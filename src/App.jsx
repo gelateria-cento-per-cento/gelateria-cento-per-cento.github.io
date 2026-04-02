@@ -276,10 +276,6 @@ const Location = ({ t }) => (
             <p className="label">{t.loc_phone_label}</p>
             <a href="tel:+393355284062">+39 335 528 4062</a>
           </div>
-          <div className="info-block">
-            <p className="label">Instagram</p>
-            <a href="https://www.instagram.com/cento_per_cento_fabrimalcesine" target="_blank" rel="noopener">@cento_per_cento_fabrimalcesine</a>
-          </div>
         </div>
         
         <div className="cta-group flex flex-col gap-1 mt-2">

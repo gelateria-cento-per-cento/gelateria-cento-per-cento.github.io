@@ -25,5 +25,13 @@
 - `[x]` Verify the build and new routes.
 lla `dist/`.
 
+- [2026-04-02 21:25]: Sezione Social & Integrazione Facebook.
+  - *Details*: Aggiunta una sezione dedicata ai social media (Instagram e Facebook) per incoraggiare l'engagement e il contatto diretto.
+  - *Tech Notes*:
+    - Creata nuova icona `Facebook` nel componente `Icons`.
+    - Implementato componente `Social` in `App.jsx`.
+    - Aggiunte 66 nuove chiavi di traduzione in `translations.js` (per 22 lingue).
+    - Styling premium in `index.css` con effetti hover dinamici e layout responsive.
+
 ## Current Status
-**Immediate Next Step**: Progetto COMPLETATO. Pronto per il deploy finale della cartella `dist/`.
+**Immediate Next Step**: Progetto COMPLETATO e pronto per il rilascio. Verificare il corretto funzionamento dei link social in staging.

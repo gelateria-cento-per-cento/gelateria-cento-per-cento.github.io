@@ -33,7 +33,10 @@ export const translations = {
     footer_quote: "L'emozione autentica del vero gelato artigianale, da trent'anni nel cuore di Malcesine.",
     footer_privacy: "Privacy Policy",
     footer_cookie: "Cookie Policy",
-    scroll: "Scroll"
+    scroll: "Scroll",
+    social_label: "Social",
+    social_title: "Restiamo in contatto",
+    social_sub: "Seguici per scoprire i nuovi gusti e le nostre creazioni quotidiane."
   },
   en: {
     nav_about: "About",
@@ -69,7 +72,10 @@ export const translations = {
     footer_quote: "The authentic emotion of real artisan gelato, in the heart of Malcesine for thirty years.",
     footer_privacy: "Privacy Policy",
     footer_cookie: "Cookie Policy",
-    scroll: "Scroll"
+    scroll: "Scroll",
+    social_label: "Social",
+    social_title: "Stay in Touch",
+    social_sub: "Follow us to discover new flavors and our daily creations."
   },
   de: {
     nav_about: "Über uns",
