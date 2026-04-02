@@ -67,13 +67,20 @@ lla `dist/`.
     - Aggiornato il componente `About` per includere l'icona nel badge.
     - Aggiunto styling in `index.css` per il posizionamento assoluto, rotazione (15deg) e ombra (drop-shadow). Corona impostata su dimensioni premium (48px desktop / 36px mobile) come richiesto dal cliente.
 
-- [2026-04-02 22:30]: Intervento Decisivo Leggibilità Hero Eyebrow.
-  - *Details*: Risolto il problema della scarsa leggibilità di "Malcesine · Lago di Garda" aumentandone il peso visivo e il contrasto con lo sfondo.
-  - *Tech Notes*: 
-    - Aumentato `font-size` a `1.1rem` e `font-weight` a `800`.
-    - Applicata un'ombra del testo (`text-shadow`) multi-livello molto più profonda e sfocata per separare i caratteri dorati dai pixel chiari dell'immagine.
-    - Introdotto un gradiente lineare scuro (`rgba(0,0,0,0.3)`) nella parte superiore dell'overlay dell'hero per garantire contrasto costante anche con immagini/cieli molto chiari.
+- [2024-04-02 22:45]: Unificazione Totale Stile "Premium Gold".
+  - *Details*: Esteso il design dell'eyebrow hero (Malcesine · Lago di Garda) a tutte le etichette di sezione, piè di pagina e badge per una coerenza visiva assoluta.
+  - *Tech Notes*:
+    - Uniformate le classi `.section-label`, `.footer-sub`, `.info-block .label` e `.about-year-badge .lbl`.
+    - Applicato ovunque: `font-weight: 800`, `letter-spacing: 0.35em`, `color: var(--color-accent-light)` e la `text-shadow` profonda distintiva.
+    - Aggiunto tocco di profondità (shadow) ai loghi header e footer per coerenza estetica.
+
+- [2024-04-02 22:48]: Dark Mode Elegante per Sezione Località.
+  - *Details*: Modificato lo sfondo della sezione "Vienici a trovare" per corrispondere a quello scuro delle Recensioni, su richiesta dell'utente.
+  - *Tech Notes*:
+    - Applicato `background: var(--color-text)` e `color: var(--color-bg)` alla classe `.location-section`.
+    - Ottimizzati i pulsanti (`.btn-primary` ora chiaro su scuro, `.btn-secondary` con bordi semi-trasparenti) per garantire visibilità e contrasto premium sul nuovo sfondo.
+    - Aggiornati i colori dei blocchi info a `#dfd8d1` per coerenza con il design system scuro.
 
 ## Current Status
-**Immediate Next Step**: Progetto COMPLETATO E OTTIMIZZATO. Testi locali ora perfettamente leggibili anche in condizioni di luce/sfondi difficili.
+**Immediate Next Step**: Progetto COMPLETATO. Il layout ora alterna sezioni chiare e scure con un ritmo visuale professionale e coerente.
 
