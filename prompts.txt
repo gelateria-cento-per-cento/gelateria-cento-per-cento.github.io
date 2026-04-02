@@ -8,6 +8,12 @@ Vorrei che iniziassimo prima di tutto a creare la struttura seguendo le best pra
 
 E poi sono aperto ai tuoi consigli per ottimizzare al massimo il mio sito web sia per SEO CHE GEO con tutte le informazioni che tu mi consigli.
 
+Considera che ho un menù/listino dei gusti che voglio mostrare e voglio che ci siano 4 lingue principali:
+- Italiano
+- Tedesco
+- Inglese
+- Francese
+
 Voglio che prima di tutto mi fai delle domande nel caso ci fossero delle scelte che vanno prese e poi iniziamo ad implementare il tutto.
 
 Ti ho inserito nella cartella "info-gelateria" delle informazioni e media riguardo alla gelateria.
