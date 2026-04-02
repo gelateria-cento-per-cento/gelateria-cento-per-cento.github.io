@@ -245,12 +245,7 @@ const Footer = ({ t }) => (
     <div className="container text-center">
       <div className="footer-logo">Cento <span className="text-accent">Per</span> Cento</div>
       <p className="footer-sub">{t.footer_sub}</p>
-      <div className="footer-links flex justify-center gap-2 flex-wrap">
-        <a href="#about">{t.nav_about}</a>
-        <a href="#reviews">{t.nav_reviews}</a>
-        <a href="#location">{t.nav_location}</a>
-        <a href="https://www.instagram.com/cento_per_cento_fabrimalcesine" target="_blank" rel="noopener noreferrer">Instagram</a>
-      </div>
+      <div className="footer-quote">{t.footer_quote}</div>
       <div className="footer-legal flex justify-center gap-2 mt-2">
         <a href="#" className="legal-link">{t.footer_privacy}</a>
         <a href="#" className="legal-link">{t.footer_cookie}</a>

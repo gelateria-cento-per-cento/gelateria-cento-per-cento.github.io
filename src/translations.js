@@ -30,6 +30,7 @@ export const translations = {
     loc_gmaps: "📍 Apri in Google Maps",
     loc_call: "📞 Chiamaci",
     footer_sub: "Gelateria Artigianale · Malcesine · Lago di Garda",
+    footer_quote: "L'emozione autentica del vero gelato artigianale, da trent'anni nel cuore di Malcesine.",
     footer_privacy: "Privacy Policy",
     footer_cookie: "Cookie Policy",
     scroll: "Scroll"
@@ -65,6 +66,7 @@ export const translations = {
     loc_gmaps: "📍 Open in Google Maps",
     loc_call: "📞 Call us",
     footer_sub: "Artisan Gelateria · Malcesine · Lake Garda",
+    footer_quote: "The authentic emotion of real artisan gelato, in the heart of Malcesine for thirty years.",
     footer_privacy: "Privacy Policy",
     footer_cookie: "Cookie Policy",
     scroll: "Scroll"
@@ -100,6 +102,7 @@ export const translations = {
     loc_gmaps: "📍 In Google Maps öffnen",
     loc_call: "📞 Rufen Sie uns an",
     footer_sub: "Hausgemachtes Eis · Malcesine · Gardasee",
+    footer_quote: "Das authentische Gefühl von echtem handwerklichem Eis, seit dreißig Jahren im Herzen von Malcesine.",
     footer_privacy: "Datenschutzerklärung",
     footer_cookie: "Cookie-Richtlinie",
     scroll: "Scrollen"
@@ -135,6 +138,7 @@ export const translations = {
     loc_gmaps: "📍 Ouvrir Google Maps",
     loc_call: "📞 Appelez-nous",
     footer_sub: "Gelateria Artisanale · Malcesine · Lac de Garde",
+    footer_quote: "L'émotion authentique d'une véritable glace artisanale, au cœur de Malcesine da trente ans.",
     footer_privacy: "Politique de confidentialité",
     footer_cookie: "Politique relative aux cookies",
     scroll: "Faire défiler"
@@ -170,6 +174,7 @@ export const translations = {
     loc_gmaps: "📍 Open in Google Maps",
     loc_call: "📞 Bel ons",
     footer_sub: "Ambachtelijke IJssalon · Malcesine · Gardameer",
+    footer_quote: "De authentieke emotie van echt ambachtelijk ijs, al dertig jaar in het hart van Malcesine.",
     footer_privacy: "Privacybeleid",
     footer_cookie: "Cookiebeleid",
     scroll: "Scrollen"
@@ -205,6 +210,7 @@ export const translations = {
     loc_gmaps: "📍 Abrir en Google Maps",
     loc_call: "📞 Llámanos",
     footer_sub: "Heladería Artesanal · Malcesine · Lago de Garda",
+    footer_quote: "La emoción auténtica del auténtico helado artesanal, en el corazón de Malcesine desde hace treinta años.",
     footer_privacy: "Política de privacidad",
     footer_cookie: "Política de cookies",
     scroll: "Desliza"
@@ -240,6 +246,7 @@ export const translations = {
     loc_gmaps: "📍 Otwórz w Mapach Google",
     loc_call: "📞 Zadzwoń do nas",
     footer_sub: "Lody Rzemieślnicze · Malcesine · Jezioro Garda",
+    footer_quote: "Autentyczne emocje płynące z prawdziwych rzemieślniczych lodów, od trzydziestu lat w sercu Malcesine.",
     footer_privacy: "Polityka prywatności",
     footer_cookie: "Polityka cookies",
     scroll: "Przewiń"
@@ -275,6 +282,7 @@ export const translations = {
     loc_gmaps: "📍 Otevřít v Mapách Google",
     loc_call: "📞 Zavolejte nám",
     footer_sub: "Řemeslná Zmrzlina · Malcesine · Garda",
+    footer_quote: "Autentické emoce z pravé řemeslné zmrzliny, již třicet let v srdci Malcesine.",
     footer_privacy: "Zásady ochrany soukromí",
     footer_cookie: "Zásady používání souborů cookie",
     scroll: "Rolovat"
@@ -310,6 +318,7 @@ export const translations = {
     loc_gmaps: "📍 Åbn i Google Maps",
     loc_call: "📞 Ring til os",
     footer_sub: "Håndlavet Ismejeri · Malcesine · Gardasøen",
+    footer_quote: "Den autentiske oplevelse af ægte håndlavet is i hjertet af Malcesine gennem tredive år.",
     footer_privacy: "Privatlivspolitik",
     footer_cookie: "Cookiepolitik",
     scroll: "Rul"
@@ -345,6 +354,7 @@ export const translations = {
     loc_gmaps: "📍 Öppna i Google Maps",
     loc_call: "📞 Ring oss",
     footer_sub: "Hantverksglass · Malcesine · Gardasjön",
+    footer_quote: "Den autentiska känslan av äkta hantverksglass i hjärtat av Malcesine sedan trettio år.",
     footer_privacy: "Integritetspolicy",
     footer_cookie: "Cookiepolicy",
     scroll: "Skrolla"
@@ -380,6 +390,7 @@ export const translations = {
     loc_gmaps: "📍 Åpne i Google Maps",
     loc_call: "📞 Ring oss",
     footer_sub: "Håndlaget Ismeieri · Malcesine · Gardasjøen",
+    footer_quote: "Den autentiske opplevelsen av ekte håndlaget is i hjertet av Malcesine gjennom tretti år.",
     footer_privacy: "Personvernserklæring",
     footer_cookie: "Cookie-erklæring",
     scroll: "Rull"
@@ -415,6 +426,7 @@ export const translations = {
     loc_gmaps: "📍 Avaa Google Maps",
     loc_call: "📞 Soita meille",
     footer_sub: "Käsityönä tehty Gelateria · Malcesine · Garda",
+    footer_quote: "Aidon käsityöjäätelön tunne Malcesinen sydämessä jo kolmenkymmenen vuoden ajan.",
     footer_privacy: "Tietosuojaseloste",
     footer_cookie: "Evästekäytäntö",
     scroll: "Vieraile"
@@ -450,6 +462,7 @@ export const translations = {
     loc_gmaps: "📍 Открыть в Google Maps",
     loc_call: "📞 Позвонить",
     footer_sub: "Домашнее Мороженое · Мальчезине · Гарда",
+    footer_quote: "Истинные эмоции настоящего ремесленного мороженого в самом сердце Мальчезине на протяжении тридцати лет.",
     footer_privacy: "Политика конфиденциальности",
     footer_cookie: "Политика в отношении файлов cookie",
     scroll: "Листать"
@@ -485,6 +498,7 @@ export const translations = {
     loc_gmaps: "📍 Abrir no Google Maps",
     loc_call: "📞 Ligue-nos",
     footer_sub: "Gelataria Artesanal · Malcesine · Garda",
+    footer_quote: "A emoção autêntica do verdadeiro gelado artesanal no coração de Malcesine há trinta anos.",
     footer_privacy: "Política de Privacidade",
     footer_cookie: "Política de Cookies",
     scroll: "Rolar"
@@ -520,6 +534,7 @@ export const translations = {
     loc_gmaps: "📍 Megnyitás Google Maps-en",
     loc_call: "📞 Hívj minket",
     footer_sub: "Kézműves Fagylaltozó · Malcesine · Garda",
+    footer_quote: "Az igazi kézműves fagylalt hiteles élménye harminc éve Malcesine szívében.",
     footer_privacy: "Adatvédelmi nyilatkozat",
     footer_cookie: "Süti tájékoztató",
     scroll: "Görgess"
@@ -555,6 +570,7 @@ export const translations = {
     loc_gmaps: "📍 Deschide Google Maps",
     loc_call: "📞 Sună-ne",
     footer_sub: "Gelaterie Artizanală · Malcesine · Garda",
+    footer_quote: "Emoția autentică a adevăratei înghețate artizanale în inima orașului Malcesine de treizeci de ani.",
     footer_privacy: "Politica de Confidențialitate",
     footer_cookie: "Politica de Cookies",
     scroll: "Scroll"
@@ -590,6 +606,7 @@ export const translations = {
     loc_gmaps: "📍 Άνοιγμα στους Χάρτες Google",
     loc_call: "📞 Καλέστε μας",
     footer_sub: "Χειροποίητο Παγωτοπωλείο · Malcesine · Garda",
+    footer_quote: "Η αυθεντική συγκίνηση του πραγματικού χειροποίητου παγωτού στην καρδιά του Malcesine εδώ και τριάντα χρόνια.",
     footer_privacy: "Πολιτική Απορρήτου",
     footer_cookie: "Πολιτική Cookies",
     scroll: "Scroll"
@@ -625,6 +642,7 @@ export const translations = {
     loc_gmaps: "📍 Google Haritalar'da aç",
     loc_call: "📞 Bizi arayın",
     footer_sub: "El Yapımı Dondurmacı · Malcesine · Garda",
+    footer_quote: "Otuz yıldır Malcesine'nin kalbinde gerçek el yapımı dondurmanın otantik heyecanı.",
     footer_privacy: "Gizlilik Politikası",
     footer_cookie: "Çerez Politikası",
     scroll: "Kaydır"
@@ -660,6 +678,7 @@ export const translations = {
     loc_gmaps: "📍 在Google地图中打开",
     loc_call: "📞 致电我们",
     footer_sub: "手工冰淇淋店 · 马尔切西内 · 加尔达湖",
+    footer_quote: "三十年来，马尔切西内心脏地带真正的原汁原味手工冰淇淋。",
     footer_privacy: "隐私政策",
     footer_cookie: "Cookie 政策",
     scroll: "滚动查看"
@@ -695,6 +714,7 @@ export const translations = {
     loc_gmaps: "📍 Googleマップを開く",
     loc_call: "📞 お電話",
     footer_sub: "手作りジェラート店 ・ マルチェージネ ・ ガルダ湖",
+    footer_quote: "30年間、マルチェージネの中心で本物の手作りジェラートの感動を。",
     footer_privacy: "プライバシーポリシー",
     footer_cookie: "クッキーポリシー",
     scroll: "スクロール"
@@ -730,6 +750,7 @@ export const translations = {
     loc_gmaps: "📍 פתח ב-Google Maps",
     loc_call: "📞 התקשרו אלינו",
     footer_sub: "ג'לאטריה בעבודת יד · מלצ'סינה · גארדה",
+    footer_quote: "הרגש האותנטי של ג'לאטו אמנותי אמיתי בלב מלצ'סינה כבר שלושים שנה.",
     footer_privacy: "מדיניות פרטיות",
     footer_cookie: "מדיניות קבצי Cookie",
     scroll: "גלול"
@@ -765,6 +786,7 @@ export const translations = {
     loc_gmaps: "📍 فتح في خرائط جوجل",
     loc_call: "📞 اتصل بنا",
     footer_sub: "جيلاتو حرفي · مالتشيسيني · غاردا",
+    footer_quote: "الإثارة الحقيقية لمذاق الجيلاتو الحرفي الأصيل في قلب مالتشيسيني منذ ثلاثين عامًا.",
     footer_privacy: "سياسة الخصوصية",
     footer_cookie: "سياسة ملفات الارتباط",
     scroll: "مرر"

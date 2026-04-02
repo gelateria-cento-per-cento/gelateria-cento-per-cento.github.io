@@ -311,7 +311,8 @@ section {
 
 .hero-eyebrow {
   font-family: -apple-system, sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.85rem;
+  font-weight: 600;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--color-accent);
@@ -567,32 +568,47 @@ section {
 .footer-elegant {
   background: var(--color-text);
   color: #a09890;
-  padding: 64px 20px;
+  padding: 32px 20px; /* Reduced padding */
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .footer-logo {
   font-family: var(--font-heading);
-  font-size: 1.25rem;
+  font-size: 1.1rem; /* Slightly smaller */
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-bg);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .footer-sub {
-  font-size: 0.72rem;
-  letter-spacing: 0.15em;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   color: #6a6058;
 }
 
-.footer-links {
-  margin-bottom: 16px;
+.footer-quote {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 24px;
+  color: var(--color-bg);
+  opacity: 0.9;
+}
+
+.footer-legal {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 8px; /* Reduced */
 }
 
 .footer-links a {
@@ -604,7 +620,7 @@ section {
 }
 
 .legal-link {
-  font-size: 0.65rem;
+  font-size: 0.62rem; /* Slighlty smaller */
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #5a5450;
@@ -618,10 +634,12 @@ section {
 }
 
 .footer-copy {
-  margin-top: 40px;
+  margin-top: 24px;
   max-width: 400px;
+  margin-left: auto; /* Centered */
+  margin-right: auto; /* Centered */
   line-height: 1.8;
-  font-size: 0.68rem;
+  font-size: 0.65rem; /* Slightly smaller */
   color: #4a4440;
 }
 
