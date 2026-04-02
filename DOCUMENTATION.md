@@ -67,6 +67,13 @@ lla `dist/`.
     - Aggiornato il componente `About` per includere l'icona nel badge.
     - Aggiunto styling in `index.css` per il posizionamento assoluto, rotazione (15deg) e ombra (drop-shadow). Corona impostata su dimensioni premium (48px desktop / 36px mobile) come richiesto dal cliente.
 
+- [2026-04-02 22:30]: Intervento Decisivo Leggibilità Hero Eyebrow.
+  - *Details*: Risolto il problema della scarsa leggibilità di "Malcesine · Lago di Garda" aumentandone il peso visivo e il contrasto con lo sfondo.
+  - *Tech Notes*: 
+    - Aumentato `font-size` a `1.1rem` e `font-weight` a `800`.
+    - Applicata un'ombra del testo (`text-shadow`) multi-livello molto più profonda e sfocata per separare i caratteri dorati dai pixel chiari dell'immagine.
+    - Introdotto un gradiente lineare scuro (`rgba(0,0,0,0.3)`) nella parte superiore dell'overlay dell'hero per garantire contrasto costante anche con immagini/cieli molto chiari.
+
 ## Current Status
-**Immediate Next Step**: Progetto COMPLETATO E OTTIMIZZATO. Corona d'oro aggiunta al badge dei 30 anni.
+**Immediate Next Step**: Progetto COMPLETATO E OTTIMIZZATO. Testi locali ora perfettamente leggibili anche in condizioni di luce/sfondi difficili.
 

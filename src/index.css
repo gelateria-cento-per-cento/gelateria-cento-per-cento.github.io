@@ -311,8 +311,10 @@ section {
 .hero-gradient-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 60% 40%, rgba(200, 150, 62, 0.15) 0%, transparent 70%), 
-              radial-gradient(ellipse at 20% 80%, rgba(200, 150, 62, 0.1) 0%, transparent 60%);
+  background: 
+    linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, transparent 40%), /* Scurisce la parte alta per far risaltare l'eyebrow */
+    radial-gradient(ellipse at 60% 40%, rgba(200, 150, 62, 0.15) 0%, transparent 70%), 
+    radial-gradient(ellipse at 20% 80%, rgba(200, 150, 62, 0.1) 0%, transparent 60%);
 }
 
 .hero-content {
@@ -322,12 +324,13 @@ section {
 
 .hero-eyebrow {
   font-family: -apple-system, sans-serif;
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.3em;
+  font-size: 1.1rem; /* Aumentato da 0.95rem */
+  font-weight: 800; /* Massimo peso per massima leggibilità */
+  letter-spacing: 0.35em;
   text-transform: uppercase;
-  color: var(--color-accent);
-  margin-bottom: 20px;
+  color: var(--color-accent-light);
+  margin-bottom: 24px;
+  text-shadow: 0 2px 15px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.4); /* Ombra molto più profonda */
 }
 
 .hero-title-group {
@@ -643,11 +646,11 @@ section {
 }
 
 .footer-sub {
-  font-size: 0.65rem;
-  letter-spacing: 0.12em;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: #6a6058;
+  color: #9a9088; /* Lighter for contrast on dark background */
 }
 
 .footer-quote {
