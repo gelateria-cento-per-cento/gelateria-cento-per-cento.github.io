@@ -105,7 +105,10 @@ export const translations = {
     footer_quote: "Das authentische Gefühl von echtem handwerklichem Eis, seit dreißig Jahren im Herzen von Malcesine.",
     footer_privacy: "Datenschutzerklärung",
     footer_cookie: "Cookie-Richtlinie",
-    scroll: "Scrollen"
+    scroll: "Scrollen",
+    social_label: "Social",
+    social_title: "Bleiben wir in Kontakt",
+    social_sub: "Folgen Sie uns auf unseren sozialen Kanälen, um neue Sorten und unsere täglichen Kreationen zu entdecken."
   },
   fr: {
     nav_about: "À propos",
@@ -141,7 +144,10 @@ export const translations = {
     footer_quote: "L'émotion authentique d'une véritable glace artisanale, au cœur de Malcesine da trente ans.",
     footer_privacy: "Politique de confidentialité",
     footer_cookie: "Politique relative aux cookies",
-    scroll: "Faire défiler"
+    scroll: "Faire défiler",
+    social_label: "Social",
+    social_title: "Restons en contact",
+    social_sub: "Suivez-nous sur nos réseaux sociaux pour découvrir de nuoveaux parfums et nos créations quotidiennes."
   },
   nl: {
     nav_about: "Over ons",
@@ -177,7 +183,10 @@ export const translations = {
     footer_quote: "De authentieke emotie van echt ambachtelijk ijs, al dertig jaar in het hart van Malcesine.",
     footer_privacy: "Privacybeleid",
     footer_cookie: "Cookiebeleid",
-    scroll: "Scrollen"
+    scroll: "Scrollen",
+    social_label: "Social",
+    social_title: "Laten we contact houden",
+    social_sub: "Volg ons op onze sociale kanalen om nieuwe smaken en onze dagelijkse creaties te ontdekken."
   },
   es: {
     nav_about: "Sobre nosotros",
@@ -213,7 +222,10 @@ export const translations = {
     footer_quote: "La emoción auténtica del auténtico helado artesanal, en el corazón de Malcesine desde hace treinta años.",
     footer_privacy: "Política de privacidad",
     footer_cookie: "Política de cookies",
-    scroll: "Desliza"
+    scroll: "Desliza",
+    social_label: "Social",
+    social_title: "Mantengamos el contacto",
+    social_sub: "Síguenos en nuestras redes sociales para descubrir nuevos sabores y nuestras creaciones diarias."
   },
   pl: {
     nav_about: "O nas",
@@ -249,7 +261,10 @@ export const translations = {
     footer_quote: "Autentyczne emocje płynące z prawdziwych rzemieślniczych lodów, od trzydziestu lat w sercu Malcesine.",
     footer_privacy: "Polityka prywatności",
     footer_cookie: "Polityka cookies",
-    scroll: "Przewiń"
+    scroll: "Przewiń",
+    social_label: "Social",
+    social_title: "Bądźmy w kontakcie",
+    social_sub: "Śledź nas w mediach społecznościowych, aby odkrywać nowe smaki i nasze codzienne kreacje."
   },
   cs: {
     nav_about: "O nás",
@@ -285,7 +300,10 @@ export const translations = {
     footer_quote: "Autentické emoce z pravé řemeslné zmrzliny, již třicet let v srdci Malcesine.",
     footer_privacy: "Zásady ochrany soukromí",
     footer_cookie: "Zásady používání souborů cookie",
-    scroll: "Rolovat"
+    scroll: "Rolovat",
+    social_label: "Social",
+    social_title: "Zůstaňme v kontaktu",
+    social_sub: "Sledujte nás na sociálních sítích a objevujte nové příchutě a naše každodenní výtvory."
   },
   da: {
     nav_about: "Om os",
@@ -321,7 +339,10 @@ export const translations = {
     footer_quote: "Den autentiske oplevelse af ægte håndlavet is i hjertet af Malcesine gennem tredive år.",
     footer_privacy: "Privatlivspolitik",
     footer_cookie: "Cookiepolitik",
-    scroll: "Rul"
+    scroll: "Rul",
+    social_label: "Social",
+    social_title: "Lad os holde kontakten",
+    social_sub: "Følg os på vores sociale kanaler for at opdage nye smage og vores daglige kreationer."
   },
   sv: {
     nav_about: "Om oss",
@@ -357,7 +378,10 @@ export const translations = {
     footer_quote: "Den autentiska känslan av äkta hantverksglass i hjärtat av Malcesine sedan trettio år.",
     footer_privacy: "Integritetspolicy",
     footer_cookie: "Cookiepolicy",
-    scroll: "Skrolla"
+    scroll: "Skrolla",
+    social_label: "Social",
+    social_title: "Låt oss hålla kontakten",
+    social_sub: "Följ oss på våra sociala kanaler för att upptäcka nya smaker och våra dagliga skapelser."
   },
   no: {
     nav_about: "Om oss",
@@ -393,7 +417,10 @@ export const translations = {
     footer_quote: "Den autentiske opplevelsen av ekte håndlaget is i hjertet av Malcesine gjennom tretti år.",
     footer_privacy: "Personvernserklæring",
     footer_cookie: "Cookie-erklæring",
-    scroll: "Rull"
+    scroll: "Rull",
+    social_label: "Social",
+    social_title: "La oss holde kontakten",
+    social_sub: "Følg os på våre sosiale kanaler for å oppdage nye smaker og våre daglige kreasjoner."
   },
   fi: {
     nav_about: "Tietoa meistä",
@@ -429,7 +456,10 @@ export const translations = {
     footer_quote: "Aidon käsityöjäätelön tunne Malcesinen sydämessä jo kolmenkymmenen vuoden ajan.",
     footer_privacy: "Tietosuojaseloste",
     footer_cookie: "Evästekäytäntö",
-    scroll: "Vieraile"
+    scroll: "Vieraile",
+    social_label: "Social",
+    social_title: "Pysytään yhteydessä",
+    social_sub: "Seuraa meitä sosiaalisessa mediassa löytääksesi uusia makuja ja päivittäisiä luomuksiamme."
   },
   ru: {
     nav_about: "О нас",
@@ -465,7 +495,10 @@ export const translations = {
     footer_quote: "Истинные эмоции настоящего ремесленного мороженого в самом сердце Мальчезине на протяжении тридцати лет.",
     footer_privacy: "Политика конфиденциальности",
     footer_cookie: "Политика в отношении файлов cookie",
-    scroll: "Листать"
+    scroll: "Листать",
+    social_label: "Соцсети",
+    social_title: "Будем на связи",
+    social_sub: "Подписывайтесь на наши соцсети, чтобы узнавать о новых вкусах и наших ежедневных творениях."
   },
   pt: {
     nav_about: "Sobre nós",
@@ -501,7 +534,10 @@ export const translations = {
     footer_quote: "A emoção autêntica do verdadeiro gelado artesanal no coração de Malcesine há trinta anos.",
     footer_privacy: "Política de Privacidade",
     footer_cookie: "Política de Cookies",
-    scroll: "Rolar"
+    scroll: "Rolar",
+    social_label: "Social",
+    social_title: "Vamos manter contacto",
+    social_sub: "Siga-nos nas nossas redes sociais para descobrir novos sabores e as nossas criações diárias."
   },
   hu: {
     nav_about: "Rólunk",
@@ -537,7 +573,10 @@ export const translations = {
     footer_quote: "Az igazi kézműves fagylalt hiteles élménye harminc éve Malcesine szívében.",
     footer_privacy: "Adatvédelmi nyilatkozat",
     footer_cookie: "Süti tájékoztató",
-    scroll: "Görgess"
+    scroll: "Görgess",
+    social_label: "Social",
+    social_title: "Maradjunk kapcsolatban",
+    social_sub: "Kövessen minket a közösségi oldalakon, hogy felfedezze az új ízeket és napi alkotásainkat."
   },
   ro: {
     nav_about: "Despre noi",
@@ -573,7 +612,10 @@ export const translations = {
     footer_quote: "Emoția autentică a adevăratei înghețate artizanale în inima orașului Malcesine de treizeci de ani.",
     footer_privacy: "Politica de Confidențialitate",
     footer_cookie: "Politica de Cookies",
-    scroll: "Scroll"
+    scroll: "Scroll",
+    social_label: "Social",
+    social_title: "Să rămânem în contact",
+    social_sub: "Urmărește-ne pe canalele noastre sociale pentru a descoperi noi arome și creațiile noastre zilnice."
   },
   el: {
     nav_about: "Σχετικά",
@@ -609,7 +651,10 @@ export const translations = {
     footer_quote: "Η αυθεντική συγκίνηση του πραγματικού χειροποίητου παγωτού στην καρδιά του Malcesine εδώ και τριάντα χρόνια.",
     footer_privacy: "Πολιτική Απορρήτου",
     footer_cookie: "Πολιτική Cookies",
-    scroll: "Scroll"
+    scroll: "Scroll",
+    social_label: "Social",
+    social_title: "Ας μείνουμε σε επαφή",
+    social_sub: "Ακολουθήστε μας στα κοινωνικά μας δίκτυα για να ανακαλύψετε νέες γεύσεις και τις καθημερινές μας δημιουργίες."
   },
   tr: {
     nav_about: "Hakkımızda",
@@ -645,7 +690,10 @@ export const translations = {
     footer_quote: "Otuz yıldır Malcesine'nin kalbinde gerçek el yapımı dondurmanın otantik heyecanı.",
     footer_privacy: "Gizlilik Politikası",
     footer_cookie: "Çerez Politikası",
-    scroll: "Kaydır"
+    scroll: "Kaydır",
+    social_label: "Sosyal",
+    social_title: "İletişimde Kalalım",
+    social_sub: "Yeni lezzetlerimizi ve günlük tasarımlarımızı keşfetmek için bizi sosyal medya kanallarımızdan takip edin."
   },
   zh: {
     nav_about: "关于我们",
@@ -681,7 +729,10 @@ export const translations = {
     footer_quote: "三十年来，马尔切西内心脏地带真正的原汁原味手工冰淇淋。",
     footer_privacy: "隐私政策",
     footer_cookie: "Cookie 政策",
-    scroll: "滚动查看"
+    scroll: "滚动查看",
+    social_label: "社交媒体",
+    social_title: "保持联系",
+    social_sub: "关注我们的社交渠道，发现新口味和我们的每日创意。"
   },
   ja: {
     nav_about: "当店について",
@@ -717,7 +768,10 @@ export const translations = {
     footer_quote: "30年間、マルチェージネの中心で本物の手作りジェラートの感動を。",
     footer_privacy: "プライバシーポリシー",
     footer_cookie: "クッキーポリシー",
-    scroll: "スクロール"
+    scroll: "スクロール",
+    social_label: "ソーシャル",
+    social_title: "連絡を取り合いましょう",
+    social_sub: "ソーシャルチャネルで私たちをフォローして、新しいフレーバーや毎日の創作を発見してください。"
   },
   he: {
     nav_about: "אודות",
@@ -753,7 +807,10 @@ export const translations = {
     footer_quote: "הרגש האותנטי של ג'לאטו אמנותי אמיתי בלב מלצ'סינה כבר שלושים שנה.",
     footer_privacy: "מדיניות פרטיות",
     footer_cookie: "מדיניות קבצי Cookie",
-    scroll: "גלול"
+    scroll: "גלול",
+    social_label: "רשתות חברתיות",
+    social_title: "בואו נשמור על קשר",
+    social_sub: "עקבו אחרינו ברשתות החברתיות כדי לגלות טעמים חדשים ואת היצירות היומיומיות שלנו."
   },
   ar: {
     nav_about: "من نحن",
@@ -789,6 +846,9 @@ export const translations = {
     footer_quote: "الإثارة الحقيقية لمذاق الجيلاتو الحرفي الأصيل في قلب مالتشيسيني منذ ثلاثين عامًا.",
     footer_privacy: "سياسة الخصوصية",
     footer_cookie: "سياسة ملفات الارتباط",
-    scroll: "مرر"
+    scroll: "مرر",
+    social_label: "التواصل الاجتماعي",
+    social_title: "لنكن على اتصال",
+    social_sub: "تابعونا على قنواتنا الاجتماعية لاكتشاف النكهات الجديدة وإبداعاتنا اليومية."
   }
 };

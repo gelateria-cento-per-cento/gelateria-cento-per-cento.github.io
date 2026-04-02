@@ -15,7 +15,8 @@ const Icons = {
   X: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>,
   Award: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>,
   Heart: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>,
-  ArrowLeft: () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+  ArrowLeft: () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>,
+  Facebook: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
 };
 
 const SEO = ({ lang, t }) => (
@@ -125,8 +126,10 @@ const Hero = ({ t }) => (
     </div>
     <div className="container hero-content text-left">
       <p className="hero-eyebrow animate-up">{t.hero_eyebrow}</p>
-      <h1 className="hero-title animate-up delay-1">Cento<br/><em className="text-accent italic">Per Cento</em></h1>
-      <p className="hero-sub animate-up delay-2">{t.hero_sub}</p>
+      <div className="hero-title-group">
+        <h1 className="hero-title animate-up delay-1">Cento<br/><em className="text-accent italic">Per Cento</em></h1>
+        <p className="hero-sub animate-up delay-2">{t.hero_sub}</p>
+      </div>
       <div className="hero-badge animate-up delay-3">
         <span className="stars">★★★★★</span>
         <span>{t.hero_badge}</span>
@@ -213,6 +216,43 @@ const Reviews = ({ t }) => (
       <div className="reviews-cta text-center mt-4">
         <a href="https://share.google/RdVoudSAVPI2sogzk" target="_blank" rel="noopener noreferrer" className="btn-outline">
           {t.reviews_btn}
+        </a>
+      </div>
+    </div>
+  </section>
+);
+
+const Social = ({ t }) => (
+  <section id="social" className="social-section">
+    <div className="container">
+      <div className="social-header text-center mb-4">
+        <p className="section-label">{t.social_label}</p>
+        <h2 className="section-title" dangerouslySetInnerHTML={{ __html: t.social_title }}></h2>
+        <div className="divider" style={{ margin: '0 auto 40px' }}></div>
+        <p className="social-sub">{t.social_sub}</p>
+      </div>
+      
+      <div className="social-grid">
+        <a href="https://www.instagram.com/cento_per_cento_fabrimalcesine" target="_blank" rel="noopener noreferrer" className="social-card instagram">
+          <div className="social-icon-box">
+            <Icons.Instagram />
+          </div>
+          <div className="social-card-content">
+            <h3>Instagram</h3>
+            <p>@cento_per_cento_fabrimalcesine</p>
+          </div>
+          <Icons.ChevronRight />
+        </a>
+        
+        <a href="https://www.facebook.com/centopercentomalcesine/" target="_blank" rel="noopener noreferrer" className="social-card facebook">
+          <div className="social-icon-box">
+            <Icons.Facebook />
+          </div>
+          <div className="social-card-content">
+            <h3>Facebook</h3>
+            <p>Cento Per Cento Malcesine</p>
+          </div>
+          <Icons.ChevronRight />
         </a>
       </div>
     </div>
@@ -391,6 +431,7 @@ const AppContent = ({ lang, t }) => {
             <Hero t={t} />
             <About t={t} />
             <Reviews t={t} />
+            <Social t={t} />
             <Location t={t} />
           </main>
         } />
