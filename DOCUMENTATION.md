@@ -74,13 +74,10 @@ lla `dist/`.
     - Applicato ovunque: `font-weight: 800`, `letter-spacing: 0.35em`, `color: var(--color-accent-light)` e la `text-shadow` profonda distintiva.
     - Aggiunto tocco di profondità (shadow) ai loghi header e footer per coerenza estetica.
 
-- [2024-04-02 22:48]: Dark Mode Elegante per Sezione Località.
-  - *Details*: Modificato lo sfondo della sezione "Vienici a trovare" per corrispondere a quello scuro delle Recensioni, su richiesta dell'utente.
-  - *Tech Notes*:
-    - Applicato `background: var(--color-text)` e `color: var(--color-bg)` alla classe `.location-section`.
-    - Ottimizzati i pulsanti (`.btn-primary` ora chiaro su scuro, `.btn-secondary` con bordi semi-trasparenti) per garantire visibilità e contrasto premium sul nuovo sfondo.
-    - Aggiornati i colori dei blocchi info a `#dfd8d1` per coerenza con il design system scuro.
+- [2024-04-02 22:50]: Pulizia Emoji Duplicate.
+  - *Details*: Rimosse le emoji 📍 e 📞 dalle stringhe di traduzione in tutte le lingue (src/translations.js). 
+  - *Tech Notes*: Le emoji creavano un duplicato visivo poiché i pulsanti includono già icone SVG (`Icons.MapPin` e `Icons.Phone`). Ora l'interfaccia è più pulita e professionale.
 
 ## Current Status
-**Immediate Next Step**: Progetto COMPLETATO. Il layout ora alterna sezioni chiare e scure con un ritmo visuale professionale e coerente.
+**Immediate Next Step**: Progetto COMPLETATO. Interfaccia pulita, coerente e ottimizzata in 22 lingue.
 
