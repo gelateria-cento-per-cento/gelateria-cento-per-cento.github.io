@@ -165,7 +165,7 @@ const About = ({ t }) => (
   <section id="about" className="about-section">
     <div className="container about-grid">
       <div className="about-img-wrap">
-        <img src="/hero.png" alt="Fabrizio Bottesi" className="about-main-img" />
+        <img src="/gelataio.jpeg" alt="Fabrizio Bottesi" className="about-main-img" />
         <div className="about-year-badge">
           <span className="num">30</span>
           <span className="lbl">{t.years_label}</span>

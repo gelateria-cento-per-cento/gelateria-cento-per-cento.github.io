@@ -41,5 +41,9 @@ lla `dist/`.
     - Calcolato l'offset dinamico (80px) per garantire che le sezioni non siano coperte dall'header.
     - Assicurata la chiusura automatica del menu mobile dopo il clic su una sezione.
 
+- [2026-04-02 21:45]: Aggiornamento Immagine About.
+  - *Details*: Sostituita l'immagine segnaposto nella sezione "Chi Siamo" con la foto originale di Fabrizio Bottesi (`gelataio.jpeg`).
+  - *Tech Notes*: Immagine copiata da `info-gelateria/` a `public/` e referenziata in `src/App.jsx`.
+
 ## Current Status
-**Immediate Next Step**: Progetto COMPLETATO. Tutti i link di navigazione interna sono ora funzionali e professionali.
+**Immediate Next Step**: Progetto COMPLETATO e personalizzato con l'immagine corretta.
