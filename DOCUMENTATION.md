@@ -33,5 +33,13 @@ lla `dist/`.
     - Aggiunte 66 nuove chiavi di traduzione in `translations.js` (per 22 lingue).
     - Styling premium in `index.css` con effetti hover dinamici e layout responsive.
 
+- [2026-04-02 21:40]: Professional Smooth Scrolling & HashRouter Fix.
+  - *Details*: Corretto il comportamento dei link nell'header che non funzionavano correttamente a causa del conflitto con `HashRouter`. Implementato uno scrolling fluido manuale che rispetta l'offset della navbar fissa.
+  - *Tech Notes*:
+    - Introdotta la funzione `scrollToSection` nel componente `Navbar`.
+    - Utilizzato `e.preventDefault()` per evitare che le ancore `#` interferissero con il routing di React.
+    - Calcolato l'offset dinamico (80px) per garantire che le sezioni non siano coperte dall'header.
+    - Assicurata la chiusura automatica del menu mobile dopo il clic su una sezione.
+
 ## Current Status
-**Immediate Next Step**: Progetto COMPLETATO e pronto per il rilascio. Verificare il corretto funzionamento dei link social in staging.
+**Immediate Next Step**: Progetto COMPLETATO. Tutti i link di navigazione interna sono ora funzionali e professionali.

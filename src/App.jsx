@@ -86,6 +86,24 @@ const Navbar = ({ t }) => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
+  const scrollToSection = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 80; // Account for fixed navbar height
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+    closeMenu();
+  };
+
   return (
     <nav className={`navbar ${isMenuOpen ? 'menu-is-open' : ''}`}>
       <div className="container flex items-center justify-between navbar-inner">
@@ -94,9 +112,10 @@ const Navbar = ({ t }) => {
         {isHome && (
           <div className="nav-right flex items-center">
             <ul className="nav-links-desktop flex">
-              <li><a href="#about" className="nav-link">{t.nav_about}</a></li>
-              <li><a href="#reviews" className="nav-link">{t.nav_reviews}</a></li>
-              <li><a href="#location" className="nav-link btn-small-nav">{t.nav_location}</a></li>
+              <li><a href="#about" onClick={(e) => scrollToSection(e, 'about')} className="nav-link">{t.nav_about}</a></li>
+              <li><a href="#reviews" onClick={(e) => scrollToSection(e, 'reviews')} className="nav-link">{t.nav_reviews}</a></li>
+              <li><a href="#social" onClick={(e) => scrollToSection(e, 'social')} className="nav-link">{t.nav_social}</a></li>
+              <li><a href="#location" onClick={(e) => scrollToSection(e, 'location')} className="nav-link btn-small-nav">{t.nav_location}</a></li>
             </ul>
             <button className="hamburger" onClick={toggleMenu} aria-label="Menu">
               {isMenuOpen ? <Icons.X /> : <Icons.Menu />}
@@ -108,9 +127,10 @@ const Navbar = ({ t }) => {
       {isHome && (
         <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
           <ul className="mobile-nav-links">
-            <li><a href="#about" onClick={closeMenu}>{t.nav_about}</a></li>
-            <li><a href="#reviews" onClick={closeMenu}>{t.nav_reviews}</a></li>
-            <li><a href="#location" onClick={closeMenu}>{t.nav_location}</a></li>
+            <li><a href="#about" onClick={(e) => scrollToSection(e, 'about')}>{t.nav_about}</a></li>
+            <li><a href="#reviews" onClick={(e) => scrollToSection(e, 'reviews')}>{t.nav_reviews}</a></li>
+            <li><a href="#social" onClick={(e) => scrollToSection(e, 'social')}>{t.nav_social}</a></li>
+            <li><a href="#location" onClick={(e) => scrollToSection(e, 'location')}>{t.nav_location}</a></li>
           </ul>
         </div>
       )}
@@ -278,8 +298,8 @@ const Location = ({ t }) => (
           </div>
         </div>
         
-        <div className="cta-group flex flex-col gap-1 mt-2">
-          <a href="https://maps.google.com/?q=Via+Castello+31+Malcesine+VR" target="_blank" rel="noopener noreferrer" className="btn-primary">
+        <div className="cta-group flex flex-col gap-1 mt-4">
+          <a href="https://maps.app.goo.gl/JJqesGKFP48hzokz6" target="_blank" rel="noopener noreferrer" className="btn-primary">
             <Icons.MapPin /> {t.loc_gmaps}
           </a>
           <a href="tel:+393355284062" className="btn-secondary">
