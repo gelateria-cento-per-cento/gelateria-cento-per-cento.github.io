@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 import { translations } from './translations';
 
@@ -54,7 +54,7 @@ const SEO = ({ lang, t }) => (
   </Helmet>
 );
 
-const Navbar = ({ t, lang, setLang }) => {
+const Navbar = ({ t }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -257,17 +257,23 @@ const Footer = ({ t }) => (
   </footer>
 );
 
-// Helper per rilevamento lingua e salvataggio preferenze
+// Helper per rilevamento lingua dinamico e scalabile
 const getInitialLang = () => {
   const saved = localStorage.getItem('gelateria_lang');
-  if (saved && ['it', 'en', 'de', 'fr'].includes(saved)) return saved;
+  const supported = Object.keys(translations);
+  
+  if (saved && supported.includes(saved)) return saved;
 
-  const browserLang = navigator.language.split('-')[0].toLowerCase();
-  const supported = ['it', 'en', 'de', 'fr'];
+  // Rileva lingua del browser (es. "it-IT" -> "it")
+  const browserFull = navigator.language.toLowerCase();
+  const browserBase = browserFull.split('-')[0];
   
-  if (supported.includes(browserLang)) return browserLang;
+  // Prova match esatto (it-it) o base (it)
+  if (supported.includes(browserFull)) return browserFull;
+  if (supported.includes(browserBase)) return browserBase;
   
-  // Se non supportata, usa IT per questa gelateria (essendo a Malcesine) o EN come standard internazionale
+  // Fallback strategico: se straniero ma non abbiamo la sua lingua, usa EN, altrimenti IT (Malcesine)
+  if (supported.includes('en')) return 'en';
   return 'it'; 
 };
 
@@ -275,13 +281,17 @@ function App() {
   const [lang] = useState(getInitialLang());
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
+
   const t = translations[lang];
 
   return (
     <HelmetProvider>
       <div className="app">
         <SEO lang={lang} t={t} />
-        <Navbar t={t} lang={lang} setLang={setLang} />
+        <Navbar t={t} />
         <main>
           <Hero t={t} />
           <About t={t} />

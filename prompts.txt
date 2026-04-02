@@ -8,7 +8,7 @@ Vorrei che iniziassimo prima di tutto a creare la struttura seguendo le best pra
 
 E poi sono aperto ai tuoi consigli per ottimizzare al massimo il mio sito web sia per SEO CHE GEO con tutte le informazioni che tu mi consigli.
 
-Considera che ho un menù/listino dei gusti che voglio mostrare e voglio che ci siano 4 lingue principali:
+Considera che ho un menù/listino dei gusti che voglio mostrare e voglio che ci siano 4 lingue principali in maniera totalmente invisibile ed automatica:
 - Italiano
 - Tedesco
 - Inglese
