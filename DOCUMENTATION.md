@@ -1,8 +1,8 @@
 # DOCUMENTATION.MD
 
-- [2026-04-02 18:43]: Completamento Sviluppo & Build.
-  - *Details*: Implementata struttura completa con SEO e design moderno. Risolti problemi di bundling sostituendo lucide-react con icone SVG per massimizzare la velocità e stabilità.
-  - *Tech Notes*: Build finale generata in `dist/`. Ottimizzazione JSON-LD LocalBusiness completata.
+- [2026-04-02 18:51]: Merge Multilingua & Redesign "Elegance".
+  - *Details*: Integrato il sistema di traduzione in 4 lingue (IT, EN, DE, FR) estratto dal file HTML fornito. Aggiornato il design system con una palette calda (Crema/Oro) e font Serif (Georgia).
+  - *Tech Notes*: Creato `src/translations.js`. Refactor completo di `App.jsx` per gestire lo state della lingua. Ottimizzata la build finale.
 
 ## Current Status
-**Immediate Next Step**: Deploy della cartella `dist/` su hosting (Vercel/Netlify).
+**Immediate Next Step**: Pronto per il deploy finale della cartella `dist/`.
