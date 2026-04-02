@@ -746,6 +746,37 @@ section {
   .map-wrap {
     aspect-ratio: 1/1;
   }
+
+  /* Shift Hero content significantly up on mobile */
+  .hero {
+    align-items: flex-start !important;
+    padding-top: 80px; /* Bring it closer to the navbar */
+  }
+
+  .hero-content {
+    text-align: left;
+  }
+
+  .hero-eyebrow {
+    margin-bottom: 8px !important;
+  }
+
+  .hero-title-group {
+    display: block !important;
+    margin-bottom: 24px !important;
+  }
+
+  .hero-title {
+    font-size: clamp(2.8rem, 12vw, 4.5rem) !important;
+    line-height: 1.0;
+    margin-bottom: 12px !important;
+  }
+
+  .hero-sub {
+    font-size: 0.85rem !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 480px) {
