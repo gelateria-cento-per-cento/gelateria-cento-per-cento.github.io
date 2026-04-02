@@ -9,6 +9,8 @@ const Icons = {
   Phone: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>,
   Clock: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>,
   ChevronRight: () => <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>,
+  Menu: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>,
+  X: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>,
   Award: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>,
   Heart: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
 };
@@ -52,33 +54,66 @@ const SEO = ({ lang, t }) => (
   </Helmet>
 );
 
-const Navbar = ({ t, lang, setLang }) => (
-  <nav className="navbar">
-    <div className="container flex items-center justify-between">
-      <a href="#hero" className="nav-logo">Cento <span className="text-accent">Per</span> Cento</a>
-      
-      <div className="nav-right flex items-center">
-        <ul className="nav-links flex">
-          <li><a href="#about" className="nav-link">{t.nav_about}</a></li>
-          <li><a href="#reviews" className="nav-link">{t.nav_reviews}</a></li>
-          <li><a href="#location" className="nav-link btn-small">{t.nav_location}</a></li>
-        </ul>
+const Navbar = ({ t, lang, setLang }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
+
+  return (
+    <nav className={`navbar ${isMenuOpen ? 'menu-is-open' : ''}`}>
+      <div className="container flex items-center justify-between navbar-inner">
+        <a href="#hero" className="nav-logo" onClick={closeMenu}>Cento <span className="text-accent">Per</span> Cento</a>
         
-        <div className="lang-switcher">
+        <div className="nav-right flex items-center">
+          {/* Desktop Links */}
+          <ul className="nav-links-desktop flex">
+            <li><a href="#about" className="nav-link">{t.nav_about}</a></li>
+            <li><a href="#reviews" className="nav-link">{t.nav_reviews}</a></li>
+            <li><a href="#location" className="nav-link btn-small-nav">{t.nav_location}</a></li>
+          </ul>
+          
+          <div className="lang-switcher-desktop">
+            {['it', 'en', 'de', 'fr'].map(l => (
+              <button 
+                key={l}
+                className={`lang-btn ${lang === l ? 'active' : ''}`}
+                onClick={() => setLang(l)}
+              >
+                {l.toUpperCase()}
+              </button>
+            ))}
+          </div>
+
+          {/* Hamburger (Mobile Only) */}
+          <button className="hamburger" onClick={toggleMenu} aria-label="Menu">
+            {isMenuOpen ? <Icons.X /> : <Icons.Menu />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu Overlay */}
+      <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
+        <ul className="mobile-nav-links">
+          <li><a href="#about" onClick={closeMenu}>{t.nav_about}</a></li>
+          <li><a href="#reviews" onClick={closeMenu}>{t.nav_reviews}</a></li>
+          <li><a href="#location" onClick={closeMenu}>{t.nav_location}</a></li>
+        </ul>
+        <div className="mobile-lang-switcher">
           {['it', 'en', 'de', 'fr'].map(l => (
             <button 
               key={l}
               className={`lang-btn ${lang === l ? 'active' : ''}`}
-              onClick={() => setLang(l)}
+              onClick={() => { setLang(l); closeMenu(); }}
             >
               {l.toUpperCase()}
             </button>
           ))}
         </div>
       </div>
-    </div>
-  </nav>
-);
+    </nav>
+  );
+};
 
 const Hero = ({ t }) => (
   <section id="hero" className="hero">
