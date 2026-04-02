@@ -427,6 +427,16 @@ section {
   justify-content: center;
 }
 
+.about-year-badge svg {
+  position: absolute;
+  top: -24px;
+  right: -24px;
+  width: 48px;
+  height: 48px;
+  transform: rotate(15deg);
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
 .about-year-badge .num {
   font-size: 2rem;
   font-weight: 700;
@@ -713,6 +723,13 @@ section {
     right: -15px;
     width: 80px;
     height: 80px;
+  }
+
+  .about-year-badge svg {
+    width: 36px;
+    height: 36px;
+    top: -18px;
+    right: -18px;
   }
   
   .about-year-badge .num { font-size: 1.5rem; }

@@ -60,9 +60,13 @@ lla `dist/`.
     - Utilizzato `details` tag per i dati strutturati LLM per mantenere la pulizia visiva senza perdere potenza SEO.
     - Assicurata la piena integrità del codice dopo refactoring chirurgico.
 
-- [2026-04-02 22:15]: Ottimizzazione Layout Hero Mobile (v3 - Larghezza Descrizione).
-  - *Details*: Rimosso il vincolo di larghezza della descrizione nella sezione Hero su mobile. Ora il testo occupa tutta la larghezza disponibile del container per una migliore leggibilità su schermi stretti.
-  - *Tech Notes*: Modificata la classe `.hero-title-group` impostandola su `display: block` nella media query mobile, liberando la `.hero-sub` dai limiti del `grid-template-columns: min-content`.
+- [2026-04-02 22:20]: Aggiunta Corona d'Oro al Badge "30 Anni".
+  - *Details*: Inserita un'icona a forma di corona gialla/oro appoggiata sull'angolo in alto a destra del quadrato nero che indica i 30 anni di attività.
+  - *Tech Notes*:
+    - Creata nuova icona `Crown` (SVG) nel componente `Icons` di `App.jsx`.
+    - Aggiornato il componente `About` per includere l'icona nel badge.
+    - Aggiunto styling in `index.css` per il posizionamento assoluto, rotazione (15deg) e ombra (drop-shadow). Corona impostata su dimensioni premium (48px desktop / 36px mobile) come richiesto dal cliente.
 
 ## Current Status
-**Immediate Next Step**: Progetto COMPLETATO E OTTIMIZZATO. Layout mobile perfezionato.
+**Immediate Next Step**: Progetto COMPLETATO E OTTIMIZZATO. Corona d'oro aggiunta al badge dei 30 anni.
+
