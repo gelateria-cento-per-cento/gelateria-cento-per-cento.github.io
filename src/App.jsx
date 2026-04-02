@@ -73,18 +73,6 @@ const Navbar = ({ t, lang, setLang }) => {
             <li><a href="#location" className="nav-link btn-small-nav">{t.nav_location}</a></li>
           </ul>
           
-          <div className="lang-switcher-desktop">
-            {['it', 'en', 'de', 'fr'].map(l => (
-              <button 
-                key={l}
-                className={`lang-btn ${lang === l ? 'active' : ''}`}
-                onClick={() => setLang(l)}
-              >
-                {l.toUpperCase()}
-              </button>
-            ))}
-          </div>
-
           {/* Hamburger (Mobile Only) */}
           <button className="hamburger" onClick={toggleMenu} aria-label="Menu">
             {isMenuOpen ? <Icons.X /> : <Icons.Menu />}
@@ -99,17 +87,6 @@ const Navbar = ({ t, lang, setLang }) => {
           <li><a href="#reviews" onClick={closeMenu}>{t.nav_reviews}</a></li>
           <li><a href="#location" onClick={closeMenu}>{t.nav_location}</a></li>
         </ul>
-        <div className="mobile-lang-switcher">
-          {['it', 'en', 'de', 'fr'].map(l => (
-            <button 
-              key={l}
-              className={`lang-btn ${lang === l ? 'active' : ''}`}
-              onClick={() => { setLang(l); closeMenu(); }}
-            >
-              {l.toUpperCase()}
-            </button>
-          ))}
-        </div>
       </div>
     </nav>
   );
@@ -280,8 +257,24 @@ const Footer = ({ t }) => (
   </footer>
 );
 
+// Helper per rilevamento lingua e salvataggio preferenze
+const getInitialLang = () => {
+  const saved = localStorage.getItem('gelateria_lang');
+  if (saved && ['it', 'en', 'de', 'fr'].includes(saved)) return saved;
+
+  const browserLang = navigator.language.split('-')[0].toLowerCase();
+  const supported = ['it', 'en', 'de', 'fr'];
+  
+  if (supported.includes(browserLang)) return browserLang;
+  
+  // Se non supportata, usa IT per questa gelateria (essendo a Malcesine) o EN come standard internazionale
+  return 'it'; 
+};
+
 function App() {
-  const [lang, setLang] = useState('it');
+  const [lang] = useState(getInitialLang());
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const t = translations[lang];
 
   return (
