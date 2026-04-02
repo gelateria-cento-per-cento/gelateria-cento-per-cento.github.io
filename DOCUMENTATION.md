@@ -1,8 +1,8 @@
 # DOCUMENTATION.MD
 
-- [2026-04-02 19:12]: Bugfix (setLang ReferenceError).
-  - *Details*: Risolto un errore di riferimento per `setLang` che rimaneva nella chiamata di Navbar. Pulita l'interfaccia da props inutilizzate.
-  - *Tech Notes*: Progetto ora stabile al 100%. Build completata.
+- [2026-04-02 20:59]: Refactor Footer & Inserimento Policy.
+  - *Details*: Centrato completamente il footer e aggiunti i link "Privacy Policy" e "Cookie Policy" tradotti in 22 lingue.
+  - *Tech Notes*: Aggiornato `translations.js`, `App.jsx` e `index.css`. Build finale verificata.
 
 ## Current Status
 **Immediate Next Step**: Progetto COMPLETATO. Pronto per il deploy finale della cartella `dist/`.

@@ -98,7 +98,7 @@ const Hero = ({ t }) => (
        <img src="/hero.png" alt="Gelateria Malcesine" className="hero-img-full" />
        <div className="hero-gradient-overlay"></div>
     </div>
-    <div className="container hero-content text-center">
+    <div className="container hero-content text-left">
       <p className="hero-eyebrow animate-up">{t.hero_eyebrow}</p>
       <h1 className="hero-title animate-up delay-1">Cento<br/><em className="text-accent italic">Per Cento</em></h1>
       <p className="hero-sub animate-up delay-2">{t.hero_sub}</p>
@@ -108,7 +108,6 @@ const Hero = ({ t }) => (
       </div>
       <div className="hero-scroll">
         <div className="hero-scroll-line"></div>
-        <span>{t.scroll}</span>
       </div>
     </div>
   </section>
@@ -246,11 +245,15 @@ const Footer = ({ t }) => (
     <div className="container text-center">
       <div className="footer-logo">Cento <span className="text-accent">Per</span> Cento</div>
       <p className="footer-sub">{t.footer_sub}</p>
-      <div className="footer-links flex justify-center gap-2">
+      <div className="footer-links flex justify-center gap-2 flex-wrap">
         <a href="#about">{t.nav_about}</a>
         <a href="#reviews">{t.nav_reviews}</a>
         <a href="#location">{t.nav_location}</a>
         <a href="https://www.instagram.com/cento_per_cento_fabrimalcesine" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+      <div className="footer-legal flex justify-center gap-2 mt-2">
+        <a href="#" className="legal-link">{t.footer_privacy}</a>
+        <a href="#" className="legal-link">{t.footer_cookie}</a>
       </div>
       <p className="footer-copy">© 2026 Gelateria Cento Per Cento · Via Castello, 31 · 37018 Malcesine (VR)</p>
     </div>
