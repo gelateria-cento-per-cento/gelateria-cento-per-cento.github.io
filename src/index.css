@@ -506,6 +506,34 @@ section {
   margin-bottom: 20px;
 }
 
+.legal-page {
+  background: var(--color-bg);
+  padding-bottom: 80px;
+}
+
+.legal-block {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+  transition: var(--transition-smooth);
+}
+
+.legal-block:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 768px) {
+  .legal-page {
+    padding-top: 100px !important;
+  }
+  .legal-block {
+    padding: 24px;
+  }
+}
+
 .btn-outline {
   display: inline-block;
   border: 1px solid rgba(255, 255, 255, 0.25);
