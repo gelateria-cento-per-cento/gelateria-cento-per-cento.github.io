@@ -21,13 +21,15 @@
   - Integrated into `App.jsx` between Reviews and Location.
   - Verified with `npm run build`.
 
-## [2026-04-04 19:09]: Location Section Enhancement
-- *Details*: Integrated a characteristic panoramic image of Malcesine's Scaliger Castle alongside the Google Map.
+## [2026-04-04 19:23]: Elite Location 2x2 Grid Redesign
+- *Details*: Restructured the Location section into a high-end 2x2 grid (4 cells total).
 - *Tech Notes*:
-  - Generated and added `src/assets/images/malcesine_view.png`.
-  - Created a vertical visual stack in `src/components/Location.jsx`.
-  - Updated `global.css` with `.location-visuals` and transitioned the map to a cinematic 16:9 aspect ratio.
-  - Added scale-on-hover effects for the landscape photo.
+  - **Top Left**: Contacts & Buttons.
+  - **Bottom Left**: Google Map.
+  - **Full Right**: Panoramic Malcesine photo spanning both superior and inferior rows.
+  - Implemented via CSS Grid with `grid-row: 1 / span 2` for the cinematic photo.
+  - Verified 100% responsiveness on mobile (vertical stack).
+
 
 
 
