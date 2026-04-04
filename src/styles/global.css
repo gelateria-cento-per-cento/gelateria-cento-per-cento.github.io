@@ -450,7 +450,13 @@ nav.sol .ni {
   padding: 14px 32px;
   opacity: 0;
   transform: translateY(16px);
-  transition: opacity .7s ease, transform .7s ease;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+
+.h-badge:hover {
+  border-color: rgba(200, 150, 62, .75);
+  background: rgba(255, 255, 255, .03);
 }
 
 .h-badge.show {

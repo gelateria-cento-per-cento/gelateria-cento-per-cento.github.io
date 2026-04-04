@@ -40,10 +40,15 @@ export default function Hero({ isLoaded }) {
           <span className={`h-t2 ${showAnims ? 'show' : ''}`}>Per Cento</span>
         </div>
         <p className={`h-sub ${showAnims ? 'show' : ''}`}>{t('hts')}</p>
-        <div className={`h-badge ${showAnims ? 'show' : ''}`}>
+        <a 
+          href="https://share.google/RdVoudSAVPI2sogzk" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className={`h-badge ${showAnims ? 'show' : ''}`}
+        >
           <span className="hb-stars">★★★★★</span>
           <span className="hb-txt">{t('hr')}</span>
-        </div>
+        </a>
       </div>
       <div className={`h-scroll ${showAnims ? 'show' : ''}`}>
         <span className="hs-lbl">Scroll</span>
