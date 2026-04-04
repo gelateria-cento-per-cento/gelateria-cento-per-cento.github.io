@@ -49,3 +49,12 @@
   - Updated `it.json`, `en.json`, `de.json`, and `fr.json` with translated versions of the two new specialties.
   - No changes were required to `Marquee.jsx` as it dynamically handles the translations array.
   - Matches the 22-language mapping system in `useI18n.js`.
+
+## [2026-04-04 19:44]: Fabrizio's Profile Photo Update
+- *Details*: Replaced the placeholder icon in the "About" section with the actual photo of Fabrizio provided in `info-gelateria/`.
+- *Tech Notes*:
+  - Copied `info-gelateria/gelataio.jpeg` to `src/assets/images/fabrizio.jpg`.
+  - Updated `About.jsx` to import and display the image using a new `.ap-img` class.
+  - Implemented a premium hover effect in `global.css`: the image scales slightly and a subtle text overlay appearing on hover.
+  - Added `object-fit: cover` and `aspect-ratio: 3/4` to ensure perfect framing.
+

@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import Fabrizio from '../assets/images/fabrizio.jpg';
 import { useI18n } from '../hooks/useI18n';
 
 export default function About() {
@@ -37,8 +38,11 @@ export default function About() {
         <div className="ag">
           <div className="apw rv from-left">
             <div className="aph">
-              <span className="ap-icon">🧑‍🍳</span>
-              <span className="ap-txt">{t('pl')}</span>
+              <img src={Fabrizio} alt="Fabrizio Bottesi" className="ap-img" loading="lazy" />
+              <div className="ap-overlay">
+                <span className="ap-icon">🧑‍🍳</span>
+                <span className="ap-txt">{t('pl')}</span>
+              </div>
             </div>
             <div className="yb">
               <span className="yb-n">30</span>
