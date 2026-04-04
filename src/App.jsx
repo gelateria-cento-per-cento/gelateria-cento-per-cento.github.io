@@ -7,6 +7,7 @@ import Marquee from './components/Marquee';
 import About from './components/About';
 import Philosophy from './components/Philosophy';
 import Reviews from './components/Reviews';
+import Social from './components/Social';
 import Location from './components/Location';
 import Footer from './components/Footer';
 import { useScrollReveal } from './hooks/useScrollReveal';
@@ -29,6 +30,7 @@ function App() {
         <About />
         <Philosophy />
         <Reviews />
+        <Social />
         <Location />
       </main>
       <Footer />

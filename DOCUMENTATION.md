@@ -12,3 +12,13 @@
 - *Tech Notes*:
   - Deleted the `nav.fnav` element in `src/components/Footer.jsx` as it was redundant with the main header navigation.
 
+## [2026-04-04 17:01]: New Feature: Social Section
+- *Details*: Added a dedicated, premium-styled section for Social Media (Instagram and Facebook).
+- *Tech Notes*:
+  - Created `src/components/Social.jsx` with responsive grid cards and interactive hover states.
+  - Added CSS for the new section in `src/styles/global.css`.
+  - Added i18n keys for 4 languages (it, en, de, fr).
+  - Integrated into `App.jsx` between Reviews and Location.
+  - Verified with `npm run build`.
+
+

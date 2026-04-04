@@ -1114,6 +1114,117 @@ footer {
   line-height: 1.8;
 }
 
+
+/* ── SOCIAL ── */
+#social {
+  background: var(--dk);
+}
+
+.social-head {
+  margin-bottom: 64px;
+}
+
+.social-head .stitle {
+  color: var(--ct);
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.social-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.social-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(200, 150, 62, 0.15), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.social-card:hover {
+  border-color: rgba(200, 150, 62, 0.4);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(200, 150, 62, 0.1);
+}
+
+.social-card:hover::before {
+  opacity: 1;
+}
+
+.sc-icon {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(200, 150, 62, 0.1);
+  color: var(--go);
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(200, 150, 62, 0.2);
+}
+
+.social-card:hover .sc-icon {
+  background: var(--go);
+  color: var(--dk);
+  transform: rotate(-10deg) scale(1.15);
+  border-color: var(--go);
+}
+
+.sc-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.sc-content h3 {
+  font-family: var(--ff);
+  font-size: 1.6rem;
+  color: var(--ct);
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+}
+
+.sc-content p {
+  font-size: 0.9rem;
+  color: #78685a;
+  line-height: 1.7;
+  max-width: 280px;
+}
+
+.sc-arrow {
+  margin-left: auto;
+  color: var(--go);
+  opacity: 0;
+  transform: translateX(-15px);
+  transition: all 0.4s ease;
+}
+
+.social-card:hover .sc-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sc-arrow svg {
+  width: 24px;
+  height: 24px;
+}
+
 /* ── RESPONSIVE ── */
 @media(max-width:900px) {
 
@@ -1143,9 +1254,19 @@ footer {
     right: 16px;
   }
 
+
   .pg,
-  .rg {
+  .rg,
+  .social-grid {
     grid-template-columns: 1fr;
+  }
+
+  .social-grid {
+    gap: 16px;
+  }
+
+  .social-card {
+    padding: 32px;
   }
 
   .rh {
