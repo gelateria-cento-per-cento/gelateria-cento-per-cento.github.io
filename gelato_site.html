@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Gelateria Cento Per Cento – Malcesine, Lago di Garda</title>
+<meta name="description" content="Gelateria artigianale a Malcesine sul Lago di Garda. Fabrizio Bottesi, mastro gelataio da 30 anni. 4.8⭐ su Google con oltre 800 recensioni."/>
+<meta name="keywords" content="gelateria Malcesine, gelato artigianale Lago di Garda, Cento Per Cento gelato, best gelato Lake Garda, Eiscreme Gardasee"/>
+<meta property="og:title" content="Gelateria Cento Per Cento – Malcesine"/><meta property="og:type" content="restaurant"/>
+<link rel="canonical" href="https://www.gelateriaCentopercento.it/"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"IceCreamShop","name":"Gelateria Cento Per Cento","address":{"@type":"PostalAddress","streetAddress":"Via Castello, 31","addressLocality":"Malcesine","addressRegion":"VR","postalCode":"37018","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":45.7619,"longitude":10.8083},"telephone":"+393355284062","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"800"},"sameAs":["https://www.instagram.com/cento_per_cento_fabrimalcesine"],"priceRange":"€","servesCuisine":"Gelato artigianale"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --dk:#0c0a07;--dk2:#111009;--cr:#faf8f4;--wa:#fff9f2;
+  --go:#c8963e;--gl:#ddb366;--ct:#f0e8d8;
+  --in:#1a1611;--bd:rgba(255,255,255,.07);--bl:#e5ddd0;
+  --ff:'Playfair Display',Georgia,serif;--fs:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:var(--fs);background:var(--dk);color:var(--in);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.025;pointer-events:none;z-index:9998}
+
+/* ── PRELOADER ── */
+#pre{position:fixed;inset:0;background:var(--dk);z-index:2000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;transition:transform 1s cubic-bezier(.76,0,.24,1)}
+#pre.gone{transform:translateY(-100%)}
+.pre-logo{font-family:var(--ff);font-size:clamp(1.6rem,4vw,2.4rem);color:var(--ct);letter-spacing:.04em;opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}
+.pre-logo.show{opacity:1;transform:none}
+.pre-logo em{font-style:italic;color:var(--go)}
+.pre-bar{width:110px;height:1px;background:rgba(255,255,255,.1);overflow:hidden}
+.pre-fill{height:100%;background:var(--go);transform:scaleX(0);transform-origin:left;transition:transform .7s .5s cubic-bezier(.4,0,.2,1)}
+.pre-fill.go{transform:scaleX(1)}
+
+/* ── CURSOR ── */
+#cd,#cr{position:fixed;border-radius:50%;pointer-events:none;z-index:9997;transform:translate(-50%,-50%);transition:width .2s,height .2s,border-color .2s}
+#cd{width:7px;height:7px;background:var(--go)}
+#cr{width:38px;height:38px;border:1px solid rgba(200,150,62,.4)}
+body.hov #cd{width:13px;height:13px}
+body.hov #cr{width:62px;height:62px;border-color:rgba(200,150,62,.75)}
+@media(hover:none){#cd,#cr{display:none}}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;width:100%;z-index:100;transition:background .4s,backdrop-filter .4s}
+nav.sol{background:rgba(12,10,7,.94);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd)}
+.ni{max-width:1300px;margin:0 auto;padding:26px 48px;display:flex;align-items:center;justify-content:space-between;transition:padding .4s}
+nav.sol .ni{padding:16px 48px}
+.nl{font-family:var(--ff);font-size:1rem;color:var(--ct);text-decoration:none;letter-spacing:.04em}
+.nl em{font-style:italic;color:var(--go)}
+.nlinks{list-style:none;display:flex;gap:40px}
+.nlinks a{font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(240,232,216,.45);text-decoration:none;transition:color .2s}
+.nlinks a:hover{color:var(--go)}
+/* hamburger – hidden on desktop */
+.ham{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:4px;cursor:pointer}
+.ham span{display:block;width:22px;height:1px;background:var(--ct);transition:transform .3s,opacity .3s;transform-origin:center}
+.ham.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.ham.open span:nth-child(2){opacity:0}
+.ham.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+/* ── MOBILE MENU – always hidden unless .open ── */
+.mob{display:none;position:fixed;inset:0;background:var(--dk);z-index:190;flex-direction:column;align-items:center;justify-content:center;gap:36px}
+.mob.open{display:flex}
+.mob a{font-family:var(--ff);font-size:2.5rem;color:var(--ct);text-decoration:none;transition:color .2s}
+.mob a:hover{color:var(--go)}
+
+/* ── HERO ── */
+#hero{min-height:100vh;background:var(--dk);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 24px 80px;position:relative;overflow:hidden}
+.orb{position:absolute;border-radius:50%;pointer-events:none;filter:blur(55px)}
+.o1{width:clamp(400px,65vw,850px);height:clamp(400px,65vw,850px);background:radial-gradient(circle,rgba(200,150,62,.12),transparent 70%);top:-15%;left:-10%;animation:o1f 14s ease-in-out infinite}
+.o2{width:clamp(280px,42vw,650px);height:clamp(280px,42vw,650px);background:radial-gradient(circle,rgba(130,75,15,.1),transparent 70%);bottom:-10%;right:-8%;animation:o2f 18s ease-in-out infinite}
+.o3{width:200px;height:200px;background:radial-gradient(circle,rgba(220,170,80,.08),transparent 70%);top:42%;left:60%;filter:blur(30px);animation:o3f 10s ease-in-out infinite}
+@keyframes o1f{0%,100%{transform:translate(0,0)}33%{transform:translate(3%,5%)}66%{transform:translate(-2%,2%)}}
+@keyframes o2f{0%,100%{transform:translate(0,0)}33%{transform:translate(-5%,-3%)}66%{transform:translate(3%,-5%)}}
+@keyframes o3f{0%,100%{transform:translate(0,0)}50%{transform:translate(-7%,5%)}}
+.hero-content{position:relative;z-index:2}
+.h-eye{font-size:.65rem;font-weight:500;letter-spacing:.35em;text-transform:uppercase;color:var(--go);margin-bottom:28px;display:flex;align-items:center;justify-content:center;gap:14px;opacity:0;transition:opacity .8s ease}
+.h-eye.show{opacity:1}
+.h-eye::before,.h-eye::after{content:'';display:block;width:32px;height:1px;background:var(--go);opacity:.6}
+.clip{overflow:hidden;line-height:1.05}
+.h-t1,.h-t2{display:block;font-family:var(--ff);font-size:clamp(5rem,13vw,12rem);font-weight:400;line-height:.94;transform:translateY(110%);transition:transform 1s cubic-bezier(.16,1,.3,1)}
+.h-t1{color:var(--ct)}
+.h-t1.show{transform:translateY(0)}
+.h-t2{font-style:italic;color:var(--go);transition-delay:.12s}
+.h-t2.show{transform:translateY(0)}
+.h-sub{font-size:.9rem;font-weight:300;color:rgba(240,232,216,.4);max-width:380px;margin:36px auto 40px;line-height:1.95;opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease}
+.h-sub.show{opacity:1;transform:none}
+.h-badge{display:inline-flex;align-items:center;gap:14px;border:1px solid rgba(200,150,62,.28);padding:14px 32px;opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+.h-badge.show{opacity:1;transform:none}
+.hb-stars{font-size:.9rem;letter-spacing:2px;color:var(--go)}
+.hb-txt{font-size:.7rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:rgba(240,232,216,.65)}
+.h-scroll{position:absolute;bottom:36px;right:48px;display:flex;align-items:center;gap:10px;opacity:0;transition:opacity .6s ease}
+.h-scroll.show{opacity:1}
+.hs-lbl{font-size:.58rem;font-weight:500;letter-spacing:.25em;text-transform:uppercase;color:rgba(240,232,216,.25);writing-mode:vertical-rl}
+.hs-line{width:1px;height:56px;background:rgba(200,150,62,.2);position:relative;overflow:hidden}
+.hs-line::after{content:'';position:absolute;top:-100%;left:0;width:100%;height:100%;background:linear-gradient(to bottom,transparent,var(--go));animation:sp 2.5s ease-in-out infinite}
+@keyframes sp{0%{top:-100%}100%{top:100%}}
+
+/* ── MARQUEE ── */
+.mq{background:var(--go);overflow:hidden;padding:14px 0}
+.mq-track{display:flex;white-space:nowrap;animation:mq 30s linear infinite}
+.mq-item{font-family:var(--ff);font-size:.82rem;font-style:italic;color:var(--dk);padding:0 28px}
+.mq-dot{opacity:.35;margin:0 4px}
+@keyframes mq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── SHARED ── */
+section{padding:130px 48px}
+.si{max-width:1300px;margin:0 auto}
+.eyebrow{font-size:.62rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--go);margin-bottom:14px}
+.stitle{font-family:var(--ff);font-size:clamp(2rem,4vw,3.5rem);font-weight:400;line-height:1.1}
+.stitle em{font-style:italic;color:var(--go)}
+.srule{width:40px;height:1px;background:var(--go);margin:20px 0 44px}
+.prose{font-size:.97rem;font-weight:300;line-height:2;color:#4a4030;margin-bottom:16px}
+/* scroll-reveal */
+.rv{opacity:0;transform:translateY(40px);transition:opacity .9s ease,transform .9s ease}
+.rv.from-left{transform:translateX(-60px)}
+.rv.from-right{transform:translateX(60px)}
+.rv.vis{opacity:1;transform:translate(0,0)}
+
+/* ── ABOUT ── */
+#about{background:var(--cr)}
+.ag{display:grid;grid-template-columns:5fr 7fr;gap:100px;align-items:center}
+.apw{position:relative}
+.aph{width:100%;aspect-ratio:3/4;background:linear-gradient(155deg,#e0d5c0,#c8baa0);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:rgba(100,90,70,.3)}
+.ap-icon{font-size:3rem;opacity:.18}
+.ap-txt{font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;opacity:.4}
+.yb{position:absolute;bottom:-28px;right:-28px;background:var(--dk);padding:28px;text-align:center;min-width:118px}
+.yb-n{display:block;font-family:var(--ff);font-size:3.8rem;font-weight:400;color:var(--go);line-height:1}
+.yb-l{display:block;font-size:.55rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:rgba(240,232,216,.45);margin-top:4px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:48px;padding-top:48px;border-top:1px solid var(--bl);gap:1px;background:var(--bl)}
+.sb{background:var(--cr);padding:20px 20px 20px 0}
+.sb:nth-child(2){padding:20px}
+.sb:last-child{padding:20px 0 20px 20px}
+.sn{font-family:var(--ff);font-size:2.8rem;font-weight:400;color:var(--go);line-height:1}
+.sl{font-size:.62rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#8a7a6a;margin-top:6px}
+
+/* ── PHILOSOPHY ── */
+#phil{background:var(--dk2);padding:130px 48px}
+.ph-head .stitle{color:var(--ct)}
+.ph-head{margin-bottom:80px}
+.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.05)}
+.pc{background:#111009;padding:52px 40px;border-bottom:2px solid transparent;transition:background .35s,border-color .35s;cursor:default}
+.pc:hover{background:#181410;border-bottom-color:var(--go)}
+.pn{font-family:var(--ff);font-size:4.5rem;color:rgba(200,150,62,.1);font-style:italic;line-height:1;margin-bottom:24px;display:block}
+.pct{font-family:var(--ff);font-size:1.3rem;color:var(--ct);font-weight:400;margin-bottom:12px}
+.pcx{font-size:.85rem;font-weight:300;color:#78685a;line-height:1.9}
+
+/* ── REVIEWS ── */
+#rev{background:var(--dk)}
+.rh{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:64px;flex-wrap:wrap;gap:24px}
+.rev-left .stitle{color:var(--ct)}
+.rdsp{text-align:right}
+.rds{font-family:var(--ff);font-size:6.5rem;font-weight:400;color:var(--go);line-height:1}
+.rd-stars{font-size:1.1rem;letter-spacing:3px;color:var(--go)}
+.rdc{font-size:.62rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#4a4030;margin-top:8px}
+.rg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rc{background:#131109;border:1px solid rgba(255,255,255,.05);padding:40px;transition:border-color .3s;transform-style:preserve-3d;cursor:default}
+.rc:hover{border-color:rgba(200,150,62,.3)}
+.rcf{font-size:.72rem;color:#6a5a3a;margin-bottom:18px;display:block}
+.rcs{color:var(--go);letter-spacing:2px;font-size:.8rem;margin-bottom:18px;display:block}
+.rct{font-family:var(--ff);font-size:.95rem;font-style:italic;line-height:1.9;color:#c0b090;margin-bottom:22px}
+.rca{font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#4a4030}
+.rcp{color:var(--go);margin-left:6px}
+.rcta{margin-top:48px;text-align:center}
+
+/* ── BUTTONS ── */
+.btn{display:inline-flex;align-items:center;gap:12px;padding:16px 44px;text-decoration:none;font-size:.72rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;position:relative;overflow:hidden;transition:color .35s,border-color .35s;cursor:pointer}
+.btn-gh{border:1px solid rgba(200,150,62,.35);color:rgba(240,232,216,.65)}
+.btn-sol{border:1px solid var(--in);background:var(--in);color:var(--cr)}
+.btn-out{border:1px solid var(--in);color:var(--in);background:transparent}
+.btn::before{content:'';position:absolute;inset:0;background:var(--go);transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.4,0,.2,1);z-index:0}
+.btn:hover::before{transform:scaleX(1)}
+.btn:hover{color:var(--dk);border-color:var(--go)}
+.btn>*{position:relative;z-index:1}
+.btn svg{width:14px;height:14px;transition:transform .3s}
+.btn:hover svg{transform:translateX(4px)}
+
+/* ── LOCATION ── */
+#loc{background:var(--wa)}
+.lg{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.li{display:flex;flex-direction:column;gap:36px}
+.lb .lbl{font-size:.6rem;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--go);margin-bottom:8px}
+.lb p,.lb a{font-size:.97rem;font-weight:300;color:var(--in);line-height:1.8;text-decoration:none}
+.lb a:hover{color:var(--go)}
+.lbtns{display:flex;gap:12px;flex-wrap:wrap}
+.mw{aspect-ratio:1/1;border:1px solid var(--bl);overflow:hidden;filter:grayscale(.15)}
+.mw iframe{width:100%;height:100%;border:none;display:block}
+
+/* ── FOOTER ── */
+footer{background:var(--dk);padding:64px 48px}
+.fi{max-width:1300px;margin:0 auto}
+.ft{display:flex;justify-content:space-between;align-items:center;padding-bottom:40px;border-bottom:1px solid var(--bd);flex-wrap:wrap;gap:24px}
+.flogo{font-family:var(--ff);font-size:1.25rem;color:var(--ct)}
+.flogo em{font-style:italic;color:var(--go)}
+.fnav{display:flex;gap:32px}
+.fnav a{font-size:.65rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:#4a4030;text-decoration:none;transition:color .2s}
+.fnav a:hover{color:var(--gl)}
+.fso a{font-size:.65rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#4a4030;text-decoration:none;border:1px solid rgba(255,255,255,.07);padding:8px 16px;transition:all .2s}
+.fso a:hover{color:var(--gl);border-color:rgba(200,150,62,.3)}
+.fb{padding-top:32px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.fc{font-size:.62rem;color:#2a2010;letter-spacing:.05em;line-height:1.8}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .nlinks,.h-scroll{display:none}
+  .ham{display:flex}
+  section,#phil,footer{padding:80px 24px}
+  .ag,.lg{grid-template-columns:1fr;gap:56px}
+  .yb{bottom:-20px;right:16px}
+  .pg,.rg{grid-template-columns:1fr}
+  .rh{flex-direction:column;align-items:flex-start}
+  .rdsp{text-align:left}
+  .ft,.fb{flex-direction:column;align-items:flex-start}
+  .ni{padding:20px 24px}
+  nav.sol .ni{padding:14px 24px}
+}
+@media(max-width:600px){
+  .stats{grid-template-columns:1fr 1fr}
+  .sb:last-child{grid-column:1/-1;padding:20px 0 0;border-top:1px solid var(--bl)}
+  .sb,.sb:nth-child(2){padding:20px 20px 20px 0;border-right:none}
+  .sb:first-child{border-right:1px solid var(--bl)}
+}
+</style>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="pre">
+  <div class="pre-logo" id="pLogo">Cento <em>Per Cento</em></div>
+  <div class="pre-bar"><div class="pre-fill" id="pFill"></div></div>
+</div>
+
+<!-- CURSOR -->
+<div id="cd"></div><div id="cr"></div>
+
+<!-- MOBILE MENU -->
+<div class="mob" id="mob">
+  <a href="#about" data-i18n="na" onclick="cM()">Chi siamo</a>
+  <a href="#rev"   data-i18n="nr" onclick="cM()">Recensioni</a>
+  <a href="#loc"   data-i18n="nl" onclick="cM()">Dove siamo</a>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="ni">
+    <a href="#hero" class="nl">Cento <em>Per Cento</em></a>
+    <ul class="nlinks">
+      <li><a href="#about" data-i18n="na">Chi siamo</a></li>
+      <li><a href="#rev"   data-i18n="nr">Recensioni</a></li>
+      <li><a href="#loc"   data-i18n="nl">Dove siamo</a></li>
+    </ul>
+    <button class="ham" id="ham" onclick="tM()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="orb o1" id="o1"></div>
+  <div class="orb o2" id="o2"></div>
+  <div class="orb o3" id="o3"></div>
+  <div class="hero-content">
+    <p class="h-eye" id="hEye" data-i18n="ht">Malcesine · Lago di Garda</p>
+    <div class="clip"><span class="h-t1" id="hL1">Cento</span></div>
+    <div class="clip"><span class="h-t2" id="hL2">Per Cento</span></div>
+    <p class="h-sub" id="hSub" data-i18n="hts">Gelato artigianale dal 1995. Trent'anni di passione e qualità assoluta sul Lago di Garda.</p>
+    <div class="h-badge" id="hBadge">
+      <span class="hb-stars">★★★★★</span>
+      <span class="hb-txt" data-i18n="hr">4.8 · 800+ recensioni Google</span>
+    </div>
+  </div>
+  <div class="h-scroll" id="hScr"><span class="hs-lbl">Scroll</span><div class="hs-line"></div></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="mq"><div class="mq-track" id="mqT"></div></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="si">
+    <div class="ag">
+      <div class="apw rv from-left">
+        <div class="aph">
+          <span class="ap-icon">🧑‍🍳</span>
+          <span class="ap-txt" data-i18n="pl">Foto Fabrizio</span>
+        </div>
+        <div class="yb"><span class="yb-n">30</span><span class="yb-l" data-i18n="yl">anni</span></div>
+      </div>
+      <div class="rv from-right">
+        <p class="eyebrow" data-i18n="ab_e">La nostra storia</p>
+        <h2 class="stitle" data-i18n="ab_t">Fabrizio Bottesi,<br/><em>Mastro Gelataio</em></h2>
+        <div class="srule"></div>
+        <p class="prose" data-i18n="ab_p1">Sono Fabrizio Bottesi e da trent'anni creo gelato artigianale nel cuore di Malcesine, uno dei borghi più belli del Lago di Garda. La mia gelateria non è solo un luogo dove gustare un dolce — è il risultato di una vita dedicata alla ricerca della qualità assoluta.</p>
+        <p class="prose" data-i18n="ab_p2">Ogni gusto nasce dalla selezione accurata delle materie prime, dal rispetto delle stagioni e da una tecnica artigianale affinata nel tempo. Nessun compromesso: solo ingredienti autentici e tanta passione.</p>
+        <div class="stats">
+          <div class="sb"><div class="sn" id="ctr30">0+</div><div class="sl" data-i18n="s1">Anni di esperienza</div></div>
+          <div class="sb"><div class="sn">4.8★</div><div class="sl" data-i18n="s2">Rating Google</div></div>
+          <div class="sb"><div class="sn" id="ctr800">0+</div><div class="sl" data-i18n="s3">Recensioni</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section id="phil">
+  <div class="si">
+    <div class="ph-head rv">
+      <p class="eyebrow" data-i18n="ph_e">Il nostro approccio</p>
+      <h2 class="stitle" data-i18n="ph_t">La nostra<br/><em>filosofia</em></h2>
+      <div class="srule"></div>
+    </div>
+    <div class="pg">
+      <div class="pc rv"><span class="pn">01</span><h3 class="pct" data-i18n="p1t">Materie prime selezionate</h3><p class="pcx" data-i18n="p1x">Solo ingredienti di prima qualità, scelti con cura e rispetto per le stagioni. Nessun additivo, nessuna scorciatoia.</p></div>
+      <div class="pc rv"><span class="pn">02</span><h3 class="pct" data-i18n="p2t">Lavorazione artigianale</h3><p class="pcx" data-i18n="p2x">Ogni gusto viene preparato a mano ogni giorno, seguendo ricette perfezionate in trent'anni di esperienza.</p></div>
+      <div class="pc rv"><span class="pn">03</span><h3 class="pct" data-i18n="p3t">Territorio e identità</h3><p class="pcx" data-i18n="p3x">Radicati nel Lago di Garda, ispirati dai sapori autentici del territorio. Il gelato come espressione di un luogo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="rev">
+  <div class="si">
+    <div class="rh">
+      <div class="rev-left rv">
+        <p class="eyebrow" data-i18n="rv_e">Recensioni</p>
+        <h2 class="stitle" data-i18n="rv_t">Cosa dicono<br/><em>di noi</em></h2>
+        <div class="srule"></div>
+      </div>
+      <div class="rdsp rv">
+        <div class="rds">4.8</div>
+        <div class="rd-stars">★★★★★</div>
+        <div class="rdc" data-i18n="rv_c">800+ recensioni su Google</div>
+      </div>
+    </div>
+    <div class="rg">
+      <div class="rc rv"><span class="rcf">🇮🇹 Italiano</span><span class="rcs">★★★★★</span><p class="rct" data-i18n="r1">"Il miglior gelato sul Lago di Garda. Si sente la cura artigianale in ogni gusto. Torneremo senz'altro!"</p><p class="rca">Maria T.<span class="rcp">· Google</span></p></div>
+      <div class="rc rv"><span class="rcf">🇬🇧 English</span><span class="rcs">★★★★★</span><p class="rct" data-i18n="r2">"The best gelato on Lake Garda without doubt. Fabrizio's passion shines through every flavour. A must-visit in Malcesine."</p><p class="rca">James K.<span class="rcp">· Google</span></p></div>
+      <div class="rc rv"><span class="rcf">🇩🇪 Deutsch</span><span class="rcs">★★★★★</span><p class="rct" data-i18n="r3">"Das beste Eis am Gardasee — frisch, cremig, mit echten Zutaten. Fabrizio ist ein wahrer Meister seines Fachs!"</p><p class="rca">Klaus M.<span class="rcp">· Google</span></p></div>
+    </div>
+    <div class="rcta rv">
+      <a href="https://share.google/RdVoudSAVPI2sogzk" target="_blank" rel="noopener" class="btn btn-gh">
+        <span data-i18n="rv_btn">Leggi tutte le recensioni</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="loc">
+  <div class="si">
+    <p class="eyebrow rv" data-i18n="lo_e">Vienici a trovare</p>
+    <h2 class="stitle rv" style="color:var(--in)" data-i18n="lo_t">Dove siamo<br/><em>a Malcesine</em></h2>
+    <div class="srule rv"></div>
+    <div class="lg">
+      <div class="li rv from-left">
+        <div class="lb"><p class="lbl" data-i18n="lo_a">Indirizzo</p><p>Via Castello, 31<br/>37018 Malcesine (VR)<br/>Lago di Garda, Italia</p></div>
+        <div class="lb"><p class="lbl" data-i18n="lo_p">Telefono</p><a href="tel:+393355284062">+39 335 528 4062</a></div>
+        <div class="lb"><p class="lbl">Instagram</p><a href="https://www.instagram.com/cento_per_cento_fabrimalcesine" target="_blank" rel="noopener">@cento_per_cento_fabrimalcesine</a></div>
+        <div class="lb"><p class="lbl">TripAdvisor</p><a href="https://www.tripadvisor.it/Restaurant_Review-g194807-d2049588-Reviews-Gelateria_Cento_Per_Cento-Malcesine_Province_of_Verona_Veneto.html" target="_blank" rel="noopener" data-i18n="lo_ta">Leggi su TripAdvisor</a></div>
+        <div class="lbtns">
+          <a href="https://share.google/RdVoudSAVPI2sogzk" target="_blank" rel="noopener" class="btn btn-sol"><span data-i18n="lo_gm">📍 Google Maps</span></a>
+          <a href="tel:+393355284062" class="btn btn-out"><span data-i18n="lo_cl">📞 Chiamaci</span></a>
+        </div>
+      </div>
+      <div class="mw rv from-right">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.0!2d10.8083!3d45.7619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781f7c9d3c9ef1d%3A0x7b2e8f3c4e5d6a7b!2sVia%20Castello%2C%2031%2C%2037018%20Malcesine%20VR!5e0!3m2!1sit!2sit!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Gelateria Cento Per Cento"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fi">
+    <div class="ft">
+      <div class="flogo">Cento <em>Per Cento</em></div>
+      <nav class="fnav">
+        <a href="#about" data-i18n="na">Chi siamo</a>
+        <a href="#rev"   data-i18n="nr">Recensioni</a>
+        <a href="#loc"   data-i18n="nl">Dove siamo</a>
+      </nav>
+      <div class="fso"><a href="https://www.instagram.com/cento_per_cento_fabrimalcesine" target="_blank" rel="noopener">Instagram ↗</a></div>
+    </div>
+    <div class="fb">
+      <p class="fc">© 2025 Gelateria Cento Per Cento · Via Castello, 31 · 37018 Malcesine (VR) · P.IVA [DA INSERIRE]</p>
+      <p class="fc" data-i18n="fs">Gelateria Artigianale · Malcesine · Lago di Garda</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ── i18n ── */
+const T={
+  it:{na:"Chi siamo",nr:"Recensioni",nl:"Dove siamo",ht:"Malcesine · Lago di Garda",hts:"Gelato artigianale dal 1995. Trent'anni di passione e qualità assoluta sul Lago di Garda.",hr:"4.8 · 800+ recensioni Google",pl:"Foto Fabrizio",yl:"anni",ab_e:"La nostra storia",ab_t:"Fabrizio Bottesi,<br/><em>Mastro Gelataio</em>",ab_p1:"Sono Fabrizio Bottesi e da trent'anni creo gelato artigianale nel cuore di Malcesine, uno dei borghi più belli del Lago di Garda. La mia gelateria non è solo un luogo dove gustare un dolce — è il risultato di una vita dedicata alla ricerca della qualità assoluta.",ab_p2:"Ogni gusto nasce dalla selezione accurata delle materie prime, dal rispetto delle stagioni e da una tecnica artigianale affinata nel tempo. Nessun compromesso: solo ingredienti autentici e tanta passione.",s1:"Anni di esperienza",s2:"Rating Google",s3:"Recensioni",ph_e:"Il nostro approccio",ph_t:"La nostra<br/><em>filosofia</em>",p1t:"Materie prime selezionate",p1x:"Solo ingredienti di prima qualità, scelti con cura e rispetto per le stagioni. Nessun additivo, nessuna scorciatoia.",p2t:"Lavorazione artigianale",p2x:"Ogni gusto viene preparato a mano ogni giorno, seguendo ricette perfezionate in trent'anni di esperienza.",p3t:"Territorio e identità",p3x:"Radicati nel Lago di Garda, ispirati dai sapori autentici del territorio. Il gelato come espressione di un luogo.",rv_e:"Recensioni",rv_t:"Cosa dicono<br/><em>di noi</em>",rv_c:"800+ recensioni su Google",r1:'"Il miglior gelato sul Lago di Garda. Si sente la cura artigianale in ogni gusto. Torneremo senz\'altro!"',r2:'"The best gelato on Lake Garda without doubt. Fabrizio\'s passion shines through every flavour. A must-visit in Malcesine."',r3:'"Das beste Eis am Gardasee — frisch, cremig, mit echten Zutaten. Fabrizio ist ein wahrer Meister seines Fachs!"',rv_btn:"Leggi tutte le recensioni",lo_e:"Vienici a trovare",lo_t:"Dove siamo<br/><em>a Malcesine</em>",lo_a:"Indirizzo",lo_p:"Telefono",lo_ta:"Leggi su TripAdvisor",lo_gm:"📍 Google Maps",lo_cl:"📞 Chiamaci",fs:"Gelateria Artigianale · Malcesine · Lago di Garda",mq:["Gelato Artigianale","Malcesine","Lago di Garda","Dal 1995","Qualità Assoluta","4.8 ★ Google"]},
+  en:{na:"About",nr:"Reviews",nl:"Find us",ht:"Malcesine · Lake Garda",hts:"Artisan gelato since 1995. Thirty years of passion and absolute quality on Lake Garda.",hr:"4.8 · 800+ Google reviews",pl:"Fabrizio's photo",yl:"years",ab_e:"Our story",ab_t:"Fabrizio Bottesi,<br/><em>Master Gelato Maker</em>",ab_p1:"I'm Fabrizio Bottesi and for thirty years I've been crafting artisan gelato in the heart of Malcesine, one of the most beautiful villages on Lake Garda. My gelateria is more than a place for a sweet treat — it's the result of a life dedicated to absolute quality.",ab_p2:"Every flavour is born from careful selection of raw ingredients, respect for the seasons, and an artisan technique refined over time. No compromises: only authentic ingredients and a whole lot of passion.",s1:"Years of experience",s2:"Google Rating",s3:"Reviews",ph_e:"Our approach",ph_t:"Our<br/><em>philosophy</em>",p1t:"Selected ingredients",p1x:"Only the finest quality ingredients, carefully chosen and respectful of the seasons. No additives, no shortcuts.",p2t:"Handcrafted production",p2x:"Every day, every flavour is prepared by hand following recipes perfected over thirty years of experience.",p3t:"Territory & identity",p3x:"Rooted in Lake Garda, inspired by the flavours of the land. Gelato as an authentic expression of a place.",rv_e:"Reviews",rv_t:"What people<br/><em>say about us</em>",rv_c:"800+ reviews on Google",r1:'"The best gelato on Lake Garda. The artisan care is felt in every flavour. We\'ll definitely be back!"',r2:'"The best gelato on Lake Garda without doubt. Fabrizio\'s passion shines through every flavour. A must-visit in Malcesine."',r3:'"Das beste Eis am Gardasee — frisch, cremig, mit echten Zutaten. Fabrizio ist ein wahrer Meister seines Fachs!"',rv_btn:"Read all reviews",lo_e:"Come visit us",lo_t:"Find us<br/><em>in Malcesine</em>",lo_a:"Address",lo_p:"Phone",lo_ta:"Read our TripAdvisor reviews",lo_gm:"📍 Google Maps",lo_cl:"📞 Call us",fs:"Artisan Gelateria · Malcesine · Lake Garda",mq:["Artisan Gelato","Malcesine","Lake Garda","Since 1995","Absolute Quality","4.8 ★ Google"]},
+  de:{na:"Über uns",nr:"Bewertungen",nl:"Wo wir sind",ht:"Malcesine · Gardasee",hts:"Handgemachtes Gelato seit 1995. Dreißig Jahre Leidenschaft und absolute Qualität am Gardasee.",hr:"4.8 · 800+ Google-Bewertungen",pl:"Fabrizios Foto",yl:"Jahre",ab_e:"Unsere Geschichte",ab_t:"Fabrizio Bottesi,<br/><em>Gelato-Meister</em>",ab_p1:"Ich bin Fabrizio Bottesi und seit dreißig Jahren stelle ich handgemachtes Gelato im Herzen von Malcesine her. Meine Gelateria ist das Ergebnis eines Lebens, das der Suche nach absoluter Qualität gewidmet ist.",ab_p2:"Jede Geschmacksrichtung entsteht durch sorgfältige Auswahl der Rohstoffe, Respekt vor den Jahreszeiten und einer verfeinerten Handwerkstechnik. Keine Kompromisse: nur authentische Zutaten und viel Leidenschaft.",s1:"Jahre Erfahrung",s2:"Google-Bewertung",s3:"Bewertungen",ph_e:"Unser Ansatz",ph_t:"Unsere<br/><em>Philosophie</em>",p1t:"Ausgewählte Zutaten",p1x:"Nur Zutaten bester Qualität, sorgfältig ausgewählt und saisongerecht. Keine Zusatzstoffe.",p2t:"Handwerkliche Verarbeitung",p2x:"Jeden Tag werden alle Sorten nach Rezepten zubereitet, die über dreißig Jahre verfeinert wurden.",p3t:"Region & Identität",p3x:"Verwurzelt am Gardasee, inspiriert von den Aromen der Region. Gelato als authentischer Ausdruck eines Ortes.",rv_e:"Bewertungen",rv_t:"Was unsere Gäste<br/><em>sagen</em>",rv_c:"800+ Bewertungen auf Google",r1:'"Das beste Gelato am Gardasee. Die handwerkliche Sorgfalt ist in jedem Geschmack zu spüren. Wir kommen wieder!"',r2:'"The best gelato on Lake Garda without doubt. Fabrizio\'s passion shines through every flavour. A must-visit in Malcesine."',r3:'"Das beste Eis am Gardasee — frisch, cremig, mit echten Zutaten. Fabrizio ist ein wahrer Meister seines Fachs!"',rv_btn:"Alle Bewertungen lesen",lo_e:"Besuchen Sie uns",lo_t:"Wo wir sind<br/><em>in Malcesine</em>",lo_a:"Adresse",lo_p:"Telefon",lo_ta:"TripAdvisor-Bewertungen lesen",lo_gm:"📍 Google Maps",lo_cl:"📞 Anrufen",fs:"Handgemachte Gelateria · Malcesine · Gardasee",mq:["Handgemachtes Gelato","Malcesine","Gardasee","Seit 1995","Absolute Qualität","4.8 ★ Google"]},
+  fr:{na:"À propos",nr:"Avis",nl:"Nous trouver",ht:"Malcesine · Lac de Garde",hts:"Gelato artisanal depuis 1995. Trente ans de passion et qualité absolue sur le Lac de Garde.",hr:"4.8 · Plus de 800 avis Google",pl:"Photo de Fabrizio",yl:"ans",ab_e:"Notre histoire",ab_t:"Fabrizio Bottesi,<br/><em>Maître Glacier</em>",ab_p1:"Je suis Fabrizio Bottesi et depuis trente ans je fabrique du gelato artisanal au cœur de Malcesine. Ma gelateria est le résultat d'une vie dédiée à la qualité absolue.",ab_p2:"Chaque parfum naît de la sélection minutieuse des matières premières, du respect des saisons et d'une technique artisanale affinée au fil du temps. Aucun compromis.",s1:"Ans d'expérience",s2:"Note Google",s3:"Avis",ph_e:"Notre approche",ph_t:"Notre<br/><em>philosophie</em>",p1t:"Ingrédients sélectionnés",p1x:"Uniquement des ingrédients de première qualité, soigneusement choisis et respectueux des saisons.",p2t:"Fabrication artisanale",p2x:"Chaque jour, chaque parfum est préparé à la main selon des recettes perfectionnées en trente ans d'expérience.",p3t:"Territoire & identité",p3x:"Ancrés dans le Lac de Garde, inspirés par les saveurs du territoire.",rv_e:"Avis clients",rv_t:"Ce que les gens<br/><em>disent de nous</em>",rv_c:"800+ avis sur Google",r1:'"Le meilleur gelato du Lac de Garde. Le soin artisanal se ressent dans chaque parfum. On reviendra !"',r2:'"The best gelato on Lake Garda without doubt. Fabrizio\'s passion shines through every flavour. A must-visit in Malcesine."',r3:'"Das beste Eis am Gardasee — frisch, cremig, mit echten Zutaten. Fabrizio ist ein wahrer Meister seines Fachs!"',rv_btn:"Lire tous les avis",lo_e:"Venez nous rendre visite",lo_t:"Où nous trouver<br/><em>à Malcesine</em>",lo_a:"Adresse",lo_p:"Téléphone",lo_ta:"Lire les avis TripAdvisor",lo_gm:"📍 Google Maps",lo_cl:"📞 Nous appeler",fs:"Gelateria Artisanale · Malcesine · Lac de Garde",mq:["Gelato Artisanal","Malcesine","Lac de Garde","Depuis 1995","Qualité Absolue","4.8 ★ Google"]}
+};
+
+/* ── Lang detect ── */
+const LM={it:'it',de:'de',at:'de',nl:'de',cs:'de',sk:'de',hu:'de',hr:'de',sl:'de',en:'en','en-gb':'en','en-us':'en',fr:'fr',be:'fr',ro:'fr',pl:'en',da:'en',sv:'en',no:'en',nb:'en',ru:'en',es:'en',pt:'en'};
+function detect(){
+  const ls=navigator.languages||[navigator.language||'it'];
+  for(const l of ls){
+    const f=l.toLowerCase(),c=f.split('-')[0];
+    if(LM[f])return LM[f];
+    if(LM[c])return LM[c];
+  }
+  return 'it';
+}
+
+function buildMQ(l){
+  const items=T[l].mq;
+  document.getElementById('mqT').innerHTML=[...items,...items,...items]
+    .map(s=>`<span class="mq-item">${s}<span class="mq-dot">·</span></span>`).join('');
+}
+
+function sL(l){
+  document.documentElement.lang=l;
+  const t=T[l];
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.getAttribute('data-i18n');
+    if(t[k]!==undefined) el.innerHTML=t[k];
+  });
+  buildMQ(l);
+}
+
+/* ── PRELOADER ── */
+document.addEventListener('DOMContentLoaded',function(){
+  sL(detect());
+
+  var logo=document.getElementById('pLogo');
+  var fill=document.getElementById('pFill');
+  var pre=document.getElementById('pre');
+
+  setTimeout(function(){logo.classList.add('show');},100);
+  setTimeout(function(){fill.classList.add('go');},300);
+  setTimeout(function(){
+    pre.classList.add('gone');
+    setTimeout(function(){
+      pre.style.display='none';
+      // hero entrance sequence
+      document.getElementById('hL1').classList.add('show');
+      setTimeout(function(){document.getElementById('hL2').classList.add('show');},130);
+      setTimeout(function(){document.getElementById('hEye').classList.add('show');},360);
+      setTimeout(function(){document.getElementById('hSub').classList.add('show');},520);
+      setTimeout(function(){document.getElementById('hBadge').classList.add('show');},680);
+      setTimeout(function(){document.getElementById('hScr').classList.add('show');},820);
+    },1050);
+  },1700);
+});
+
+/* ── Nav on scroll ── */
+window.addEventListener('scroll',function(){
+  document.getElementById('nav').classList.toggle('sol',window.scrollY>80);
+},{passive:true});
+
+/* ── Scroll-reveal ── */
+var io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target);}
+  });
+},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+
+/* ── Counters ── */
+function animCount(el,target,dur){
+  var start=null;
+  function step(ts){
+    if(!start)start=ts;
+    var p=Math.min((ts-start)/dur,1);
+    var ease=1-Math.pow(1-p,3);
+    el.textContent=Math.round(ease*target)+'+';
+    if(p<1)requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+var cio=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      cio.unobserve(e.target);
+      if(e.target.id==='ctr30') animCount(e.target,30,2000);
+      if(e.target.id==='ctr800') animCount(e.target,800,2200);
+    }
+  });
+},{threshold:.3});
+var c30=document.getElementById('ctr30');
+var c800=document.getElementById('ctr800');
+if(c30)cio.observe(c30);
+if(c800)cio.observe(c800);
+
+/* ── Custom cursor ── */
+var dot=document.getElementById('cd'),ring=document.getElementById('cr');
+var mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',function(e){
+  mx=e.clientX;my=e.clientY;
+  dot.style.left=mx+'px';dot.style.top=my+'px';
+});
+(function lerp(){
+  rx+=(mx-rx)*.1;ry+=(my-ry)*.1;
+  ring.style.left=rx+'px';ring.style.top=ry+'px';
+  requestAnimationFrame(lerp);
+})();
+document.querySelectorAll('a,button,.rc,.pc').forEach(function(el){
+  el.addEventListener('mouseenter',function(){document.body.classList.add('hov');});
+  el.addEventListener('mouseleave',function(){document.body.classList.remove('hov');});
+});
+
+/* ── Mouse parallax orbs ── */
+document.addEventListener('mousemove',function(e){
+  var x=(e.clientX/innerWidth-.5)*2,y=(e.clientY/innerHeight-.5)*2;
+  document.getElementById('o1').style.transform='translate('+x*30+'px,'+y*22+'px)';
+  document.getElementById('o2').style.transform='translate('+-x*22+'px,'+-y*16+'px)';
+  document.getElementById('o3').style.transform='translate('+x*44+'px,'+y*34+'px)';
+});
+
+/* ── 3D tilt reviews ── */
+document.querySelectorAll('.rc').forEach(function(c){
+  c.addEventListener('mousemove',function(e){
+    var r=c.getBoundingClientRect();
+    var x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+    c.style.transform='perspective(900px) rotateY('+(x*10)+'deg) rotateX('+(-y*10)+'deg)';
+    c.style.transition='transform .15s ease';
+  });
+  c.addEventListener('mouseleave',function(){
+    c.style.transform='perspective(900px) rotateY(0deg) rotateX(0deg)';
+    c.style.transition='transform .8s cubic-bezier(.34,1.56,.64,1)';
+  });
+});
+
+/* ── Smooth scroll ── */
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();window.scrollTo({top:t.offsetTop-76,behavior:'smooth'});}
+  });
+});
+
+/* ── Mobile menu ── */
+function tM(){
+  var m=document.getElementById('mob'),h=document.getElementById('ham');
+  m.classList.toggle('open');h.classList.toggle('open');
+  document.body.style.overflow=m.classList.contains('open')?'hidden':'';
+}
+function cM(){
+  document.getElementById('mob').classList.remove('open');
+  document.getElementById('ham').classList.remove('open');
+  document.body.style.overflow='';
+}
+</script>
+</body>
+</html>
