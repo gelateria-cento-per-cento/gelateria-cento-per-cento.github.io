@@ -1,5 +1,6 @@
 import React from 'react';
 import { useI18n } from '../hooks/useI18n';
+import MalcesineView from '../assets/images/malcesine_view.png';
 
 export default function Location() {
   const { t } = useI18n();
@@ -37,14 +38,19 @@ export default function Location() {
               </a>
             </div>
           </div>
-          <div className="mw rv from-right">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.0!2d10.8083!3d45.7619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781f7c9d3c9ef1d%3A0x7b2e8f3c4e5d6a7b!2sVia%20Castello%2C%2031%2C%2037018%20Malcesine%20VR!5e0!3m2!1sit!2sit!4v1" 
-              allowFullScreen="" 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade" 
-              title="Gelateria Cento Per Cento"
-            ></iframe>
+          <div className="location-visuals rv from-right">
+            <div className="malcesine-photo">
+              <img src={MalcesineView} alt="Malcesine panoramic view" loading="lazy" />
+            </div>
+            <div className="mw">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.0!2d10.8083!3d45.7619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781f7c9d3c9ef1d%3A0x7b2e8f3c4e5d6a7b!2sVia%20Castello%2C%2031%2C%2037018%20Malcesine%20VR!5e0!3m2!1sit!2sit!4v1" 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade" 
+                title="Gelateria Cento Per Cento"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>

@@ -21,4 +21,13 @@
   - Integrated into `App.jsx` between Reviews and Location.
   - Verified with `npm run build`.
 
+## [2026-04-04 19:09]: Location Section Enhancement
+- *Details*: Integrated a characteristic panoramic image of Malcesine's Scaliger Castle alongside the Google Map.
+- *Tech Notes*:
+  - Generated and added `src/assets/images/malcesine_view.png`.
+  - Created a vertical visual stack in `src/components/Location.jsx`.
+  - Updated `global.css` with `.location-visuals` and transitioned the map to a cinematic 16:9 aspect ratio.
+  - Added scale-on-hover effects for the landscape photo.
+
+
 
