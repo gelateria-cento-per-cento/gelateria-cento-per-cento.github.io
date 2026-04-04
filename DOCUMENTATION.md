@@ -29,7 +29,8 @@
   - **Full Right**: Panoramic Malcesine photo spanning both superior and inferior rows.
   - Implemented via CSS Grid with `grid-row: 1 / span 2` for the cinematic photo.
   - Verified 100% responsiveness on mobile (vertical stack).
-
-
-
-
+## [2026-04-04 19:28]: Fix TypeError in Reviews Card Interactions
+- *Details*: Resolved a runtime error in `Reviews.jsx` where moving the mouse out of a review card caused an `Uncaught TypeError: Cannot set properties of undefined (setting 'transform')`.
+- *Tech Notes*:
+  - Corrected the `onMouseLeave` event handler to pass only `e.currentTarget` to `handleMouseLeave`.
+  - The previous implementation was passing both `e` and `e.currentTarget`, causing the function to treat the event object as the DOM element.

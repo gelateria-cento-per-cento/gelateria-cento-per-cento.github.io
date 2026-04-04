@@ -44,7 +44,7 @@ export default function Reviews() {
               key={i}
               className="rc rv"
               onMouseMove={(e) => handleMouseMove(e, e.currentTarget)}
-              onMouseLeave={(e) => handleMouseLeave(e, e.currentTarget)}
+              onMouseLeave={(e) => handleMouseLeave(e.currentTarget)}
             >
               <span className="rcf">{r.flag}</span>
               <span className="rcs">★★★★★</span>
