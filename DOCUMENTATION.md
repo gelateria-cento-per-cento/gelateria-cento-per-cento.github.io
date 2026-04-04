@@ -58,3 +58,12 @@
   - Implemented a premium hover effect in `global.css`: the image scales slightly and a subtle text overlay appearing on hover.
   - Added `object-fit: cover` and `aspect-ratio: 3/4` to ensure perfect framing.
 
+## [2026-04-04 19:50]: Premium Gold Crown Detail
+- *Details*: Added a stylized gold crown icon to the "30 years" experience badge in the About section.
+- *Tech Notes*:
+  - Implemented a custom SVG path (Lucide-inspired) directly in `About.jsx` for maximum performance and sharpness.
+  - Positioned the icon at `top: 10px; right: 10px;` within the `.yb` container.
+  - Rotated the icon 45° as requested.
+  - Styled with `var(--go)` (Gold) and added a `drop-shadow` for a premium, high-authority aesthetic.
+
+

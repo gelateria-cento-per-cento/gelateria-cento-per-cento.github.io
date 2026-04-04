@@ -713,6 +713,17 @@ section {
   min-width: 118px;
 }
 
+.yb-crown {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  color: var(--go);
+  transform: rotate(45deg);
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
 .yb-n {
   display: block;
   font-family: var(--ff);
