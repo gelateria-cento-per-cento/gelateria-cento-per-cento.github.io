@@ -798,7 +798,7 @@ section {
 
 /* ── REVIEWS ── */
 #rev {
-  background: var(--dk);
+  background: var(--cr);
 }
 
 .rh {
@@ -811,7 +811,7 @@ section {
 }
 
 .rev-left .stitle {
-  color: var(--ct);
+  color: var(--in);
 }
 
 .rdsp {
@@ -922,6 +922,11 @@ section {
 .btn-gh {
   border: 1px solid rgba(200, 150, 62, .35);
   color: rgba(240, 232, 216, .65);
+}
+
+#rev .btn-gh {
+  color: var(--in);
+  border-color: rgba(200, 150, 62, 0.5);
 }
 
 .btn-sol {
