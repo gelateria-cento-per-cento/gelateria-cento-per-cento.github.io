@@ -42,3 +42,10 @@
   - Changed the element in `Hero.jsx` from a `div` to an `a` tag.
   - Added the official Google Reviews sharing URL.
   - Implemented a hover effect in `global.css` to enhance the interactive feel.
+
+## [2026-04-04 19:42]: Expanded Marquee Content
+- *Details*: Added "Gelato vegano" and "Gelato per cani" to the rotating marquee items.
+- *Tech Notes*:
+  - Updated `it.json`, `en.json`, `de.json`, and `fr.json` with translated versions of the two new specialties.
+  - No changes were required to `Marquee.jsx` as it dynamically handles the translations array.
+  - Matches the 22-language mapping system in `useI18n.js`.
