@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gelateria Cento Per Cento – Malcesine, Lago di Garda</title>
+    <meta name="description"
+        content="Gelateria artigianale a Malcesine sul Lago di Garda. Fabrizio Bottesi, mastro gelataio da 30 anni. 4.8⭐ su Google con oltre 800 recensioni. Il miglior gelato del Garda." />
+    <meta name="keywords"
+        content="gelateria Malcesine, gelato artigianale Lago di Garda, Cento Per Cento gelato, gelato Malcesine, gelateria Garda" />
+    <meta property="og:title" content="Gelateria Cento Per Cento – Malcesine" />
+    <meta property="og:description"
+        content="30 anni di passione per il gelato artigianale sul Lago di Garda. 4.8⭐ su Google." />
+    <meta property="og:type" content="restaurant" />
+    <link rel="canonical" href="https://www.gelateriaCentopercento.it/" />
+    <script
+        type="application/ld+json"> {   "@context":"https://schema.org",   "@type":"IceCreamShop",   "name":"Gelateria Cento Per Cento",   "image":"",   "description":"Gelateria artigianale a Malcesine sul Lago di Garda, fondata e gestita da Fabrizio Bottesi, mastro gelataio con 30 anni di esperienza.",   "address":{"@type":"PostalAddress","streetAddress":"Via Castello, 31","addressLocality":"Malcesine","addressRegion":"VR","postalCode":"37018","addressCountry":"IT"},   "geo":{"@type":"GeoCoordinates","latitude":45.7619,"longitude":10.8083},   "telephone":"+393355284062",   "url":"https://www.gelateriaCentopercento.it",   "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"800"},   "sameAs":["https://www.instagram.com/cento_per_cento_fabrimalcesine"],   "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]}],   "priceRange":"€",   "servesCuisine":"Gelato artigianale" } </script>
+    <style>
+        :root {
+            --cream: #faf8f4;
+            --warm-white: #fff9f2;
+            --charcoal: #1e1e1e;
+            --gold: #c8963e;
+            --gold-light: #e8b96a;
+            --muted: #7a7065;
+            --border: #e8e2d9;
+            --radius: 2px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: var(--cream);
+            color: var(--charcoal);
+            overflow-x: hidden
+        }
+
+        /* ── NAV ── */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            padding: 18px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(250, 248, 244, 0.92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            transition: all .3s
+        }
+
+        .nav-logo {
+            font-size: 1.1rem;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--charcoal);
+            text-decoration: none;
+            font-family: 'Georgia', serif
+        }
+
+        .nav-logo span {
+            color: var(--gold)
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 28px
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--muted);
+            font-family: sans-serif;
+            font-size: .78rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            transition: color .2s
+        }
+
+        .nav-links a:hover {
+            color: var(--gold)
+        }
+
+        .lang-switcher {
+            display: flex;
+            gap: 6px
+        }
+
+        .lang-btn {
+            background: none;
+            border: 1px solid var(--border);
+            padding: 3px 8px;
+            font-family: sans-serif;
+            font-size: .7rem;
+            letter-spacing: .08em;
+            cursor: pointer;
+            color: var(--muted);
+            transition: all .2s;
+            text-transform: uppercase
+        }
+
+        .lang-btn.active,
+        .lang-btn:hover {
+            background: var(--charcoal);
+            color: var(--cream);
+            border-color: var(--charcoal)
+        }
+
+        /* ── HERO ── */
+        #hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 24px;
+            position: relative;
+            background: var(--warm-white);
+            overflow: hidden
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 60% 40%, rgba(200, 150, 62, .10) 0%, transparent 70%), radial-gradient(ellipse at 20% 80%, rgba(200, 150, 62, .06) 0%, transparent 60%);
+            pointer-events: none
+        }
+
+        .hero-eyebrow {
+            font-family: sans-serif;
+            font-size: .72rem;
+            letter-spacing: .3em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 20px
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 7rem);
+            font-weight: 400;
+            line-height: 1.05;
+            letter-spacing: -.01em;
+            color: var(--charcoal);
+            margin-bottom: 12px
+        }
+
+        .hero-title em {
+            font-style: italic;
+            color: var(--gold)
+        }
+
+        .hero-sub {
+            font-family: sans-serif;
+            font-size: .95rem;
+            color: var(--muted);
+            letter-spacing: .05em;
+            margin-bottom: 40px;
+            max-width: 480px;
+            line-height: 1.7
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--charcoal);
+            color: var(--cream);
+            padding: 12px 24px;
+            font-family: sans-serif;
+            font-size: .78rem;
+            letter-spacing: .12em;
+            text-transform: uppercase
+        }
+
+        .hero-badge .stars {
+            color: var(--gold-light);
+            letter-spacing: 1px
+        }
+
+        .hero-scroll {
+            position: absolute;
+            bottom: 36px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            font-family: sans-serif;
+            font-size: .65rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--muted)
+        }
+
+        .hero-scroll-line {
+            width: 1px;
+            height: 40px;
+            background: linear-gradient(to bottom, var(--gold), transparent);
+            animation: scrollline 2s ease-in-out infinite
+        }
+
+        @keyframes scrollline {
+
+            0%,
+            100% {
+                opacity: .3;
+                transform: scaleY(.5)
+            }
+
+            50% {
+                opacity: 1;
+                transform: scaleY(1)
+            }
+        }
+
+        /* ── SECTIONS ── */
+        section {
+            padding: 100px 40px
+        }
+
+        .section-inner {
+            max-width: 1100px;
+            margin: 0 auto
+        }
+
+        .section-label {
+            font-family: sans-serif;
+            font-size: .68rem;
+            letter-spacing: .3em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 16px
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            font-weight: 400;
+            line-height: 1.15;
+            margin-bottom: 28px;
+            color: var(--charcoal)
+        }
+
+        .section-title em {
+            font-style: italic;
+            color: var(--gold)
+        }
+
+        .divider {
+            width: 48px;
+            height: 1px;
+            background: var(--gold);
+            margin-bottom: 40px
+        }
+
+        /* ── ABOUT ── */
+        #about {
+            background: var(--cream)
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center
+        }
+
+        .about-img-wrap {
+            position: relative
+        }
+
+        .about-img-placeholder {
+            width: 100%;
+            aspect-ratio: 3/4;
+            background: linear-gradient(135deg, #e8dfd0 0%, #d4c8b8 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 12px;
+            color: var(--muted)
+        }
+
+        .about-img-placeholder svg {
+            opacity: .3;
+            width: 48px;
+            height: 48px
+        }
+
+        .about-img-placeholder p {
+            font-family: sans-serif;
+            font-size: .72rem;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            opacity: .6
+        }
+
+        .about-year-badge {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: var(--charcoal);
+            color: var(--cream);
+            width: 100px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif
+        }
+
+        .about-year-badge .num {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gold-light);
+            line-height: 1
+        }
+
+        .about-year-badge .lbl {
+            font-size: .55rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            opacity: .8;
+            margin-top: 2px
+        }
+
+        .about-text p {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #3a3530;
+            margin-bottom: 20px
+        }
+
+        .about-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid var(--border)
+        }
+
+        .stat .num {
+            font-size: 2.5rem;
+            color: var(--gold);
+            font-weight: 400;
+            line-height: 1
+        }
+
+        .stat .lbl {
+            font-family: sans-serif;
+            font-size: .72rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-top: 4px
+        }
+
+        /* ── REVIEWS ── */
+        #reviews {
+            background: var(--charcoal);
+            color: var(--cream)
+        }
+
+        #reviews .section-label {
+            color: var(--gold-light)
+        }
+
+        #reviews .section-title {
+            color: var(--cream)
+        }
+
+        #reviews .divider {
+            background: var(--gold-light)
+        }
+
+        .reviews-header {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 60px;
+            flex-wrap: wrap;
+            gap: 24px
+        }
+
+        .rating-big {
+            display: flex;
+            align-items: center;
+            gap: 20px
+        }
+
+        .rating-num {
+            font-size: 5rem;
+            font-weight: 400;
+            color: var(--gold-light);
+            line-height: 1
+        }
+
+        .rating-detail .stars {
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+            color: var(--gold-light)
+        }
+
+        .rating-detail p {
+            font-family: sans-serif;
+            font-size: .75rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: #a09890;
+            margin-top: 6px
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px
+        }
+
+        .review-card {
+            background: rgba(255, 255, 255, .05);
+            border: 1px solid rgba(255, 255, 255, .08);
+            padding: 32px;
+            transition: background .2s
+        }
+
+        .review-card:hover {
+            background: rgba(255, 255, 255, .09)
+        }
+
+        .review-stars {
+            color: var(--gold-light);
+            font-size: .9rem;
+            letter-spacing: 2px;
+            margin-bottom: 16px
+        }
+
+        .review-text {
+            font-size: .92rem;
+            line-height: 1.8;
+            color: #d4cdc5;
+            margin-bottom: 20px;
+            font-style: italic
+        }
+
+        .review-author {
+            font-family: sans-serif;
+            font-size: .7rem;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: #a09890
+        }
+
+        .reviews-cta {
+            margin-top: 48px;
+            text-align: center
+        }
+
+        .btn-outline {
+            display: inline-block;
+            border: 1px solid rgba(255, 255, 255, .25);
+            color: var(--cream);
+            padding: 14px 36px;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: .75rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            transition: all .2s
+        }
+
+        .btn-outline:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--charcoal)
+        }
+
+        /* ── LOCATION ── */
+        #location {
+            background: var(--warm-white)
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start
+        }
+
+        .location-info {
+            display: flex;
+            flex-direction: column;
+            gap: 32px
+        }
+
+        .info-block .label {
+            font-family: sans-serif;
+            font-size: .68rem;
+            letter-spacing: .25em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 8px
+        }
+
+        .info-block p,
+        .info-block a {
+            font-size: 1rem;
+            color: var(--charcoal);
+            line-height: 1.7;
+            text-decoration: none
+        }
+
+        .info-block a:hover {
+            color: var(--gold)
+        }
+
+        .map-wrap {
+            width: 100%;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            aspect-ratio: 4/3
+        }
+
+        .map-wrap iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 8px
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: var(--charcoal);
+            color: var(--cream);
+            padding: 14px 28px;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: .75rem;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            transition: all .2s
+        }
+
+        .btn-primary:hover {
+            background: var(--gold);
+            color: var(--charcoal)
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: 1px solid var(--charcoal);
+            color: var(--charcoal);
+            padding: 14px 28px;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: .75rem;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            transition: all .2s
+        }
+
+        .btn-secondary:hover {
+            background: var(--charcoal);
+            color: var(--cream)
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            background: var(--charcoal);
+            color: #a09890;
+            padding: 48px 40px;
+            text-align: center
+        }
+
+        .footer-logo {
+            font-size: 1.2rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--cream);
+            margin-bottom: 8px;
+            font-family: 'Georgia', serif
+        }
+
+        .footer-logo span {
+            color: var(--gold)
+        }
+
+        .footer-sub {
+            font-family: sans-serif;
+            font-size: .72rem;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+            color: #6a6058
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 32px;
+            flex-wrap: wrap
+        }
+
+        .footer-links a {
+            color: #a09890;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: .72rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            transition: color .2s
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-light)
+        }
+
+        .footer-copy {
+            font-family: sans-serif;
+            font-size: .68rem;
+            color: #4a4440;
+            letter-spacing: .05em
+        }
+
+        /* ── MOBILE ── */
+        @media(max-width:768px) {
+            nav {
+                padding: 16px 20px
+            }
+
+            .nav-links {
+                display: none
+            }
+
+            section {
+                padding: 70px 24px
+            }
+
+            .about-grid,
+            .location-grid {
+                grid-template-columns: 1fr;
+                gap: 40px
+            }
+
+            .about-year-badge {
+                bottom: -16px;
+                right: 16px
+            }
+
+            .reviews-grid {
+                grid-template-columns: 1fr
+            }
+
+            .reviews-header {
+                flex-direction: column;
+                align-items: flex-start
+            }
+
+            .about-stats {
+                gap: 24px
+            }
+        }
+    </style>
+</head>
+
+<body> <!-- NAV -->
+    <nav> <a href="#hero" class="nav-logo">Cento <span>Per</span> Cento</a>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav_about">Chi siamo</a></li>
+                <li><a href="#reviews" data-i18n="nav_reviews">Recensioni</a></li>
+                <li><a href="#location" data-i18n="nav_location">Dove siamo</a></li>
+            </ul>
+            <div class="lang-switcher"> <button class="lang-btn active" onclick="setLang('it')">IT</button> <button
+                    class="lang-btn" onclick="setLang('en')">EN</button> <button class="lang-btn"
+                    onclick="setLang('de')">DE</button> <button class="lang-btn" onclick="setLang('fr')">FR</button>
+            </div>
+        </div>
+    </nav> <!-- HERO -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <p class="hero-eyebrow" data-i18n="hero_eyebrow">Malcesine · Lago di Garda</p>
+        <h1 class="hero-title">Cento<br /><em>Per Cento</em></h1>
+        <p class="hero-sub" data-i18n="hero_sub">Gelato artigianale dal 1995. Trent'anni di passione, ricerca e qualità
+            al 100% sul Lago di Garda.</p>
+        <div class="hero-badge"> <span class="stars">★★★★★</span> <span data-i18n="hero_badge">4.8 · Oltre 800
+                recensioni Google</span> </div>
+        <div class="hero-scroll">
+            <div class="hero-scroll-line"></div> <span>Scroll</span>
+        </div>
+    </section> <!-- ABOUT -->
+    <section id="about">
+        <div class="section-inner">
+            <div class="about-grid">
+                <div class="about-img-wrap">
+                    <div class="about-img-placeholder"> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1">
+                            <circle cx="12" cy="8" r="4" />
+                            <path d="M12 12v10M8 14l4-2 4 2" />
+                        </svg>
+                        <p data-i18n="photo_placeholder">Foto Fabrizio</p>
+                    </div>
+                    <div class="about-year-badge"> <span class="num">30</span> <span class="lbl"
+                            data-i18n="years_label">anni</span> </div>
+                </div>
+                <div class="about-text">
+                    <p class="section-label" data-i18n="about_label">La nostra storia</p>
+                    <h2 class="section-title" data-i18n="about_title">Fabrizio Bottesi,<br /><em>Mastro Gelataio</em>
+                    </h2>
+                    <div class="divider"></div>
+                    <p data-i18n="about_p1">Sono Fabrizio Bottesi e da trent'anni creo gelato artigianale nel cuore di
+                        Malcesine, uno dei borghi più belli del Lago di Garda. La mia gelateria non è solo un luogo dove
+                        gustare un dolce — è il risultato di una vita dedicata alla ricerca della qualità assoluta.</p>
+                    <p data-i18n="about_p2">Ogni gusto nasce dalla selezione accurata delle materie prime, dal rispetto
+                        delle stagioni e da una tecnica artigianale affinata nel tempo. Niente compromessi: solo
+                        ingredienti autentici, lavorazione artigiana e tanta passione.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="num">30+</div>
+                            <div class="lbl" data-i18n="stat1">Anni di esperienza</div>
+                        </div>
+                        <div class="stat">
+                            <div class="num">4.8★</div>
+                            <div class="lbl" data-i18n="stat2">Rating Google</div>
+                        </div>
+                        <div class="stat">
+                            <div class="num">800+</div>
+                            <div class="lbl" data-i18n="stat3">Recensioni</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- REVIEWS -->
+    <section id="reviews">
+        <div class="section-inner">
+            <div class="reviews-header">
+                <div>
+                    <p class="section-label" data-i18n="reviews_label">Recensioni</p>
+                    <h2 class="section-title" data-i18n="reviews_title">Cosa dicono<br /><em>di noi</em></h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="rating-big">
+                    <div class="rating-num">4.8</div>
+                    <div class="rating-detail">
+                        <div class="stars">★★★★★</div>
+                        <p data-i18n="reviews_count">800+ recensioni su Google</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text" data-i18n="r1_text">"Il miglior gelato che abbia mai assaggiato sul Lago di
+                        Garda. Si vede la cura artigianale in ogni gusto. Torneremo senz'altro!"</p>
+                    <p class="review-author">Maria T. · Google</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text" data-i18n="r2_text">"Absolutely the best ice cream on Lake Garda. Fabrizio's
+                        passion is evident in every single flavour. A must-visit in Malcesine."</p>
+                    <p class="review-author">James K. · Google</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text" data-i18n="r3_text">"Das beste Eis am Gardasee — frisch, cremig und mit
+                        echten Zutaten gemacht. Fabrizio ist ein wahrer Meister seines Fachs!"</p>
+                    <p class="review-author">Klaus M. · Google</p>
+                </div>
+            </div>
+            <div class="reviews-cta"> <a href="https://share.google/RdVoudSAVPI2sogzk" target="_blank" rel="noopener"
+                    class="btn-outline" data-i18n="reviews_btn">Leggi tutte le recensioni →</a> </div>
+        </div>
+    </section> <!-- LOCATION -->
+    <section id="location">
+        <div class="section-inner">
+            <p class="section-label" data-i18n="loc_label">Vienici a trovare</p>
+            <h2 class="section-title" data-i18n="loc_title">Dove siamo<br /><em>a Malcesine</em></h2>
+            <div class="divider"></div>
+            <div class="location-grid">
+                <div class="location-info">
+                    <div class="info-block">
+                        <p class="label" data-i18n="loc_addr_label">Indirizzo</p>
+                        <p>Via Castello, 31<br />37018 Malcesine (VR)<br />Lago di Garda, Italia</p>
+                    </div>
+                    <div class="info-block">
+                        <p class="label" data-i18n="loc_phone_label">Telefono</p> <a href="tel:+393355284062">+39 335
+                            528 4062</a>
+                    </div>
+                    <div class="info-block">
+                        <p class="label">Instagram</p> <a
+                            href="https://www.instagram.com/cento_per_cento_fabrimalcesine" target="_blank"
+                            rel="noopener">@cento_per_cento_fabrimalcesine</a>
+                    </div>
+                    <div class="info-block">
+                        <p class="label">TripAdvisor</p> <a
+                            href="https://www.tripadvisor.it/Restaurant_Review-g194807-d2049588-Reviews-Gelateria_Cento_Per_Cento-Malcesine_Province_of_Verona_Veneto.html"
+                            target="_blank" rel="noopener" data-i18n="loc_trip">Leggi le recensioni su TripAdvisor</a>
+                    </div>
+                    <div class="cta-buttons"> <a href="https://maps.google.com/?q=Via+Castello+31+Malcesine+VR"
+                            target="_blank" rel="noopener" class="btn-primary" data-i18n="loc_gmaps">Apri in Google
+                            Maps</a> <a href="tel:+393355284062" class="btn-secondary" data-i18n="loc_call">Chiamaci</a>
+                    </div>
+                </div>
+                <div class="map-wrap"> <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.0!2d10.8083!3d45.7619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781f7c9d3c9ef1d%3A0x7b2e8f3c4e5d6a7b!2sVia%20Castello%2C%2031%2C%2037018%20Malcesine%20VR!5e0!3m2!1sit!2sit!4v1"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Mappa Gelateria Cento Per Cento Malcesine"> </iframe> </div>
+            </div>
+        </div>
+    </section> <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">Cento <span>Per</span> Cento</div>
+        <div class="footer-sub" data-i18n="footer_sub">Gelateria Artigianale · Malcesine · Lago di Garda</div>
+        <div class="footer-links"> <a href="#about" data-i18n="nav_about">Chi siamo</a> <a href="#reviews"
+                data-i18n="nav_reviews">Recensioni</a> <a href="#location" data-i18n="nav_location">Dove siamo</a> <a
+                href="https://www.instagram.com/cento_per_cento_fabrimalcesine" target="_blank"
+                rel="noopener">Instagram</a> </div>
+        <p class="footer-copy">© 2025 Gelateria Cento Per Cento · Via Castello, 31 · 37018 Malcesine (VR) · P.IVA [DA
+            INSERIRE]</p>
+    </footer>
+    <script> const i18n = { it: { nav_about: "Chi siamo", nav_reviews: "Recensioni", nav_location: "Dove siamo", hero_eyebrow: "Malcesine · Lago di Garda", hero_sub: "Gelato artigianale dal 1995. Trent'anni di passione, ricerca e qualità al 100% sul Lago di Garda.", hero_badge: "4.8 · Oltre 800 recensioni Google", photo_placeholder: "Foto Fabrizio", years_label: "anni", about_label: "La nostra storia", about_title: "Fabrizio Bottesi,<br/><em>Mastro Gelataio</em>", about_p1: "Sono Fabrizio Bottesi e da trent'anni creo gelato artigianale nel cuore di Malcesine, uno dei borghi più belli del Lago di Garda. La mia gelateria non è solo un luogo dove gustare un dolce — è il risultato di una vita dedicata alla ricerca della qualità assoluta.", about_p2: "Ogni gusto nasce dalla selezione accurata delle materie prime, dal rispetto delle stagioni e da una tecnica artigianale affinata nel tempo. Niente compromessi: solo ingredienti autentici, lavorazione artigiana e tanta passione.", stat1: "Anni di esperienza", stat2: "Rating Google", stat3: "Recensioni", reviews_label: "Recensioni", reviews_title: "Cosa dicono<br/><em>di noi</em>", reviews_count: "800+ recensioni su Google", r1_text: '"Il miglior gelato che abbia mai assaggiato sul Lago di Garda. Si vede la cura artigianale in ogni gusto. Torneremo senz\'altro!"', r2_text: '"Absolutely the best ice cream on Lake Garda. Fabrizio\'s passion is evident in every single flavour. A must-visit in Malcesine."', r3_text: '"Das beste Eis am Gardasee — frisch, cremig und mit echten Zutaten gemacht. Fabrizio ist ein wahrer Meister seines Fachs!"', reviews_btn: "Leggi tutte le recensioni →", loc_label: "Vienici a trovare", loc_title: "Dove siamo<br/><em>a Malcesine</em>", loc_addr_label: "Indirizzo", loc_phone_label: "Telefono", loc_trip: "Leggi le recensioni su TripAdvisor", loc_gmaps: "Apri in Google Maps", loc_call: "Chiamaci", footer_sub: "Gelateria Artigianale · Malcesine · Lago di Garda" }, en: { nav_about: "About", nav_reviews: "Reviews", nav_location: "Find us", hero_eyebrow: "Malcesine · Lake Garda", hero_sub: "Artisan gelato since 1995. Thirty years of passion, research and 100% quality on Lake Garda.", hero_badge: "4.8 · Over 800 Google reviews", photo_placeholder: "Fabrizio's photo", years_label: "years", about_label: "Our story", about_title: "Fabrizio Bottesi,<br/><em>Master Gelato Maker</em>", about_p1: "I'm Fabrizio Bottesi and for thirty years I've been crafting artisan gelato in the heart of Malcesine, one of the most beautiful villages on Lake Garda. My gelateria is more than a place to enjoy a sweet treat — it's the result of a life dedicated to the pursuit of absolute quality.", about_p2: "Every flavour is born from careful selection of raw ingredients, respect for the seasons, and an artisan technique refined over time. No compromises: only authentic ingredients, handcrafted production and a whole lot of passion.", stat1: "Years of experience", stat2: "Google Rating", stat3: "Reviews", reviews_label: "Reviews", reviews_title: "What people<br/><em>say about us</em>", reviews_count: "800+ reviews on Google", r1_text: '"The best gelato I\'ve ever had on Lake Garda. You can taste the artisan care in every flavour. We\'ll definitely be back!"', r2_text: '"Absolutely the best ice cream on Lake Garda. Fabrizio\'s passion is evident in every single flavour. A must-visit in Malcesine."', r3_text: '"Das beste Eis am Gardasee — frisch, cremig und mit echten Zutaten gemacht. Fabrizio ist ein wahrer Meister seines Fachs!"', reviews_btn: "Read all reviews →", loc_label: "Come visit us", loc_title: "Find us<br/><em>in Malcesine</em>", loc_addr_label: "Address", loc_phone_label: "Phone", loc_trip: "Read our TripAdvisor reviews", loc_gmaps: "📍 Open in Google Maps", loc_call: "📞 Call us", footer_sub: "Artisan Gelateria · Malcesine · Lake Garda" }, de: { nav_about: "Über uns", nav_reviews: "Bewertungen", nav_location: "Wo wir sind", hero_eyebrow: "Malcesine · Gardasee", hero_sub: "Handgemachtes Gelato seit 1995. Dreißig Jahre Leidenschaft, Forschung und 100% Qualität am Gardasee.", hero_badge: "4.8 · Über 800 Google-Bewertungen", photo_placeholder: "Fabrizios Foto", years_label: "Jahre", about_label: "Unsere Geschichte", about_title: "Fabrizio Bottesi,<br/><em>Gelato-Meister</em>", about_p1: "Ich bin Fabrizio Bottesi und seit dreißig Jahren stelle ich handgemachtes Gelato im Herzen von Malcesine her, einem der schönsten Orte am Gardasee. Meine Gelateria ist mehr als ein Ort, um ein süßes Dessert zu genießen — sie ist das Ergebnis eines Lebens, das der Suche nach absoluter Qualität gewidmet ist.", about_p2: "Jede Geschmacksrichtung entsteht durch die sorgfältige Auswahl der Rohstoffe, die Achtung der Jahreszeiten und eine im Laufe der Zeit verfeinerte Handwerkstechnik. Keine Kompromisse: nur authentische Zutaten, handwerkliche Verarbeitung und viel Leidenschaft.", stat1: "Jahre Erfahrung", stat2: "Google-Bewertung", stat3: "Bewertungen", reviews_label: "Bewertungen", reviews_title: "Was unsere Gäste<br/><em>sagen</em>", reviews_count: "800+ Bewertungen auf Google", r1_text: '"Das beste Gelato, das ich je am Gardasee probiert habe. Die handwerkliche Sorgfalt ist in jedem Geschmack spürbar. Wir kommen definitiv wieder!"', r2_text: '"Absolutely the best ice cream on Lake Garda. Fabrizio\'s passion is evident in every single flavour. A must-visit in Malcesine."', r3_text: '"Das beste Eis am Gardasee — frisch, cremig und mit echten Zutaten gemacht. Fabrizio ist ein wahrer Meister seines Fachs!"', reviews_btn: "Alle Bewertungen lesen →", loc_label: "Besuchen Sie uns", loc_title: "Wo wir sind<br/><em>in Malcesine</em>", loc_addr_label: "Adresse", loc_phone_label: "Telefon", loc_trip: "TripAdvisor-Bewertungen lesen", loc_gmaps: "📍 In Google Maps öffnen", loc_call: "📞 Anrufen", footer_sub: "Handgemachte Gelateria · Malcesine · Gardasee" }, fr: { nav_about: "À propos", nav_reviews: "Avis", nav_location: "Nous trouver", hero_eyebrow: "Malcesine · Lac de Garde", hero_sub: "Gelato artisanal depuis 1995. Trente ans de passion, de recherche et de qualité à 100% sur le Lac de Garde.", hero_badge: "4.8 · Plus de 800 avis Google", photo_placeholder: "Photo de Fabrizio", years_label: "ans", about_label: "Notre histoire", about_title: "Fabrizio Bottesi,<br/><em>Maître Glacier</em>", about_p1: "Je suis Fabrizio Bottesi et depuis trente ans je fabrique du gelato artisanal au cœur de Malcesine, l'un des plus beaux villages du Lac de Garde. Ma gelateria n'est pas seulement un endroit pour savourer une douceur — c'est le résultat d'une vie dédiée à la recherche de la qualité absolue.", about_p2: "Chaque parfum naît de la sélection minutieuse des matières premières, du respect des saisons et d'une technique artisanale affinée au fil du temps. Aucun compromis : uniquement des ingrédients authentiques, une fabrication artisanale et beaucoup de passion.", stat1: "Ans d'expérience", stat2: "Note Google", stat3: "Avis", reviews_label: "Avis clients", reviews_title: "Ce que les gens<br/><em>disent de nous</em>", reviews_count: "800+ avis sur Google", r1_text: '"Le meilleur gelato que j\'aie jamais goûté sur le Lac de Garde. Le soin artisanal est perceptible dans chaque parfum. On reviendra c\'est sûr !"', r2_text: '"Absolutely the best ice cream on Lake Garda. Fabrizio\'s passion is evident in every single flavour. A must-visit in Malcesine."', r3_text: '"Das beste Eis am Gardasee — frisch, cremig und mit echten Zutaten gemacht. Fabrizio ist ein wahrer Meister seines Fachs!"', reviews_btn: "Lire tous les avis →", loc_label: "Venez nous rendre visite", loc_title: "Où nous trouver<br/><em>à Malcesine</em>", loc_addr_label: "Adresse", loc_phone_label: "Téléphone", loc_trip: "Lire les avis TripAdvisor", loc_gmaps: "📍 Ouvrir dans Google Maps", loc_call: "📞 Nous appeler", footer_sub: "Gelateria Artisanale · Malcesine · Lac de Garde" } }; let currentLang = 'it'; function setLang(lang) { currentLang = lang; document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active')); document.querySelector(`.lang-btn[onclick="setLang('${lang}')"]`).classList.add('active'); document.documentElement.lang = lang; const t = i18n[lang]; document.querySelectorAll('[data-i18n]').forEach(el => { const key = el.getAttribute('data-i18n'); if (t[key] !== undefined) el.innerHTML = t[key]; }); }  // Smooth scroll offset for fixed nav document.querySelectorAll('a[href^="#"]').forEach(a=>{   a.addEventListener('click',e=>{     const target = document.querySelector(a.getAttribute('href'));     if(target){e.preventDefault();window.scrollTo({top:target.offsetTop-70,behavior:'smooth'})}   }); }); </script>
+</body>
+
+</html>

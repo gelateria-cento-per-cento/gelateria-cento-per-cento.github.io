@@ -1,0 +1,21 @@
+voglio creare un sito web per la mia gelateria, deve avere un look moderno e minimalista.
+La mia gelateria si trova sul lago di garda, in particolare a malcesine ed io sono Fabrizio Bottesi il proprietario e mastro gelataio che opera in questo luogo da ben 30 anni.
+
+Vorrei che iniziassimo prima di tutto a creare la struttura seguendo le best practise per creare questa mia "vetrina digitale" nel quale voglio esporre le informazioni principali come:
+- chi sono
+- dove si trova la gelateria
+-  Delle recensioni / cosa ne pensa la gente di noi ( visto che ho un brand molto forte e molto apprezzato con 4.8 con oltre 800 recensioni su google )
+
+E poi sono aperto ai tuoi consigli per ottimizzare al massimo il mio sito web sia per SEO CHE GEO con tutte le informazioni che tu mi consigli.
+
+Considera che ho un menù/listino dei gusti che voglio mostrare e voglio che ci siano 4 lingue principali in maniera totalmente invisibile ed automatica:
+- Italiano
+- Tedesco
+- Inglese
+- Francese
+
+Voglio che prima di tutto mi fai delle domande nel caso ci fossero delle scelte che vanno prese e poi iniziamo ad implementare il tutto.
+
+Ti ho inserito nella cartella "info-gelateria" delle informazioni e media riguardo alla gelateria.
+
+

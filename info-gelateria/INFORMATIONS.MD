@@ -1,0 +1,5 @@
+- google maps / business: https://share.google/RdVoudSAVPI2sogzk
+- Address: Via Castello, 31, 37018 Malcesine VR
+- TripAdvisor: https://www.tripadvisor.it/Restaurant_Review-g194807-d2049588-Reviews-Gelateria_Cento_Per_Cento-Malcesine_Province_of_Verona_Veneto.html
+- Instagram: https://www.instagram.com/cento_per_cento_fabrimalcesine?igsh=Y2Rpb3VwZ2o3OWRm
+- Phone: +393355284062
