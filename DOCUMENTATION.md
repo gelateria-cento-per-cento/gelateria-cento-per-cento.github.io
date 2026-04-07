@@ -81,3 +81,11 @@
   - Replaced `https://share.google/RdVoudSAVPI2sogzk` with `https://www.google.com/maps/dir/?api=1&destination=Gelateria+Cento+Per+Cento+Malcesine+Via+Castello+31`.
   - This change ensures that clicking the button on mobile devices triggers the Google Maps app in navigation mode directly.
   - Verified with `npm run build`.
+
+## [2026-04-07 16:03]: Malcesine Photo Update (Location Section)
+- *Details*: Replaced the cinematic panoramic photo in the "COME VISIT US" section with a high-resolution version provided in `info-gelateria/`.
+- *Tech Notes*:
+  - Copied `info-gelateria/malcesine.png` to `src/assets/images/malcesine.png` (5.9MB).
+  - Updated `src/components/Location.jsx` to import and display the new high-resolution image.
+  - Renamed the import variable to `MalcesinePhoto` for clarity.
+  - Verified with `npm run build` (Success).

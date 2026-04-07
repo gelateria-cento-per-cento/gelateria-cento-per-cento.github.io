@@ -1,6 +1,6 @@
 import React from 'react';
 import { useI18n } from '../hooks/useI18n';
-import MalcesineView from '../assets/images/malcesine_view.png';
+import MalcesinePhoto from '../assets/images/malcesine.png';
 
 export default function Location() {
   const { t } = useI18n();
@@ -43,7 +43,7 @@ export default function Location() {
           </div>
           
           <div className="malcesine-photo from-right">
-            <img src={MalcesineView} alt="Malcesine panoramic view" loading="lazy" />
+            <img src={MalcesinePhoto} alt="Malcesine panoramic view" loading="lazy" />
           </div>
         </div>
       </div>
