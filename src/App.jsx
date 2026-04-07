@@ -15,12 +15,16 @@ const Reviews = lazy(() => import('./components/Reviews'));
 const Social = lazy(() => import('./components/Social'));
 const Location = lazy(() => import('./components/Location'));
 const Footer = lazy(() => import('./components/Footer'));
+const CookieBanner = lazy(() => import('./components/CookieBanner'));
+const CookiePolicy = lazy(() => import('./components/CookiePolicy'));
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   
   // Initialize scroll reveal logic
   useScrollReveal();
+
+  const isPolicyCookie = window.location.search.includes('policy=cookie');
 
   return (
     <>
@@ -29,21 +33,28 @@ function App() {
       <Cursor />
       <Navbar />
       <main>
-        <Hero isLoaded={isLoaded} />
-        <Marquee />
-        {isLoaded && (
-          <Suspense fallback={null}>
-            <About />
-            <Philosophy />
-            <Reviews />
-            <Social />
-            <Location />
-          </Suspense>
+        {isPolicyCookie ? (
+          isLoaded && <Suspense fallback={null}><CookiePolicy /></Suspense>
+        ) : (
+          <>
+            <Hero isLoaded={isLoaded} />
+            <Marquee />
+            {isLoaded && (
+              <Suspense fallback={null}>
+                <About />
+                <Philosophy />
+                <Reviews />
+                <Social />
+                <Location />
+              </Suspense>
+            )}
+          </>
         )}
       </main>
       {isLoaded && (
         <Suspense fallback={null}>
           <Footer />
+          <CookieBanner />
         </Suspense>
       )}
     </>

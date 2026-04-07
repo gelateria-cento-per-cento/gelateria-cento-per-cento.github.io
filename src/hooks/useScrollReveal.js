@@ -11,11 +11,25 @@ export function useScrollReveal() {
       });
     }, { threshold: 0.12 });
 
-    const elements = document.querySelectorAll('.rv');
-    elements.forEach(el => observer.observe(el));
+    const observeElements = () => {
+      const elements = document.querySelectorAll('.rv:not(.vis):not(.observed)');
+      elements.forEach(el => {
+        el.classList.add('observed');
+        observer.observe(el);
+      });
+    };
+
+    observeElements();
+
+    const mutObserver = new MutationObserver(() => {
+      observeElements();
+    });
+    
+    mutObserver.observe(document.body, { childList: true, subtree: true });
 
     return () => {
-      elements.forEach(el => observer.unobserve(el));
+      observer.disconnect();
+      mutObserver.disconnect();
     };
   }, []);
 }

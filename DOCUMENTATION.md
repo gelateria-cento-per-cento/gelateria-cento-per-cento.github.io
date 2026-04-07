@@ -220,3 +220,32 @@
   - Removed `gtag.js` (Google Analytics) from `index.html` to ensure absolute zero-cookie compliance.
   - Updated `src/components/Footer.jsx` to strictly link to the `.html` extensions of these policies.
 
+
+## [2026-04-07 23:59]: Cookie Banner and GA4 Compliance
+- *Details*: Implemented a compliant Cookie Banner and integrated it with Google Analytics 4. Created a native React Cookie Policy page.
+- *Tech Notes*:
+  - Created `CookieBanner.jsx` component that blocks GA4 until user accepts.
+  - Restored GA4 script dynamically only upon user consent.
+  - Created `CookiePolicy.jsx` and injected it conditionally inside `App.jsx` using `?policy=cookie` URL query parameter.
+  - Styled the Cookie Policy with coherent typography and design matching the rest of the generic Gelateria layout.
+
+## [2026-04-08 00:00]: Centered Policy Pages
+- *Details*: Centered the text and layout of the Cookie Policy page for better readability and a more elegant, focused design.
+- *Tech Notes*:
+  - Applied `text-align: center` and flex column centering to `.policy-section` and its inner `.si` container.
+  - Updated `.policy-list` to use `list-style-position: inside` to ensure bullet points center correctly with the text.
+  - Refactored `.inline-list` (used for browser links) to display list items as `inline-block` with horizontal margins, achieving a perfectly centered row.
+
+## [2026-04-08 00:02]: Added Home Return Button
+- *Details*: Added a prominent return to home button to the Cookie Policy page, mimicking the behavior found in the static Privacy Policy page.
+- *Tech Notes*:
+  - Added `.back-link` custom styles to `global.css`.
+  - Injected bilingual `← Torna alla Home` link button into `CookiePolicy.jsx`.
+
+## [2026-04-07 23:59]: Hotfix: Invisible Content Bug (Hero Section Only)
+- *Details*: Fixed a severe visibility bug where only the Hero section rendered while all below-the-fold content remained completely invisible after the mobile performance optimizations. Also corrected a CSS parsing failure.
+- *Tech Notes*:
+  - **CSS Error**: Fixed an invalid PostCSS syntax (`text- underline-offset` with a space) in `global.css` that was causing Vite's Dev Server and hot module replacement to fail.
+  - **Scroll Reveal Patch**: The `useScrollReveal` custom hook was initializing its `IntersectionObserver` on mount when `lazy` components were still rendering `Suspense` fallbacks. As a result, `.rv` elements were completely ignored by the observer and stayed trapped in their `opacity: 0` state permanently.
+  - Re-engineered `useScrollReveal.js` with a `MutationObserver` to dynamically catch and observe all new `.rv` elements injected into the DOM post-mount by React `lazy`.
+  - Verified with `npm run build` (success).

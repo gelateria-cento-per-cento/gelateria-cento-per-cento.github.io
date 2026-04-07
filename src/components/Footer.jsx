@@ -29,9 +29,9 @@ export default function Footer() {
         <div className="foo-col">
           <h4 className="foo-h">{t('f_le')}</h4>
           <nav className="foo-nav">
-            <a href="/privacy-policy.html" target="_blank" rel="noopener noreferrer">{t('f_pr')}</a>
-            <a href="/cookie-policy.html" target="_blank" rel="noopener noreferrer">{t('f_ck')}</a>
-            <a href="/allergeni.pdf" target="_blank" rel="noopener noreferrer">{t('f_al')}</a>
+            <a href="privacy-policy.html">{t('f_pr')}</a>
+            <a href="?policy=cookie">{t('f_ck')}</a>
+            <a href="allergeni.pdf" target="_blank" rel="noopener noreferrer">{t('f_al')}</a>
           </nav>
         </div>
 
