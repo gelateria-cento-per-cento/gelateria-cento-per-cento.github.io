@@ -67,3 +67,11 @@
   - Styled with `var(--go)` (Gold) and added a `drop-shadow` for a premium, high-authority aesthetic.
 
 
+
+## [2026-04-07 14:19]: Year Update (1995 to 1996)
+- *Details*: Updated the starting year of the gelateria from 1995 to 1996 across all localizations and HTML files.
+- *Tech Notes*:
+  - Modified `src/i18n/it.json`, `src/i18n/en.json`, `src/i18n/de.json`, and `src/i18n/fr.json`.
+  - Updated hardcoded values and script translations in `gelato_site.html`.
+  - Updated hardcoded values and script translations in `info-gelateria/index.html`.
+  - Content already reflected "30 years" of experience, which remains consistent (2026 - 1996 = 30).
