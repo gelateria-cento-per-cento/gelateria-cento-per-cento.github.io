@@ -168,3 +168,10 @@
 - *Tech Notes*:
     - Inserted the GA4 `gtag.js` asynchronous script directly into the `<head>` of `index.html`.
     - Configured with Measurement ID: `G-V21J9HSHVY`.
+
+## [2026-04-07 23:26]: Open Graph & Twitter Card Image Setup
+- *Details*: Set the Open Graph and Twitter Card images to use the Instagram logo, ensuring that preview cards on social networks and messaging apps show the logo when the link is shared.
+- *Tech Notes*:
+    - Copied `info-gelateria/logo instagram.png` to `public/logo-instagram.png`.
+    - Added `<meta property="og:image" content="https://gelateria-cento-per-cento.github.io/logo-instagram.png"/>` to `index.html`.
+    - Added `<meta name="twitter:image" content="https://gelateria-cento-per-cento.github.io/logo-instagram.png"/>` to `index.html`.
