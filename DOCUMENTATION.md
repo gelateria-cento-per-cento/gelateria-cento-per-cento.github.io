@@ -85,5 +85,9 @@ lla `dist/`.
   - *Details*: Rimosse le emoji 📍 e 📞 dalle stringhe di traduzione in tutte le lingue (src/translations.js). 
   - *Tech Notes*: Le emoji creavano un duplicato visivo poiché i pulsanti includono già icone SVG (`Icons.MapPin` e `Icons.Phone`). Ora l'interfaccia è più pulita e professionale.
 
+- [2026-04-07 16:16]: Build Fix (Missing Dependencies).
+  - *Details*: Risolto un errore durante il processo di build (`npm run build`) che non riusciva a risolvere il modulo `react-router-dom`.
+  - *Tech Notes*: Eseguito `npm install` per installare correttamente le dipendenze dichiarate in `package.json`. La build è stata completata con successo con Vite.
+
 ## Current Status
-**Immediate Next Step**: Progetto COMPLETATO. Interfaccia pulita, coerente e ottimizzata in 22 lingue.
+**Immediate Next Step**: Progetto COMPLETATO. Bug di build risolto e dipendenze allineate.
