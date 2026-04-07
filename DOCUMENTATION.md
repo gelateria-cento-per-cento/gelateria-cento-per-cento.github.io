@@ -256,3 +256,10 @@
   - Created `src/components/PrivacyPolicy.jsx` replicating the centered design of `CookiePolicy`.
   - Updated `src/App.jsx` to dynamically render `PrivacyPolicy` when the URL contains `?policy=privacy`.
   - Modified `src/components/Footer.jsx` to correctly link to `?policy=privacy` instead of the unreachable HTML file, fixing the 404 navigation error.
+
+## [2026-04-08 00:05]: Native React Privacy Policy Component
+- *Details*: Modernized the Privacy Policy by converting it from a standalone HTML file to a natively rendered React component (`PrivacyPolicy.jsx`), perfectly aligned with the Cookie Policy architecture.
+- *Tech Notes*:
+  - Deleted deprecated `public/privacy-policy.html` and `public/cookie-policy.html` static pages.
+  - Created `PrivacyPolicy.jsx` utilizing the same `.policy-section` and `.policy-content` CSS variables to guarantee consistent centering and layout styling.
+  - Updated the content strings in `PrivacyPolicy.jsx` to explicitly mention Google Analytics 4 (GA4) and the Cookie Banner consent gateway to remain legally accurate regarding user tracking.
