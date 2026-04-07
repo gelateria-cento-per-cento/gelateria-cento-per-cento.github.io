@@ -193,3 +193,21 @@
 - [2026-04-07]: Navbar Scroll Throttling
   - *Details*: Optimized the `handleScroll` event listener in `Navbar.jsx` with `window.requestAnimationFrame`.
   - *Tech Notes*: This bounds the execution rate of the scroll callback to the display's refresh cycle (usually 60fps), completely stopping JavaScript main-thread churn and avoiding frame drops when the user scrolls quickly on lower-end devices.
+
+## [2026-04-07 23:48]: Footer Redesign & Extended Legal Policies
+- *Details*: Completely redesigned the footer component to establish a premium aesthetic with coherent dark/gold branding, integrated EU legal policy requirements, and enhanced local SEO footprint.
+- *Tech Notes*:
+    - Remodelled the `Footer.jsx` output to be a fully responsive CSS grid.
+    - Added 4 distinct internal dictionary columns (Brand, Navigation, Legal/Policies, Location).
+    - Linked out dedicated generic placeholder files `/privacy-policy`, `/cookie-policy`, and `/allergeni.pdf`.
+    - Embedded Schema.org attributes (`itemScope itemType="https://schema.org/PostalAddress"`).
+    - Translated all new keys recursively into `it.json`, `en.json`, `de.json`, and `fr.json`.
+    - Added tasks to verify implementation via `TO_SIMO_DO.md`.
+
+## [2026-04-07 23:52]: Hotfix: Footer Navigation Rendering Bug
+- *Details*: Fixed a major z-index/fixed layer issue where the new footer columns appeared stuck overlapping the top header menu.
+- *Tech Notes*:
+    - The new footer utilized semantic `<nav>` elements (`<nav className="foo-nav">`) for internal links.
+    - An old generic CSS selector (`nav { position: fixed ... }`) meant for the main `Navbar.jsx` was inadvertently hoisting *any* nav block to the top of the viewport.
+    - Refactored `global.css` to target precisely `#nav` and `#nav.sol` for the main header, decoupling it from semantic tags elsewhere in the layout.
+    - Verified hot reload via `npm run build`.

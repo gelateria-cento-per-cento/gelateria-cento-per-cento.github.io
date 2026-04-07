@@ -10,6 +10,7 @@
 ## ⚠️ Post-Deployment: Bing Webmaster Tools
 1. **Register on** [Bing Webmaster Tools](https://www.bing.com/webmasters) (ChatGPT uses Bing)
 2. **Submit the sitemap** so BingBot (and therefore ChatGPT) discovers all pages
+
 ## 🔜 Future: Custom Domain
 - When ready, register `gelateriacentopercento.it` (or similar)
 - Point it to the GitHub Pages site (CNAME record)
@@ -21,6 +22,11 @@
 3. Go back to your Google Search Console dashboard.
 4. Click **Verify** under the "HTML tag" verification method.
 
+## ⚠️ MANUAL ACTION REQUIRED: European Legal Policies & Allergeni
+1. Aggiorna o crea il file reale per **Privacy Policy** (attualmente linkato a `/privacy-policy`).
+2. Aggiorna o crea il file reale per **Cookie Policy** (attualmente linkato a `/cookie-policy`).
+3. Carica il PDF degli allergeni in `public/allergeni.pdf`.
+
 ## apertura sito web deve essere più veloce ( loading bar )
 
 ## header non deve essere un pezzo aggiunto ( layer on top ) ma non deve vedersi sopra nulla mentre si scrolla
@@ -28,5 +34,3 @@
 ## immagine di malcesine da mobile prima di google maps?
 
 ## Recensioni da mobile, devono essere migliori ( trovare come navigarle senza uno scroll infinito)
-
-## 
