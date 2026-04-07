@@ -54,7 +54,7 @@ export default function Reviews() {
           ))}
         </div>
         <div className="rcta rv">
-          <a href="https://share.google/RdVoudSAVPI2sogzk" target="_blank" rel="noopener noreferrer" className="btn btn-gh">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Gelateria+Cento+Per+Cento+Malcesine+Via+Castello+31" target="_blank" rel="noopener noreferrer" className="btn btn-gh">
             <span>{t('rv_btn')}</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M5 12h14M13 6l6 6-6 6" />

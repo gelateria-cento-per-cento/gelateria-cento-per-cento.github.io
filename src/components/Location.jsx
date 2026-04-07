@@ -23,7 +23,7 @@ export default function Location() {
               <a href="tel:+393355284062">+39 335 528 4062</a>
             </div>
             <div className="lbtns">
-              <a href="https://share.google/RdVoudSAVPI2sogzk" target="_blank" rel="noopener noreferrer" className="btn btn-sol">
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Gelateria+Cento+Per+Cento+Malcesine+Via+Castello+31" target="_blank" rel="noopener noreferrer" className="btn btn-sol">
                 <span>{t('lo_gm')}</span>
               </a>
               <a href="tel:+393355284062" className="btn btn-out">

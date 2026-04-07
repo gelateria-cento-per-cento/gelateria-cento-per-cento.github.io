@@ -74,4 +74,10 @@
   - Modified `src/i18n/it.json`, `src/i18n/en.json`, `src/i18n/de.json`, and `src/i18n/fr.json`.
   - Updated hardcoded values and script translations in `gelato_site.html`.
   - Updated hardcoded values and script translations in `info-gelateria/index.html`.
-  - Content already reflected "30 years" of experience, which remains consistent (2026 - 1996 = 30).
+## [2026-04-07 14:22]: Google Maps Direct Navigation Update
+- *Details*: Updated all Google Maps links to use the official Directions API instead of shortened sharing URLs.
+- *Tech Notes*:
+  - Modified `Hero.jsx`, `Location.jsx`, and `Reviews.jsx`.
+  - Replaced `https://share.google/RdVoudSAVPI2sogzk` with `https://www.google.com/maps/dir/?api=1&destination=Gelateria+Cento+Per+Cento+Malcesine+Via+Castello+31`.
+  - This change ensures that clicking the button on mobile devices triggers the Google Maps app in navigation mode directly.
+  - Verified with `npm run build`.

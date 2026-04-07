@@ -41,7 +41,7 @@ export default function Hero({ isLoaded }) {
         </div>
         <p className={`h-sub ${showAnims ? 'show' : ''}`}>{t('hts')}</p>
         <a 
-          href="https://share.google/RdVoudSAVPI2sogzk" 
+          href="https://www.google.com/maps/dir/?api=1&destination=Gelateria+Cento+Per+Cento+Malcesine+Via+Castello+31" 
           target="_blank" 
           rel="noopener noreferrer" 
           className={`h-badge ${showAnims ? 'show' : ''}`}
