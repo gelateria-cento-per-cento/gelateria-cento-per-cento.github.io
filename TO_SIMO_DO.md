@@ -23,20 +23,10 @@
 1. **Register on** [Bing Webmaster Tools](https://www.bing.com/webmasters) (ChatGPT uses Bing)
 2. **Submit the sitemap** so BingBot (and therefore ChatGPT) discovers all pages
 
-## 📋 Update Flavor List
-- Provide Simo with the **complete list of current flavors** for the GEO pages and schema
-- The current list includes placeholders (Pistacchio, Stracciatella, Nocciola, etc.) + Pinguino
-- **Update with ALL actual flavors** including seasonal/rotating specials
+## ✅ Flavor List — DONE
+- All 33 flavors have been integrated into the JSON-LD schema and all 6 GEO stealth pages
 
 ## 🔜 Future: Custom Domain
 - When ready, register `gelateriacentopercento.it` (or similar)
 - Point it to the GitHub Pages site (CNAME record)
 - Update canonical URLs, sitemap, and schema across all files
-
-- [ ] **Add meta tags for SEO**
-
-- [ ] **Add sitemap.xml**
-
-- [ ] **Add robots.txt**
-
-- [ ] **Add manifest.json**
