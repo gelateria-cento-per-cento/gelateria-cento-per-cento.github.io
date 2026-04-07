@@ -5,11 +5,11 @@
 2. Under **Build and deployment → Source**, select **GitHub Actions**
 3. Click **Save**
 4. The deploy workflow has already triggered — once you change this setting, future pushes to `main` will auto-deploy
-5. Your site will be live at: **https://simo-hue.github.io/cento-per-cento-Fabri-malcesine/**
+5. Your site will be live at: **https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.github.io/**
 
 ## ⚠️ Post-Deployment: Google Search Console
 1. **Register the site** on [Google Search Console](https://search.google.com/search-console)
-2. **Submit the sitemap**: `https://simo-hue.github.io/cento-per-cento-Fabri-malcesine/sitemap.xml`
+2. **Submit the sitemap**: `https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.github.io/sitemap.xml`
 3. **Request indexing** for the main page
 
 ## ⚠️ Post-Deployment: Bing Webmaster Tools
