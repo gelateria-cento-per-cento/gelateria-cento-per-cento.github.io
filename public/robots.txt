@@ -35,4 +35,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.github.io/sitemap.xml
+Sitemap: https://gelateria-cento-per-cento.github.io/sitemap.xml
