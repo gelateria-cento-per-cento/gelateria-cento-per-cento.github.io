@@ -1,18 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense, lazy } from 'react';
 import Preloader from './components/Preloader';
 import Cursor from './components/Cursor';
 import SEOHead from './components/SEOHead';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Marquee from './components/Marquee';
-import About from './components/About';
-import Philosophy from './components/Philosophy';
-import Reviews from './components/Reviews';
-import Social from './components/Social';
-import Location from './components/Location';
-import Footer from './components/Footer';
 import { useScrollReveal } from './hooks/useScrollReveal';
 import './styles/global.css';
+
+// Lazy load below-the-fold components
+const About = lazy(() => import('./components/About'));
+const Philosophy = lazy(() => import('./components/Philosophy'));
+const Reviews = lazy(() => import('./components/Reviews'));
+const Social = lazy(() => import('./components/Social'));
+const Location = lazy(() => import('./components/Location'));
+const Footer = lazy(() => import('./components/Footer'));
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -29,13 +31,21 @@ function App() {
       <main>
         <Hero isLoaded={isLoaded} />
         <Marquee />
-        <About />
-        <Philosophy />
-        <Reviews />
-        <Social />
-        <Location />
+        {isLoaded && (
+          <Suspense fallback={null}>
+            <About />
+            <Philosophy />
+            <Reviews />
+            <Social />
+            <Location />
+          </Suspense>
+        )}
       </main>
-      <Footer />
+      {isLoaded && (
+        <Suspense fallback={null}>
+          <Footer />
+        </Suspense>
+      )}
     </>
   );
 }

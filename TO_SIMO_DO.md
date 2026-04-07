@@ -20,3 +20,11 @@
 2. Wait a minute for the GitHub Actions site deployment to finish.
 3. Go back to your Google Search Console dashboard.
 4. Click **Verify** under the "HTML tag" verification method.
+
+## apertura sito web deve essere più veloce ( loading bar )
+
+## header non deve essere un pezzo aggiunto ( layer on top ) ma non deve vedersi sopra nulla mentre si scrolla
+
+## immagine di malcesine da mobile prima di google maps?
+
+## Recensioni da mobile, devono essere migliori ( trovare come navigarle senza uno scroll infinito)

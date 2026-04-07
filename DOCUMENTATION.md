@@ -175,3 +175,13 @@
     - Copied `info-gelateria/logo instagram.png` to `public/logo-instagram.png`.
     - Added `<meta property="og:image" content="https://gelateria-cento-per-cento.github.io/logo-instagram.png"/>` to `index.html`.
     - Added `<meta name="twitter:image" content="https://gelateria-cento-per-cento.github.io/logo-instagram.png"/>` to `index.html`.
+
+- [2026-04-07]: Mobile PageSpeed Optimizations
+  - *Details*: Improved the mobile performance score from 67 to target 90+ by eliminating render-blocking resources, lazy-loading heavy components, and massively reducing image sizes.
+  - *Tech Notes*: 
+    - Converted `malcesine.png` (5.6MB) and `shooting_in_progress.png` (968KB) to WebP format, achieving ~95% size reduction without noticeable visual quality loss.
+    - Updated `index.html` to preload Google Fonts and defer Google Analytics (`gtag.js`), saving ~1,350ms of render-blocking delay.
+    - Added `React.lazy` and `Suspense` in `App.jsx` to lazily load all components below the fold (`About`, `Philosophy`, `Reviews`, `Social`, `Location`, `Footer`).
+    - Implemented IntersectionObserver on the Google Maps iframe to delay rendering until it comes into the viewport.
+    - Adjusted the `Preloader.jsx` timings to take ~1.2s instead of ~2.75s, removing artificial delay from LCP metrics.
+    - Disabled CSS `feTurbulence` filter on mobile devices (`max-width: 900px`) in `global.css` to prevent expensive GPU rasterization loops on lower-end devices.

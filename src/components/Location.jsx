@@ -1,9 +1,27 @@
 import React from 'react';
 import { useI18n } from '../hooks/useI18n';
-import MalcesinePhoto from '../assets/images/malcesine.png';
+import MalcesinePhoto from '../assets/images/malcesine.webp';
 
 export default function Location() {
   const { t } = useI18n();
+  const [showMap, setShowMap] = React.useState(false);
+  const mapRef = React.useRef(null);
+
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setShowMap(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '200px' }
+    );
+
+    if (mapRef.current) observer.observe(mapRef.current);
+    
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <section id="loc" itemScope itemType="https://schema.org/IceCreamShop">
@@ -40,13 +58,22 @@ export default function Location() {
           </div>
           
           <div className="mw from-left">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.0!2d10.8083!3d45.7619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781f7c9d3c9ef1d%3A0x7b2e8f3c4e5d6a7b!2sVia%20Castello%2C%2031%2C%2037018%20Malcesine%20VR!5e0!3m2!1sit!2sit!4v1" 
-              allowFullScreen="" 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade" 
-              title="Gelateria Cento Per Cento — Via Castello 31, Malcesine, Lago di Garda"
-            ></iframe>
+            {!showMap ? (
+              <div 
+                ref={mapRef} 
+                style={{ width: '100%', height: '100%', minHeight: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(255, 255, 255, 0.05)' }}
+              >
+                <span style={{ fontSize: '0.8rem', color: 'var(--go)', letterSpacing: '2px', textTransform: 'uppercase' }}>{t('loading_map') || 'Loading Map...'}</span>
+              </div>
+            ) : (
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.0!2d10.8083!3d45.7619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781f7c9d3c9ef1d%3A0x7b2e8f3c4e5d6a7b!2sVia%20Castello%2C%2031%2C%2037018%20Malcesine%20VR!5e0!3m2!1sit!2sit!4v1" 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade" 
+                title="Gelateria Cento Per Cento — Via Castello 31, Malcesine, Lago di Garda"
+              ></iframe>
+            )}
           </div>
           
           <div className="malcesine-photo from-right">

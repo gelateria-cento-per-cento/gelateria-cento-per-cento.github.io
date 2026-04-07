@@ -6,14 +6,15 @@ export default function Preloader({ onComplete }) {
   const [gone, setGone] = useState(false);
 
   useEffect(() => {
-    const t1 = setTimeout(() => setShowLogo(true), 100);
-    const t2 = setTimeout(() => setGoFill(true), 300);
+    // Faster animation sequence
+    const t1 = setTimeout(() => setShowLogo(true), 50); // was 100
+    const t2 = setTimeout(() => setGoFill(true), 150); // was 300
     const t3 = setTimeout(() => {
       setGone(true);
       setTimeout(() => {
         if (onComplete) onComplete();
-      }, 1050);
-    }, 1700);
+      }, 450); // was 1050
+    }, 800); // was 1700
 
     return () => {
       clearTimeout(t1);
