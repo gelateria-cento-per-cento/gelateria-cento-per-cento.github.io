@@ -17,6 +17,7 @@ const Location = lazy(() => import('./components/Location'));
 const Footer = lazy(() => import('./components/Footer'));
 const CookieBanner = lazy(() => import('./components/CookieBanner'));
 const CookiePolicy = lazy(() => import('./components/CookiePolicy'));
+const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy'));
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -25,6 +26,8 @@ function App() {
   useScrollReveal();
 
   const isPolicyCookie = window.location.search.includes('policy=cookie');
+  const isPolicyPrivacy = window.location.search.includes('policy=privacy');
+  const isPolicyPage = isPolicyCookie || isPolicyPrivacy;
 
   return (
     <>
@@ -33,8 +36,11 @@ function App() {
       <Cursor />
       <Navbar />
       <main>
-        {isPolicyCookie ? (
-          isLoaded && <Suspense fallback={null}><CookiePolicy /></Suspense>
+        {isPolicyPage ? (
+          isLoaded && <Suspense fallback={null}>
+            {isPolicyCookie && <CookiePolicy />}
+            {isPolicyPrivacy && <PrivacyPolicy />}
+          </Suspense>
         ) : (
           <>
             <Hero isLoaded={isLoaded} />

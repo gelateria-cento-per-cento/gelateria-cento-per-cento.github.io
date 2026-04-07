@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useI18n } from '../hooks/useI18n';
 
 export default function PrivacyPolicy() {
-  const { lang } = useI18n();
+  const { lang, t } = useI18n();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -15,21 +15,29 @@ export default function PrivacyPolicy() {
       sections: [
         {
           heading: '1. Titolare del Trattamento',
-          text: `Fabrizio Bottesi - Gelateria Cento Per Cento\nVia Castello, 31 - 37018 Malcesine (VR), Italia\nP.IVA: 01515910220\nEmail: info@gelateriacentopercento.it`
+          text: <><br/>Fabrizio Bottesi - Gelateria Cento Per Cento<br/>Via Castello, 31 - 37018 Malcesine (VR), Italia<br/>P.IVA: 01515910220<br/>Email: <a href="mailto:info@gelateriacentopercento.it">info@gelateriacentopercento.it</a></>
         },
         {
           heading: '2. Quali dati raccogliamo e perché',
-          text: 'Il nostro Sito è concepito per essere un semplice strumento informativo e di vetrina. Non raccogliamo dati personali in modo attivo e non utilizziamo strumenti di tracciamento o profilazione lato client.\n\nGli unici dati considerati sono:\n- Dati di navigazione base: necessari ai server web per il corretto funzionamento, cancellati regolarmente.\n- Google Search Console: utilizzato solo a fini statistici per analizzare il posizionamento nei risultati di ricerca. Opera lato motore di ricerca e non installa cookie di tracciamento sul tuo dispositivo.'
+          text: <>
+            Il nostro Sito è principalmente uno strumento informativo. Raccogliamo dati nelle seguenti modalità:
+            <ul className="policy-list" style={{ marginTop: '16px' }}>
+              <li><strong>Dati di navigazione base:</strong> log di sistema necessari ai server web. Vengono elaborati in forma anonima per garantire la sicurezza e il corretto funzionamento del sito.</li>
+              <li><strong>Google Analytics 4 (GA4):</strong> Utilizziamo strumenti di analisi statistica per comprendere il traffico. <strong>Questi strumenti di tracciamento vengono attivati esclusivamente previo tuo consenso esplicito</strong> (tramite il Banner Cookie all'ingresso del sito).</li>
+              <li><strong>Google Search Console:</strong> Strumento lato motore di ricerca per analizzare il traffico organico. Non installa cookie di tracciamento.</li>
+            </ul>
+          </>
         },
         {
           heading: '3. Trasferimento all\'Estero e Terze Parti',
-          text: 'I tuoi dati non saranno diffusi o ceduti a terze parti per finalità commerciali. L\'hosting è gestito su infrastrutture sicure.'
+          text: <>I tuoi dati non saranno mai ceduti a terze parti per finalità di marketing a tua insaputa. Potranno essere condivisi in modo anonimizzato con fornitori tecnici (es. infrastruttura server, Google) nel pieno rispetto dei protocolli di sicurezza GDPR.</>
         },
         {
           heading: '4. Diritti dell\'Interessato',
-          text: 'Ai sensi del GDPR, hai il diritto, in qualunque momento, di chiedere l\'accesso ai tuoi dati, la rettifica, la cancellazione e di opporti al loro trattamento. Le richieste vanno rivolte al Titolare del Trattamento ai contatti indicati sopra.'
+          text: <>Ai sensi del GDPR (Art. 15 e successivi), hai il diritto, in qualunque momento, di chiedere l'accesso ai tuoi dati, la rettifica, la cancellazione e di opporti o limitare il loro trattamento. Se hai prestato il consenso per Google Analytics, puoi revocarlo in qualsiasi momento cancellando i cookie del browser. Le richieste dirette possono essere rivolte al Titolare del Trattamento all'email fornita.</>
         }
-      ]
+      ],
+      back: '← Torna alla Home'
     },
     en: {
       title: 'Privacy Policy',
@@ -37,21 +45,29 @@ export default function PrivacyPolicy() {
       sections: [
         {
           heading: '1. Data Controller',
-          text: `Fabrizio Bottesi - Gelateria Cento Per Cento\nVia Castello, 31 - 37018 Malcesine (VR), Italy\nVAT ID: 01515910220\nEmail: info@gelateriacentopercento.it`
+          text: <><br/>Fabrizio Bottesi - Gelateria Cento Per Cento<br/>Via Castello, 31 - 37018 Malcesine (VR), Italy<br/>VAT ID: 01515910220<br/>Email: <a href="mailto:info@gelateriacentopercento.it">info@gelateriacentopercento.it</a></>
         },
         {
           heading: '2. What data we collect and why',
-          text: 'Our Site is designed to be a simple showcase. We do not actively collect personal data and we do not use client-side tracking or profiling tools.\n\nThe only considered data are:\n- Basic navigation data: necessary for web servers proper functioning, regularly deleted.\n- Google Search Console: used only for statistical purposes to analyze search engine rankings. It operates on the search engine side and does not install tracking cookies on your device.'
+          text: <>
+            Our Site is primarily an informational showcase. We collect data in the following ways:
+            <ul className="policy-list" style={{ marginTop: '16px' }}>
+              <li><strong>Basic navigation data:</strong> system logs necessary for web servers. They are processed anonymously to ensure the security and proper functioning of the site.</li>
+              <li><strong>Google Analytics 4 (GA4):</strong> We use statistical analysis tools to understand traffic. <strong>These tracking tools are activated exclusively upon your explicit consent</strong> (via the Cookie Banner upon entering the site).</li>
+              <li><strong>Google Search Console:</strong> A search engine-side tool to analyze organic traffic. It does not install tracking cookies.</li>
+            </ul>
+          </>
         },
         {
           heading: '3. Transfers Abroad and Third Parties',
-          text: 'Your data will not be disseminated or sold to third parties for commercial purposes. Hosting is managed on secure infrastructure.'
+          text: <>Your data will never be sold to third parties for marketing purposes. They may be shared anonymously with technical providers (e.g., server infrastructure, Google) strictly adhering to GDPR security protocols.</>
         },
         {
           heading: '4. Data Subject Rights',
-          text: 'Under the GDPR, you have the right at any time to request access to your data, rectification, deletion, and to object to their processing. Requests must be addressed to the Data Controller at the contacts indicated above.'
+          text: <>Under the GDPR (Art. 15 and following), you have the right at any time to request access to your data, its rectification, deletion, and to restrict or object to its processing. If you have given consent for Google Analytics, you can revoke it at any time by clearing your browser cookies. Direct requests can be addressed to the Data Controller at the provided email.</>
         }
-      ]
+      ],
+      back: '← Back to Home'
     }
   };
 
@@ -74,13 +90,13 @@ export default function PrivacyPolicy() {
           {texts.sections.map((section, index) => (
             <div key={index}>
               <h3 className="policy-h3">{section.heading}</h3>
-              <p className="prose" style={{ whiteSpace: 'pre-line' }}>{section.text}</p>
+              <p className="prose">{section.text}</p>
             </div>
           ))}
 
           <div style={{ marginTop: '50px' }}>
             <a href="/" className="back-link">
-              ← {lang === 'en' ? 'Back to Home' : lang === 'de' ? 'Zurück zur Startseite' : lang === 'fr' ? 'Retour à l\'accueil' : 'Torna alla Home'}
+              {texts.back}
             </a>
           </div>
         </div>

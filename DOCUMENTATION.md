@@ -249,3 +249,10 @@
   - **Scroll Reveal Patch**: The `useScrollReveal` custom hook was initializing its `IntersectionObserver` on mount when `lazy` components were still rendering `Suspense` fallbacks. As a result, `.rv` elements were completely ignored by the observer and stayed trapped in their `opacity: 0` state permanently.
   - Re-engineered `useScrollReveal.js` with a `MutationObserver` to dynamically catch and observe all new `.rv` elements injected into the DOM post-mount by React `lazy`.
   - Verified with `npm run build` (success).
+
+## [2026-04-08 00:04]: React-Based Privacy Policy
+- *Details*: Migrated the Privacy Policy from a static HTML document to a native React component to match the routing and styling pattern of the custom Cookie Policy.
+- *Tech Notes*:
+  - Created `src/components/PrivacyPolicy.jsx` replicating the centered design of `CookiePolicy`.
+  - Updated `src/App.jsx` to dynamically render `PrivacyPolicy` when the URL contains `?policy=privacy`.
+  - Modified `src/components/Footer.jsx` to correctly link to `?policy=privacy` instead of the unreachable HTML file, fixing the 404 navigation error.
