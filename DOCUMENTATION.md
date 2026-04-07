@@ -211,3 +211,12 @@
     - An old generic CSS selector (`nav { position: fixed ... }`) meant for the main `Navbar.jsx` was inadvertently hoisting *any* nav block to the top of the viewport.
     - Refactored `global.css` to target precisely `#nav` and `#nav.sol` for the main header, decoupling it from semantic tags elsewhere in the layout.
     - Verified hot reload via `npm run build`.
+
+## [2026-04-07 23:55]: Legal Compliance: Privacy & Cookie Policy
+- *Details*: Created compliant Privacy and Cookie policies tailored to a 'zero-cookie' setup, resolving the need for a cookie banner, and removed the previously tracked but unneeded GA4 script to enforce strict compliance with user instructions.
+- *Tech Notes*:
+  - Created `public/privacy-policy.html` detailing use of server-side Google Search Console only.
+  - Created `public/cookie-policy.html` explaining why no cookies are collected or stored.
+  - Removed `gtag.js` (Google Analytics) from `index.html` to ensure absolute zero-cookie compliance.
+  - Updated `src/components/Footer.jsx` to strictly link to the `.html` extensions of these policies.
+
