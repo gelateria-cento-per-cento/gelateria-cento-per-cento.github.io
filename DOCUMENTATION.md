@@ -142,3 +142,17 @@
     - **Vite Config**: Added `base: '/cento-per-cento-Fabri-malcesine.io/'` for GitHub Pages
     - **CSS**: `.sr-only` utility, `address` reset, `.fso` flex layout for social links
     - Verified with `npm run build` (Success, 0 errors, all GEO pages in dist/)
+
+## [2026-04-07 23:16]: Mock Owner Photo Update
+- *Details*: Replaced the photo of Fabrizio Bottesi with an AI-generated mock image.
+- *Tech Notes*:
+    - Generated a mock owner portrait using the AI image generation tool.
+    - Added the image to `src/assets/images/mock_owner_photo.png`.
+    - Updated `src/components/About.jsx` to load `mock_owner_photo.png` rather than `fabrizio.jpg`.
+
+## [2026-04-07 23:17]: Shooting In Progress Placeholder
+- *Details*: Replaced the previous mock photo with a funny "Shooting in progress" ice cream illustration.
+- *Tech Notes*:
+    - Generated a cartoon-style image of an ice cream cone with a camera.
+    - Saved asset to `src/assets/images/shooting_in_progress.png`.
+    - Updated `src/components/About.jsx` to use this new humorous placeholder.
