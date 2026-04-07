@@ -15,10 +15,6 @@
 ## ⚠️ Post-Deployment: Bing Webmaster Tools
 1. **Register on** [Bing Webmaster Tools](https://www.bing.com/webmasters) (ChatGPT uses Bing)
 2. **Submit the sitemap** so BingBot (and therefore ChatGPT) discovers all pages
-
-## ✅ Flavor List — DONE
-- All 33 flavors have been integrated into the JSON-LD schema and all 6 GEO stealth pages
-
 ## 🔜 Future: Custom Domain
 - When ready, register `gelateriacentopercento.it` (or similar)
 - Point it to the GitHub Pages site (CNAME record)
