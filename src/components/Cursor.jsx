@@ -1,5 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 
+// Detect touch device once at module level
+const isTouchDevice = () => window.matchMedia('(hover: none)').matches;
+
 export default function Cursor() {
   const dotRef = useRef(null);
   const ringRef = useRef(null);
@@ -7,6 +10,9 @@ export default function Cursor() {
   const pos = useRef({ mx: 0, my: 0, rx: 0, ry: 0 });
 
   useEffect(() => {
+    // On touch devices, do nothing — CSS already hides #cd/#cr
+    if (isTouchDevice()) return;
+
     const handleMouseMove = (e) => {
       pos.current.mx = e.clientX;
       pos.current.my = e.clientY;
@@ -20,7 +26,7 @@ export default function Cursor() {
     const handleMouseLeave = () => setHover(false);
 
     document.addEventListener('mousemove', handleMouseMove);
-    
+
     const interactables = document.querySelectorAll('a, button, .rc, .pc');
     interactables.forEach(el => {
       el.addEventListener('mouseenter', handleMouseEnter);
@@ -53,6 +59,7 @@ export default function Cursor() {
     document.body.classList.toggle('hov', hover);
   }, [hover]);
 
+  // Always render the divs — CSS @media(hover:none) hides them on touch
   return (
     <>
       <div id="cd" ref={dotRef}></div>

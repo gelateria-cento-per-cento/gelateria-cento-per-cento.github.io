@@ -1315,8 +1315,11 @@ footer {
 }
 
 /* ── RESPONSIVE ── */
-@media(max-width:900px) {
 
+/* ── TABLET / LARGE MOBILE (≤900px) ── */
+@media (max-width: 900px) {
+
+  /* Navbar */
   .nlinks,
   .h-scroll {
     display: none;
@@ -1326,95 +1329,452 @@ footer {
     display: flex;
   }
 
+  .ni {
+    padding: 18px 20px;
+  }
+
+  nav.sol .ni {
+    padding: 13px 20px;
+  }
+
+  /* Sections */
   section,
   #phil,
   footer {
-    padding: 80px 24px;
+    padding: 72px 20px;
   }
 
-  .lg,
-  .loc-grid {
+  /* Hero */
+  .h-t1,
+  .h-t2 {
+    font-size: clamp(3.8rem, 18vw, 7rem);
+  }
+
+  #hero {
+    padding: 100px 20px 64px;
+  }
+
+  /* About */
+  .ag {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 56px;
   }
 
-  .malcesine-photo {
-    aspect-ratio: 16/9;
-    grid-column: 1;
-    grid-row: auto;
-  }
-
-  .loc-text, .mw {
-    grid-column: 1;
-    grid-row: auto;
-  }
-
-  .mw {
-    min-height: 400px;
+  .apw {
+    max-width: 380px;
+    margin: 0 auto;
   }
 
   .yb {
-    bottom: -20px;
-    right: 16px;
+    bottom: -18px;
+    right: 12px;
+    padding: 20px;
+    min-width: 100px;
   }
 
+  .yb-n {
+    font-size: 3rem;
+  }
 
-  .pg,
-  .rg,
-  .social-grid {
+  /* Philosophy */
+  .pg {
     grid-template-columns: 1fr;
   }
 
-  .social-grid {
-    gap: 16px;
+  .pc {
+    padding: 40px 28px;
   }
 
-  .social-card {
-    padding: 32px;
-  }
-
+  /* Reviews */
   .rh {
     flex-direction: column;
     align-items: flex-start;
+    gap: 16px;
   }
 
   .rdsp {
     text-align: left;
   }
 
+  .rds {
+    font-size: 4.5rem;
+  }
+
+  .rg {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .rc {
+    padding: 28px 24px;
+  }
+
+  /* Social */
+  .social-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .social-card {
+    padding: 28px 24px;
+    gap: 20px;
+  }
+
+  .sc-content p {
+    max-width: none;
+  }
+
+  /* Location */
+  .loc-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 28px;
+  }
+
+  .malcesine-photo {
+    grid-column: 1;
+    grid-row: auto;
+    aspect-ratio: 16/9;
+    min-height: auto;
+    order: 1;
+  }
+
+  .loc-text {
+    grid-column: 1;
+    grid-row: auto;
+    gap: 24px;
+    order: 2;
+  }
+
+  .mw {
+    grid-column: 1;
+    grid-row: auto;
+    min-height: 320px;
+    order: 3;
+  }
+
+  .lbtns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .lbtns .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Footer */
   .ft,
   .fb {
     flex-direction: column;
     align-items: flex-start;
+    gap: 20px;
   }
 
-  .ni {
-    padding: 20px 24px;
+  footer {
+    padding: 52px 20px 40px;
   }
 
-  nav.sol .ni {
-    padding: 14px 24px;
+  .fc {
+    font-size: .6rem;
   }
 }
 
-@media(max-width:600px) {
+/* ── MOBILE (≤600px) ── */
+@media (max-width: 600px) {
+
+  /* Sections */
+  section,
+  #phil {
+    padding: 60px 16px;
+  }
+
+  footer {
+    padding: 44px 16px 32px;
+  }
+
+  /* Hero */
+  .h-t1,
+  .h-t2 {
+    font-size: clamp(3.2rem, 20vw, 5.5rem);
+  }
+
+  #hero {
+    padding: 88px 16px 56px;
+  }
+
+  .h-sub {
+    font-size: .85rem;
+    margin: 24px auto 28px;
+  }
+
+  .h-badge {
+    padding: 12px 20px;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Eyebrow / titles */
+  .stitle {
+    font-size: clamp(1.7rem, 7vw, 2.5rem);
+  }
+
+  /* About */
+  .apw {
+    max-width: 300px;
+  }
+
+  .yb {
+    bottom: -16px;
+    right: 8px;
+    padding: 16px;
+    min-width: 86px;
+  }
+
+  .yb-n {
+    font-size: 2.4rem;
+  }
+
+  .yb-l {
+    font-size: .48rem;
+  }
+
+  .yb-crown {
+    width: 22px;
+    height: 22px;
+    top: -10px;
+    right: -10px;
+  }
+
+  /* Stats */
   .stats {
     grid-template-columns: 1fr 1fr;
+    margin-top: 36px;
+    padding-top: 36px;
   }
 
   .sb:last-child {
-    grid-column: 1/-1;
-    padding: 20px 0 0;
+    grid-column: 1 / -1;
+    padding: 16px 0 0;
     border-top: 1px solid var(--bl);
   }
 
   .sb,
   .sb:nth-child(2) {
-    padding: 20px 20px 20px 0;
+    padding: 16px 16px 16px 0;
     border-right: none;
   }
 
   .sb:first-child {
     border-right: 1px solid var(--bl);
   }
+
+  .sn {
+    font-size: 2.2rem;
+  }
+
+  /* Philosophy */
+  .pc {
+    padding: 32px 20px;
+  }
+
+  .pn {
+    font-size: 3.5rem;
+  }
+
+  /* Reviews */
+  .rds {
+    font-size: 3.6rem;
+  }
+
+  .rc {
+    padding: 24px 18px;
+  }
+
+  .rct {
+    font-size: .88rem;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 14px 28px;
+    font-size: .68rem;
+    min-height: 48px; /* touch target */
+  }
+
+  /* Social */
+  .social-card {
+    padding: 22px 18px;
+    gap: 16px;
+  }
+
+  .sc-icon {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+  }
+
+  .sc-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .sc-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .sc-content p {
+    font-size: .82rem;
+  }
+
+  .sc-arrow {
+    display: none; /* non serve su mobile */
+  }
+
+  /* Location */
+  .lb p,
+  .lb a {
+    font-size: .9rem;
+  }
+
+  .mw {
+    min-height: 260px;
+  }
 }
+
+/* ── SMALL MOBILE (≤400px) ── */
+@media (max-width: 400px) {
+
+  section,
+  #phil {
+    padding: 52px 14px;
+  }
+
+  footer {
+    padding: 40px 14px 28px;
+  }
+
+  /* Hero */
+  .h-t1,
+  .h-t2 {
+    font-size: clamp(2.8rem, 22vw, 4.5rem);
+  }
+
+  #hero {
+    padding: 80px 14px 48px;
+  }
+
+  .h-eye {
+    font-size: .58rem;
+    letter-spacing: .25em;
+    gap: 10px;
+  }
+
+  .h-eye::before,
+  .h-eye::after {
+    width: 20px;
+  }
+
+  .h-sub {
+    font-size: .8rem;
+  }
+
+  /* Nav */
+  .ni {
+    padding: 16px 14px;
+  }
+
+  nav.sol .ni {
+    padding: 12px 14px;
+  }
+
+  /* Titles */
+  .stitle {
+    font-size: clamp(1.5rem, 8vw, 2.2rem);
+  }
+
+  /* About */
+  .apw {
+    max-width: 100%;
+  }
+
+  .yb {
+    bottom: -14px;
+    right: 6px;
+    padding: 12px;
+    min-width: 76px;
+  }
+
+  .yb-n {
+    font-size: 2rem;
+  }
+
+  /* Philosophy */
+  .pc {
+    padding: 28px 16px;
+  }
+
+  /* Reviews */
+  .rc {
+    padding: 20px 14px;
+  }
+
+  /* Social */
+  .social-card {
+    padding: 18px 14px;
+    gap: 14px;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 13px 22px;
+    font-size: .65rem;
+  }
+
+  .lbtns .btn {
+    font-size: .65rem;
+  }
+
+  /* Footer text */
+  .fc {
+    font-size: .55rem;
+  }
+}
+
+/* ── TOUCH: disabilita effetti hover/3D non adatti al touch ── */
+@media (hover: none) {
+  /* No 3D tilt on touch devices */
+  .rc {
+    transform: none !important;
+    transition: none !important;
+  }
+
+  /* No floating on social cards */
+  .social-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* No photo zoom on about */
+  .apw:hover .ap-img {
+    transform: none;
+  }
+
+  .apw:hover .ap-overlay {
+    opacity: 0;
+  }
+
+  /* No malcesine photo zoom */
+  .malcesine-photo:hover img {
+    transform: none;
+  }
+
+  /* Rimuovi overlay cursore custom su touch */
+  #cd,
+  #cr {
+    display: none;
+  }
+}
+

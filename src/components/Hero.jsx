@@ -15,6 +15,9 @@ export default function Hero({ isLoaded }) {
   }, [isLoaded]);
 
   useEffect(() => {
+    // Skip parallax on touch/mobile devices
+    if (window.matchMedia('(hover: none)').matches) return;
+
     const handleMouseMove = (e) => {
       const x = (e.clientX / window.innerWidth - 0.5) * 2;
       const y = (e.clientY / window.innerHeight - 0.5) * 2;
@@ -25,6 +28,7 @@ export default function Hero({ isLoaded }) {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
+
 
   return (
     <section id="hero">

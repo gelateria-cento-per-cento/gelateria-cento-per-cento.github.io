@@ -1,10 +1,13 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { useI18n } from '../hooks/useI18n';
+
+const isTouch = () => window.matchMedia('(hover: none)').matches;
 
 export default function Reviews() {
   const { t } = useI18n();
 
   const handleMouseMove = (e, card) => {
+    if (isTouch()) return;
     const rect = card.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width - 0.5;
     const y = (e.clientY - rect.top) / rect.height - 0.5;
@@ -13,6 +16,7 @@ export default function Reviews() {
   };
 
   const handleMouseLeave = (card) => {
+    if (isTouch()) return;
     card.style.transform = 'perspective(900px) rotateY(0deg) rotateX(0deg)';
     card.style.transition = 'transform .8s cubic-bezier(.34, 1.56, .64, 1)';
   };

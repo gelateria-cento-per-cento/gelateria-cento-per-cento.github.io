@@ -8,7 +8,7 @@
 
 - [ ] **Add robots.txt**
 
-- [ ] **Add favicon.ico**
+- [x] **Add favicon.ico**
 
 - [ ] **Add manifest.json**
 

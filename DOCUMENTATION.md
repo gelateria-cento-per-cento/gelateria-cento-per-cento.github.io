@@ -89,3 +89,26 @@
   - Updated `src/components/Location.jsx` to import and display the new high-resolution image.
   - Renamed the import variable to `MalcesinePhoto` for clarity.
   - Verified with `npm run build` (Success).
+
+## [2026-04-07 21:05]: Mobile & Touch Optimization (Full Audit)
+- *Details*: Complete professional mobile optimization pass. All sections now display correctly and usably across all screen sizes (400px to 900px). Touch-specific interactions are properly guarded.
+- *Tech Notes*:
+  - **CSS (`global.css`)**: Replaced the two basic media queries with a full 4-tier responsive system:
+    - `≤900px` (tablet/large mobile): About grid collapses to 1 col, `.yb` badge repositioned, hero text clamped, reviews/social/philosophy collapse to 1 col, location grid flattened with correct order (text → map → photo), CTA buttons stack full-width, padding reduced.
+    - `≤600px` (mobile): Further reduces padding, hero text, badge goes full-width, stats grid 2-col, font sizes, touch target min-height 48px on buttons.
+    - `≤400px` (small mobile): Extreme reduction for iPhone SE/small Android.
+    - `@media (hover: none)`: Disables 3D card tilt, hover transforms, parallax, and custom cursor on all touch devices.
+  - **`Cursor.jsx`**: Added `isTouchDevice()` check; skips all mousemove/rAF listeners on touch, preventing wasted battery and scroll jank.
+  - **`Reviews.jsx`**: Added `isTouch()` guard inside both mouse handlers; 3D perspective tilt is completely bypassed on touch devices.
+  - **Location Section**: Reordered grid elements for mobile using `order` property; now displays panoramic photo → address text → map for maximum visual impact at the top of the section.
+  - Verified with `npm run build` (Success, 0 errors).
+
+
+## [2026-04-07 21:12]: Favicon Implementation
+- *Details*: Set the Instagram logo as the project's favicon.
+- *Tech Notes*:
+    - Created a `public/` directory at the project root for static assets.
+    - Copied `info-gelateria/logo instagram Background Removed.png` to `public/favicon.png`.
+    - Updated `index.html` to point to `/favicon.png`.
+    - Updated `gelato_site.html` to point to the local asset path for standalone portability.
+    - Verified build output in `dist/`.
