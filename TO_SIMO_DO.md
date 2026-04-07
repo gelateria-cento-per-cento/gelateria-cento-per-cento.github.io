@@ -19,3 +19,9 @@
 - When ready, register `gelateriacentopercento.it` (or similar)
 - Point it to the GitHub Pages site (CNAME record)
 - Update canonical URLs, sitemap, and schema across all files
+
+## ⚠️ MANUAL ACTION REQUIRED: Complete Google Site Verification
+1. Commit the new code and **PUSH** it to GitHub (`git commit -m "Add GSC verification" && git push`).
+2. Wait a minute for the GitHub Actions site deployment to finish.
+3. Go back to your Google Search Console dashboard.
+4. Click **Verify** under the "HTML tag" verification method.

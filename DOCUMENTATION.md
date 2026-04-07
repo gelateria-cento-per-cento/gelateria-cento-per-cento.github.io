@@ -156,3 +156,15 @@
     - Generated a cartoon-style image of an ice cream cone with a camera.
     - Saved asset to `src/assets/images/shooting_in_progress.png`.
     - Updated `src/components/About.jsx` to use this new humorous placeholder.
+
+## [2026-04-07 23:19]: Google Search Console Integration
+- *Details*: Integrated the site with Google Search Console via meta tag verification.
+- *Tech Notes*:
+    - Added the `<meta name="google-site-verification" content="...">` tag directly to the `<head>` of `index.html`.
+    - This allows Google to verify ownership instantly when they scrape the homepage.
+
+## [2026-04-07 23:22]: Google Analytics 4 Integration
+- *Details*: Integrated Google Analytics 4 (GA4) tracking for the website to monitor user traffic and engagement.
+- *Tech Notes*:
+    - Inserted the GA4 `gtag.js` asynchronous script directly into the `<head>` of `index.html`.
+    - Configured with Measurement ID: `G-V21J9HSHVY`.
