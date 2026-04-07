@@ -185,3 +185,11 @@
     - Implemented IntersectionObserver on the Google Maps iframe to delay rendering until it comes into the viewport.
     - Adjusted the `Preloader.jsx` timings to take ~1.2s instead of ~2.75s, removing artificial delay from LCP metrics.
     - Disabled CSS `feTurbulence` filter on mobile devices (`max-width: 900px`) in `global.css` to prevent expensive GPU rasterization loops on lower-end devices.
+
+- [2026-04-07]: Resource Hints Update
+  - *Details*: Added `preconnect` and `dns-prefetch` instructions for Google Maps in `index.html`.
+  - *Tech Notes*: Pre-warms the DNS SSL tunnels logic, so the heavy map resolves instantly when intersection observer is triggered.
+
+- [2026-04-07]: Navbar Scroll Throttling
+  - *Details*: Optimized the `handleScroll` event listener in `Navbar.jsx` with `window.requestAnimationFrame`.
+  - *Tech Notes*: This bounds the execution rate of the scroll callback to the display's refresh cycle (usually 60fps), completely stopping JavaScript main-thread churn and avoiding frame drops when the user scrolls quickly on lower-end devices.
