@@ -1,22 +1,15 @@
 # TO_SIMO_DO — Manual Actions Required
 
-## ⚠️ Deployment: GitHub Pages Setup
-1. **Create the GitHub organization** `gelateria-cento-per-cento` if not already done
-2. **Create the repository** `cento-per-cento-Fabri-malcesine.io` under that org
-3. **Push the code** to the new repo
-4. **Enable GitHub Pages** in Settings → Pages → Source: deploy from `gh-pages` branch or GitHub Actions
-5. **Configure Vite deployment**: You can use the following GitHub Action or manually build + deploy:
-   - Run `npm run build` 
-   - Push the `dist/` folder content to the `gh-pages` branch
-6. **Verify all URLs work**:
-   - Main site: `https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.io/`
-   - GEO pages: `https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.io/geo/best-gelato-malcesine.html`
-   - robots.txt: `https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.io/robots.txt`
-   - sitemap.xml: `https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.io/sitemap.xml`
+## ⚠️ CRITICAL: Enable GitHub Pages (1 minute)
+1. Go to **https://github.com/simo-hue/cento-per-cento-Fabri-malcesine/settings/pages**
+2. Under **Build and deployment → Source**, select **GitHub Actions**
+3. Click **Save**
+4. The deploy workflow has already triggered — once you change this setting, future pushes to `main` will auto-deploy
+5. Your site will be live at: **https://simo-hue.github.io/cento-per-cento-Fabri-malcesine/**
 
 ## ⚠️ Post-Deployment: Google Search Console
 1. **Register the site** on [Google Search Console](https://search.google.com/search-console)
-2. **Submit the sitemap**: `https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.io/sitemap.xml`
+2. **Submit the sitemap**: `https://simo-hue.github.io/cento-per-cento-Fabri-malcesine/sitemap.xml`
 3. **Request indexing** for the main page
 
 ## ⚠️ Post-Deployment: Bing Webmaster Tools
