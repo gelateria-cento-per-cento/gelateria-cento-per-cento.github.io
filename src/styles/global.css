@@ -13,6 +13,23 @@
   --fs: 'Inter', system-ui, sans-serif;
 }
 
+/* ── SEO: Screen Reader Only ── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+address {
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1169,6 +1186,12 @@ footer {
 
 .fnav a:hover {
   color: var(--gl);
+}
+
+.fso {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .fso a {

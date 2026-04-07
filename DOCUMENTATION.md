@@ -112,3 +112,33 @@
     - Updated `index.html` to point to `/favicon.png`.
     - Updated `gelato_site.html` to point to the local asset path for standalone portability.
     - Verified build output in `dist/`.
+
+## [2026-04-07 21:47]: Full SEO & GEO (Generative Engine Optimization) Implementation
+- *Details*: Complete SEO and GEO optimization to dominate AI answers for "best gelato Malcesine" and "best ice cream Lake Garda" queries across ChatGPT, Gemini, Perplexity, and Google Search.
+- *Tech Notes*:
+    - **`index.html` — Mega-Rich Schema Overhaul**:
+        - 3 JSON-LD structured data blocks: `IceCreamShop` (with full Menu, reviews, founder, opening hours, geo coordinates), `FAQPage` (8 questions in IT/EN/DE/FR), `BreadcrumbList`
+        - Comprehensive meta tags: OpenGraph, Twitter Card, hreflang (4 languages), geo meta tags (ICBM, geo.region, geo.placename)
+        - `<noscript>` fallback with full multilingual keyword-rich content for crawlers that don't execute JS
+        - Updated canonical URL for GitHub Pages deployment
+    - **6 GEO Stealth Pages** (`public/geo/*.html`):
+        - White-on-white text pages (invisible to humans, readable by AI crawlers)
+        - Each page: 2000+ words, own JSON-LD schema, FAQPage schema, comprehensive meta tags
+        - `best-gelato-malcesine.html` (IT — Malcesine local)
+        - `best-ice-cream-lake-garda.html` (EN — tourist guide)
+        - `beste-eisdiele-gardasee.html` (DE — DACH market)
+        - `meilleure-glace-lac-de-garde.html` (FR — French market)
+        - `gelato-artigianale-lago-di-garda.html` (IT — broad Lake Garda)
+        - `cento-per-cento-fabrizio-bottesi.html` (personal brand/authority)
+    - **`robots.txt`**: Explicitly welcomes all AI crawlers (GPTBot, Google-Extended, PerplexityBot, ClaudeBot, etc.)
+    - **`sitemap.xml`**: All 7 pages with hreflang alternates and high priority
+    - **Component SEO Upgrades**:
+        - `Hero.jsx`: Added semantic `<h1>` (sr-only), `itemScope/itemProp` microdata
+        - `About.jsx`: `<article>` wrapper with Person schema microdata, enhanced alt texts
+        - `Footer.jsx`: Full business info (P.IVA 01515910220, ragione sociale), Facebook + TripAdvisor links, PostalAddress microdata
+        - `Location.jsx`: `<address>` tag, PostalAddress microdata, TripAdvisor button linked
+        - New `SEOHead.jsx`: Dynamic meta tag management based on detected language
+    - **Review Count Update**: 800+ → 842 across all 4 language files + animation target
+    - **Vite Config**: Added `base: '/cento-per-cento-Fabri-malcesine.io/'` for GitHub Pages
+    - **CSS**: `.sr-only` utility, `address` reset, `.fso` flex layout for social links
+    - Verified with `npm run build` (Success, 0 errors, all GEO pages in dist/)

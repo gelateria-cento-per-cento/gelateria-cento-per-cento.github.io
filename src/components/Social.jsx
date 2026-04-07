@@ -12,7 +12,7 @@ export default function Social() {
           <h2 className="stitle" dangerouslySetInnerHTML={{ __html: t('so_t') }}></h2>
           <div className="srule"></div>
         </div>
-        
+
         <div className="social-grid">
           <a href="https://www.instagram.com/cento_per_cento_fabrimalcesine" target="_blank" rel="noopener noreferrer" className="social-card rv from-left">
             <div className="sc-icon">
@@ -27,11 +27,11 @@ export default function Social() {
               <p>{t('so_ig_p')}</p>
             </div>
             <div className="sc-arrow">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </div>
           </a>
 
-          <a href="https://www.facebook.com/centopercento" target="_blank" rel="noopener noreferrer" className="social-card rv from-right">
+          <a href="https://www.facebook.com/pages/Gelateria-Cento-Per-Cento/370602093009786" target="_blank" rel="noopener noreferrer" className="social-card rv from-right">
             <div className="sc-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
@@ -42,7 +42,7 @@ export default function Social() {
               <p>{t('so_fb_p')}</p>
             </div>
             <div className="sc-arrow">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </div>
           </a>
         </div>

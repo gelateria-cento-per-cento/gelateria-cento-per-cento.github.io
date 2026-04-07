@@ -35,20 +35,22 @@ export default function Hero({ isLoaded }) {
       <div className="orb o1" ref={orb1}></div>
       <div className="orb o2" ref={orb2}></div>
       <div className="orb o3" ref={orb3}></div>
-      <div className="hero-content">
+      <div className="hero-content" itemScope itemType="https://schema.org/IceCreamShop">
         <p className={`h-eye ${showAnims ? 'show' : ''}`}>{t('ht')}</p>
-        <div className="clip">
+        <h1 className="sr-only" itemProp="name">Gelateria Cento Per Cento — Malcesine, Lago di Garda</h1>
+        <div className="clip" aria-hidden="true">
           <span className={`h-t1 ${showAnims ? 'show' : ''}`}>Cento</span>
         </div>
-        <div className="clip">
+        <div className="clip" aria-hidden="true">
           <span className={`h-t2 ${showAnims ? 'show' : ''}`}>Per Cento</span>
         </div>
-        <p className={`h-sub ${showAnims ? 'show' : ''}`}>{t('hts')}</p>
+        <p className={`h-sub ${showAnims ? 'show' : ''}`} itemProp="description">{t('hts')}</p>
         <a 
           href="https://www.google.com/maps/dir/?api=1&destination=Gelateria+Cento+Per+Cento+Malcesine+Via+Castello+31" 
           target="_blank" 
           rel="noopener noreferrer" 
           className={`h-badge ${showAnims ? 'show' : ''}`}
+          aria-label="4.8 stelle su Google — 842 recensioni"
         >
           <span className="hb-stars">★★★★★</span>
           <span className="hb-txt">{t('hr')}</span>

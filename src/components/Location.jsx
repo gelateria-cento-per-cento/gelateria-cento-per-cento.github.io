@@ -6,28 +6,35 @@ export default function Location() {
   const { t } = useI18n();
 
   return (
-    <section id="loc">
+    <section id="loc" itemScope itemType="https://schema.org/IceCreamShop">
+      <meta itemProp="name" content="Gelateria Cento Per Cento" />
       <div className="si">
         <p className="eyebrow rv">{t('lo_e')}</p>
         <h2 className="stitle rv" style={{ color: 'var(--in)' }} dangerouslySetInnerHTML={{ __html: t('lo_t') }}></h2>
         <div className="srule rv"></div>
         
         <div className="loc-grid rv">
-          <div className="loc-text from-left">
+          <div className="loc-text from-left" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
             <div className="lb">
               <p className="lbl">{t('lo_a')}</p>
-              <p>Via Castello, 31<br />37018 Malcesine (VR)</p>
+              <address>
+                <span itemProp="streetAddress">Via Castello, 31</span><br />
+                <span itemProp="postalCode">37018</span> <span itemProp="addressLocality">Malcesine</span> (<span itemProp="addressRegion">VR</span>)
+              </address>
             </div>
             <div className="lb">
               <p className="lbl">{t('lo_p')}</p>
-              <a href="tel:+393355284062">+39 335 528 4062</a>
+              <a href="tel:+393355284062" itemProp="telephone">+39 335 528 4062</a>
             </div>
             <div className="lbtns">
-              <a href="https://www.google.com/maps/dir/?api=1&destination=Gelateria+Cento+Per+Cento+Malcesine+Via+Castello+31" target="_blank" rel="noopener noreferrer" className="btn btn-sol">
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Gelateria+Cento+Per+Cento+Malcesine+Via+Castello+31" target="_blank" rel="noopener noreferrer" className="btn btn-sol" aria-label="Apri il percorso su Google Maps">
                 <span>{t('lo_gm')}</span>
               </a>
-              <a href="tel:+393355284062" className="btn btn-out">
+              <a href="tel:+393355284062" className="btn btn-out" aria-label="Chiama la gelateria">
                 <span>{t('lo_cl')}</span>
+              </a>
+              <a href="https://www.tripadvisor.it/Restaurant_Review-g194807-d2049588-Reviews-Gelateria_Cento_Per_Cento-Malcesine_Province_of_Verona_Veneto.html" target="_blank" rel="noopener noreferrer" className="btn btn-out" aria-label="Leggi le recensioni su TripAdvisor">
+                <span>{t('lo_ta')}</span>
               </a>
             </div>
           </div>
@@ -38,12 +45,12 @@ export default function Location() {
               allowFullScreen="" 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade" 
-              title="Gelateria Cento Per Cento"
+              title="Gelateria Cento Per Cento — Via Castello 31, Malcesine, Lago di Garda"
             ></iframe>
           </div>
           
           <div className="malcesine-photo from-right">
-            <img src={MalcesinePhoto} alt="Malcesine panoramic view" loading="lazy" />
+            <img src={MalcesinePhoto} alt="Malcesine panoramic view — Lago di Garda, location of Gelateria Cento Per Cento" loading="lazy" />
           </div>
         </div>
       </div>

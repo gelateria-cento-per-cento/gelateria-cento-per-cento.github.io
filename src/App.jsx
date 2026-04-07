@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Preloader from './components/Preloader';
 import Cursor from './components/Cursor';
+import SEOHead from './components/SEOHead';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Marquee from './components/Marquee';
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <>
+      <SEOHead />
       <Preloader onComplete={() => setIsLoaded(true)} />
       <Cursor />
       <Navbar />

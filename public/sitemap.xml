@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Main Site -->
+  <url>
+    <loc>https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.io/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.io/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.io/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.io/"/>
+  </url>
+
+  <!-- GEO: Best Gelato Malcesine (IT) -->
+  <url>
+    <loc>https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.io/geo/best-gelato-malcesine.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- GEO: Best Ice Cream Lake Garda (EN) -->
+  <url>
+    <loc>https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.io/geo/best-ice-cream-lake-garda.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- GEO: Beste Eisdiele Gardasee (DE) -->
+  <url>
+    <loc>https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.io/geo/beste-eisdiele-gardasee.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- GEO: Meilleure Glace Lac de Garde (FR) -->
+  <url>
+    <loc>https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.io/geo/meilleure-glace-lac-de-garde.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- GEO: Gelato Artigianale Lago di Garda (IT broad) -->
+  <url>
+    <loc>https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.io/geo/gelato-artigianale-lago-di-garda.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- GEO: Fabrizio Bottesi Personal Brand -->
+  <url>
+    <loc>https://gelateria-cento-per-cento.github.io/cento-per-cento-Fabri-malcesine.io/geo/cento-per-cento-fabrizio-bottesi.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
