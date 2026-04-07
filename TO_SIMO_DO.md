@@ -28,3 +28,5 @@
 ## immagine di malcesine da mobile prima di google maps?
 
 ## Recensioni da mobile, devono essere migliori ( trovare come navigarle senza uno scroll infinito)
+
+## 
