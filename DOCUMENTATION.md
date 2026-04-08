@@ -318,3 +318,9 @@
 - [2026-04-08 19:01]: Aggressive Footer Layout Optimization (Desktop)
   - *Details*: Further reduced vertical whitespace to the absolute minimum for a "slim" desktop footer.
   - *Tech Notes*: Reduced `footer` padding to 40px, `.foo-grid` padding-bottom to 16px, and tightened internal margins for headings, links, and contact info in `src/styles/global.css`.
+- [2026-04-08 19:05]: Clickable Malcesine Photo
+  - *Details*: Made the panoramic Malcesine photo in the Location section clickable to open Google Maps navigation.
+  - *Tech Notes*:
+    - Wrapped the `img` tag in `Location.jsx` with an `a` tag pointing to the official Google Maps Directions API.
+    - Added `cursor: pointer` to the `.malcesine-photo` container in `global.css`.
+    - Maintained the existing 3D scale hover effect for enhanced interaction.

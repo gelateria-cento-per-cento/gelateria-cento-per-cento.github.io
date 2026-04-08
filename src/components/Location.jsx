@@ -74,7 +74,15 @@ export default function Location() {
           </div>
           
           <div className="malcesine-photo from-right">
-            <img src={MalcesinePhoto} alt="Malcesine panoramic view — Lago di Garda, location of Gelateria Cento Per Cento" loading="lazy" />
+            <a 
+              href="https://www.google.com/maps/dir/?api=1&destination=Gelateria+Cento+Per+Cento+Malcesine+Via+Castello+31" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="Apri il percorso su Google Maps"
+              style={{ display: 'block', height: '100%' }}
+            >
+              <img src={MalcesinePhoto} alt="Malcesine panoramic view — Lago di Garda, location of Gelateria Cento Per Cento" loading="lazy" />
+            </a>
           </div>
         </div>
       </div>

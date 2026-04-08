@@ -1341,6 +1341,7 @@ section {
   grid-row: 1 / span 2;
   border: 1px solid var(--bl);
   overflow: hidden;
+  cursor: pointer;
 }
 
 .malcesine-photo img {

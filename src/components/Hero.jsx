@@ -46,7 +46,7 @@ export default function Hero({ isLoaded }) {
         </div>
         <p className={`h-sub ${showAnims ? 'show' : ''}`} itemProp="description">{t('hts')}</p>
         <a 
-          href="https://www.google.com/maps/dir/?api=1&destination=Gelateria+Cento+Per+Cento+Malcesine+Via+Castello+31" 
+          href="https://www.google.com/search?sca_esv=69b89b82830faa31&sxsrf=ANbL-n6YG2X_8EcMmETG9UDkrk2gmJ96OQ:1775123828769&q=Gelateria+Cento+per+Cento+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDOyMDYxNzcxMbcwMLQ0MDC0MNjAyPiKUdE9NSexJLUoM1HBOTWvJF-hILUIygpKLctMLS9exEpYDQC5sYqyYwAAAA&rldimm=16283477447801900180&tbm=lcl&hl=en-IT&sa=X&ved=2ahUKEwiP2vvJ886TAxU5_QIHHciIPFwQ9fQKegQIMxAG&biw=1920&bih=963&dpr=2#lkt=LocalPoiReviews"
           target="_blank" 
           rel="noopener noreferrer" 
           className={`h-badge ${showAnims ? 'show' : ''}`}
