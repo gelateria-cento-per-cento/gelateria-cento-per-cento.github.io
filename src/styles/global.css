@@ -1039,8 +1039,9 @@ section {
 
 /* ── PHILOSOPHY ── */
 #phil {
-  background: var(--dk2);
+  background: var(--dk);
   padding: 130px 48px;
+  overflow-x: hidden;
 }
 
 .ph-head .stitle {
@@ -1719,6 +1720,7 @@ footer {
     margin: 0;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    background: transparent;
   }
 
   .pg::-webkit-scrollbar {

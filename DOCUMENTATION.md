@@ -8,11 +8,12 @@
   - Verified build with `npm run build` (Success).
 
 ## [2026-04-08 18:45]: Hotfix: Mobile Overflow & Background Color
-- *Details*: Fixed a bug where a "strange brown color" appeared on mobile sides due to viewport leakage.
+- *Details*: Fixed a bug where a "strange brown/greenish color" appeared on mobile sides due to viewport leakage and container backgrounds.
 - *Tech Notes*: 
   - Set `html, body` background to `#000` explicitly.
+  - Set `#phil` background to `var(--dk)` (Deep Black) to remove old greenish `var(--dk2)` tint.
   - Added `overflow-x: hidden` to all sections.
-  - Removed negative margins on sliders that were causing horizontal overflow.
+  - Removed negative margins on sliders and set `background: transparent` on `.pg` mobile.
   - Synchronized mobile padding values (standardized on 20px/16px) across all components.
 
 ## [2026-04-04 16:24]: UI Cleanup
