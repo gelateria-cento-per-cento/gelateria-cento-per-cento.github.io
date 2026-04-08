@@ -1,10 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useI18n } from '../hooks/useI18n';
 
 const isTouch = () => window.matchMedia('(hover: none)').matches;
 
 export default function Reviews() {
   const { t } = useI18n();
+  const [activeIdx, setActiveIdx] = useState(0);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveIdx(parseInt(entry.target.getAttribute('data-index')));
+          }
+        });
+      },
+      { threshold: 0.6, rootMargin: '0px' }
+    );
+
+    const cards = containerRef.current.querySelectorAll('.rc');
+    cards.forEach((card) => observer.observe(card));
+
+    return () => observer.disconnect();
+  }, []);
 
   const handleMouseMove = (e, card) => {
     if (isTouch()) return;
@@ -42,11 +62,12 @@ export default function Reviews() {
             <div className="rdc">{t('rv_c')}</div>
           </div>
         </div>
-        <div className="rg">
+        <div className="rg" ref={containerRef}>
           {reviewItems.map((r, i) => (
             <div
               key={i}
-              className="rc rv"
+              className={`rc rv ${activeIdx === i ? 'active' : ''}`}
+              data-index={i}
               onMouseMove={(e) => handleMouseMove(e, e.currentTarget)}
               onMouseLeave={(e) => handleMouseLeave(e.currentTarget)}
             >
@@ -55,6 +76,11 @@ export default function Reviews() {
               <p className="rct">{t(r.key)}</p>
               <p className="rca">{r.author}<span className="rcp">· Google</span></p>
             </div>
+          ))}
+        </div>
+        <div className="slider-nav">
+          {reviewItems.map((_, i) => (
+            <div key={i} className={`s-dot ${activeIdx === i ? 'active' : ''}`}></div>
           ))}
         </div>
         <div className="rcta rv" style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>

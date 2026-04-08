@@ -36,16 +36,18 @@ address {
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
+html, body {
+  background: #000;
+  color: var(--in);
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: var(--fs);
   background: var(--dk);
-  color: var(--in);
   overflow-x: hidden;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -618,6 +620,7 @@ body.hov #cr {
 /* ── SHARED ── */
 section {
   padding: 130px 48px;
+  overflow-x: hidden;
 }
 
 .si {
@@ -1662,8 +1665,16 @@ footer {
   /* Sections */
   section,
   #phil,
+  #rev,
   footer {
-    padding: 72px 20px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .si {
+    padding: 0 20px;
+    width: 100%;
+    max-width: 100%;
   }
 
   /* Hero */
@@ -1698,9 +1709,28 @@ footer {
     font-size: 3rem;
   }
 
-  /* Philosophy */
+  /* Philosophy Slider */
   .pg {
-    grid-template-columns: 1fr;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding: 0 20px 24px;
+    margin: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .pg::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pc {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+    border-bottom: none;
+    background: #111009;
+    border: 1px solid rgba(255, 255, 255, 0.05);
   }
 
   .pc {
@@ -1723,12 +1753,25 @@ footer {
   }
 
   .rg {
-    grid-template-columns: 1fr;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     gap: 16px;
+    padding: 0 20px 24px;
+    margin: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .rg::-webkit-scrollbar {
+    display: none;
   }
 
   .rc {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
     padding: 28px 24px;
+    background: #131109;
   }
 
   /* Social */
@@ -1809,12 +1852,17 @@ footer {
 
   /* Sections */
   section,
-  #phil {
-    padding: 60px 16px;
+  #phil,
+  #rev {
+    padding: 60px 0;
   }
 
-  footer {
-    padding: 44px 16px 32px;
+  .si {
+    padding: 0 16px;
+  }
+
+  .pg, .rg {
+    padding: 0 16px 24px;
   }
 
   /* Hero */
@@ -2106,3 +2154,46 @@ footer {
   }
 }
 
+/* ── SLIDER INDICATORS ── */
+.slider-nav {
+  display: none;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .slider-nav {
+    display: flex;
+  }
+}
+
+.s-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--go);
+  opacity: 0.15;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.s-dot.active {
+  width: 28px;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+/* Card focus animations */
+@media (max-width: 900px) {
+  .pc, .rc {
+    opacity: 0.45;
+    transform: scale(0.93);
+    transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.7s ease, border-color 0.4s ease;
+  }
+
+  .pc.active, .rc.active {
+    opacity: 1;
+    transform: scale(1);
+    border-color: rgba(200, 150, 62, 0.4) !important;
+  }
+}

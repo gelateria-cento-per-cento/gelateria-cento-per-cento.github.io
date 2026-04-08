@@ -7,6 +7,14 @@
   - Created `it.json`, `en.json`, `de.json`, and `fr.json`.
   - Verified build with `npm run build` (Success).
 
+## [2026-04-08 18:45]: Hotfix: Mobile Overflow & Background Color
+- *Details*: Fixed a bug where a "strange brown color" appeared on mobile sides due to viewport leakage.
+- *Tech Notes*: 
+  - Set `html, body` background to `#000` explicitly.
+  - Added `overflow-x: hidden` to all sections.
+  - Removed negative margins on sliders that were causing horizontal overflow.
+  - Synchronized mobile padding values (standardized on 20px/16px) across all components.
+
 ## [2026-04-04 16:24]: UI Cleanup
 - *Details*: Removed duplicated navigation links from the footer.
 - *Tech Notes*:
@@ -346,4 +354,13 @@
 - *Tech Notes*:
     - **Location.jsx**: Moved the `rv` (scroll-reveal) class from the grid container to individual columns to align with the site-wide animation pattern and prevent accidental masking.
     - **global.css**: Added explicit `width: 100%` and stable `aspect-ratio` to the `.malcesine-photo` container in mobile media queries to ensure it renders correctly on smaller screens.
-    - **Link Verification**: Manually audited all CTAs. Links successfully point to Google Business Profile, TripAdvisor, Google Maps (Directions), Instagram, and Facebook.
+    
+## [2026-04-08 20:35]: Premium Mobile UX: Philosophy & Reviews
+- *Details*: Redesigned the "Our Approach" and "Reviews" sections for mobile to improve user engagement and eliminate "scrolling fatigue".
+- *Tech Notes*:
+    - **Horizontal Snap-Scroll**: Implemented `scroll-snap-type: x mandatory` for `.pg` and `.rg` on mobile viewports.
+    - **Active Focus Logic**: Integrated `IntersectionObserver` in both `Philosophy.jsx` and `Reviews.jsx` to track the centered card.
+    - **Premium Animations**: Added CSS transitions for `scale` and `opacity` to highlight the "active" card while dimming adjacent ones.
+    - **Navigation Feedback**: Added a custom golden `slider-nav` (pagination dots) that animates dynamically as the user swipes.
+    - **Edge Bleed**: Engineered a bleed-to-edge effect with matching margins and padding to provide a cinematic, immersive feel.
+    - Verified with `npm run build` (Success).
