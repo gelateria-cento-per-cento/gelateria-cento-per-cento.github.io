@@ -65,7 +65,7 @@ export default function Reviews() {
             </svg>
           </a>
           <a href="https://www.tripadvisor.it/Restaurant_Review-g194807-d2049588-Reviews-Gelateria_Cento_Per_Cento-Malcesine_Province_of_Verona_Veneto.html" target="_blank" rel="noopener noreferrer" className="btn btn-out" style={{ 
-            color: 'var(--go)', 
+            color: 'black', 
             borderColor: 'var(--go)',
             backgroundColor: 'transparent'
           }} aria-label="Leggi le recensioni su TripAdvisor">

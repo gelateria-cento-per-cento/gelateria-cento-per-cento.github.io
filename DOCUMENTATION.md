@@ -270,3 +270,14 @@
   - Removed TripAdvisor link from `.lbtns` block in `src/components/Location.jsx`.
   - Added the TripAdvisor link inside `.rcta` container in `src/components/Reviews.jsx`, aligned using a responsive flex wrap layout alongside the Google Reviews button.
   - Updated localization keys `rv_btn` across all four language files (`it.json`, `en.json`, `de.json`, `fr.json`) to explicitly mention "Google reviews" (e.g., "Leggi tutte le recensioni Google", "Read all Google reviews") for better UX clarity.
+
+## [2026-04-08 09:25]: TripAdvisor Button Styling Adjustments
+- *Details*: Changed the TripAdvisor button text content and color to match specific styling requirements.
+- *Tech Notes*:
+  - Modified the inline style for the TripAdvisor button in `src/components/Reviews.jsx` to set `color: 'black'`.
+  - Updated the translation key `lo_ta` in `src/i18n/en.json` to exactly "tripadvisor reviews".
+
+## [2026-04-08 09:28]: Google Reviews Button Text Change
+- *Details*: Changed the Google reviews button text to match specific requested string.
+- *Tech Notes*:
+  - Updated the translation key `rv_btn` in `src/i18n/en.json` to precisely "google reviews", fixing the user typo.
