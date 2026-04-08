@@ -282,9 +282,10 @@
 - *Tech Notes*:
   - Updated the translation key `rv_btn` in `src/i18n/en.json` to precisely "google reviews", fixing the user typo.
 
-## [2026-04-08 09:35]: UI Update: Philosophy Cards Readability Improved
-- *Details*: Improved the readability of the three "Our approach" (Philosophy) cards while maintaining their existing dark stylistic design.
+## [2026-04-08 09:58]: SEO/GEO-Optimized README implementation
+- *Details*: Created a high-authority README.md designed to enhance the repository's visibility for Lake Garda and Malcesine-specific searches.
 - *Tech Notes*:
-  - Modified the `.pcx` (paragraph description) CSS class in `src/styles/global.css`.
-  - Increased font size slightly from `.85rem` to `.95rem`.
-  - Increased structural contrast by overriding the dark brown text (`#78685a`) with a lighter beige `rgba(240, 232, 216, 0.75)` mapping visually to `--ct` variable logic to ensure readability on the dark `#111009` card backgrounds.
+    - Integrated keyword-rich headers targeting "Artisanal Gelato Malcesine" and "Fabrizio Bottesi".
+    - Included optimized media assets (WebP panorama, founder photo).
+    - Detailed the project's internal GEO stealth page architecture for AI crawler discovery.
+    - Added quick-action badges for PageSpeed, Vite, React, and Google Maps Navigation.
