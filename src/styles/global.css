@@ -1238,6 +1238,18 @@ section {
   background: transparent;
 }
 
+.btn-rv-google {
+  background: var(--in);
+  color: var(--cr);
+  border: 1px solid var(--in);
+}
+
+.btn-rv-tripadvisor {
+  background: transparent;
+  color: var(--in);
+  border: 1px solid var(--go);
+}
+
 .btn::before {
   content: '';
   position: absolute;

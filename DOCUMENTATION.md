@@ -324,3 +324,19 @@
     - Wrapped the `img` tag in `Location.jsx` with an `a` tag pointing to the official Google Maps Directions API.
     - Added `cursor: pointer` to the `.malcesine-photo` container in `global.css`.
     - Maintained the existing 3D scale hover effect for enhanced interaction.
+
+## [2026-04-08 19:10]: Hero Section Review Link Bug Fix
+- *Details*: Fixed a bug where the Google reviews badge in the Hero section triggered navigation directions instead of opening the Google Business Profile review page.
+- *Tech Notes*:
+    - Updated the `href` attribute of the `<a>` tag in `src/components/Hero.jsx`.
+    - Pointed the link to the official Google search/reviews URL provided by the user.
+    - Verified that `target="_blank"` and `rel="noopener noreferrer"` are maintained for external link security.
+    - Confirmed build stability with `npm run build`.
+
+## [2026-04-08 19:20]: Complementary Review Buttons
+- *Details*: Enhanced the style of Google and TripAdvisor buttons in the Reviews section to be visually complementary.
+- *Tech Notes*:
+    - Implemented `.btn-rv-google` (Primary: Solid Dark background, Cream text).
+    - Implemented `.btn-rv-tripadvisor` (Secondary: Transparent background, Gold border, Dark text).
+    - Removed legacy inline styles in `Reviews.jsx`.
+    - Maintained unified Gold fill hover animation for both buttons.
