@@ -288,9 +288,11 @@
     - Integrated keyword-rich headers targeting "Artisanal Gelato Malcesine" and "Fabrizio Bottesi".
     - Included optimized media assets (WebP panorama, founder photo).
     - Detailed the project's internal GEO stealth page architecture for AI crawler discovery.
-## [2026-04-08 18:34]: Preloader Timing Optimization
-- *Details*: Set the total preloader duration to exactly 1 second.
+## [2026-04-08 18:41]: Premium Mobile Menu Animation
+- *Details*: Implemented a high-end, smooth animation for the mobile navigation menu.
 - *Tech Notes*:
-    - Updated `Preloader.jsx`: set stay time to 400ms and `onComplete` delay to 600ms.
-    - Updated `global.css`: accelerated `.pre-logo` and `.pre-fill` transitions to fit within the stay window.
-    - The total sequence is now 400ms (stay) + 600ms (exit) = 1s visually and programmatically.
+    - Replaced `display: none` toggle with `visibility` and `clip-path` for hardware-accelerated transitions.
+    - Added a circular expansion effect (`clip-path: circle`) starting from the top-right corner.
+    - Implemented staggered entrance animations for individual menu links using CSS `nth-child` and `transition-delay`.
+    - Guided the animation with a `cubic-bezier(.77, 0, .175, 1)` curve for a "professional/architectural" feel.
+    - Ensured no layout thrashing or performance impact on mobile devices.
