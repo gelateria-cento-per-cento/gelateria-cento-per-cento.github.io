@@ -13,8 +13,8 @@ export default function Preloader({ onComplete }) {
       setGone(true);
       setTimeout(() => {
         if (onComplete) onComplete();
-      }, 350); // fast exit
-    }, 350); // fast wait
+      }, 600); // Wait for the 0.6s CSS transition to finish
+    }, 600); // Show for 0.4s before starting exit
 
     return () => {
       clearTimeout(t1);

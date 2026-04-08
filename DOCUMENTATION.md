@@ -288,4 +288,9 @@
     - Integrated keyword-rich headers targeting "Artisanal Gelato Malcesine" and "Fabrizio Bottesi".
     - Included optimized media assets (WebP panorama, founder photo).
     - Detailed the project's internal GEO stealth page architecture for AI crawler discovery.
-    - Added quick-action badges for PageSpeed, Vite, React, and Google Maps Navigation.
+## [2026-04-08 18:34]: Preloader Timing Optimization
+- *Details*: Set the total preloader duration to exactly 1 second.
+- *Tech Notes*:
+    - Updated `Preloader.jsx`: set stay time to 400ms and `onComplete` delay to 600ms.
+    - Updated `global.css`: accelerated `.pre-logo` and `.pre-fill` transitions to fit within the stay window.
+    - The total sequence is now 400ms (stay) + 600ms (exit) = 1s visually and programmatically.
