@@ -57,7 +57,7 @@ export default function CookiePolicy() {
           {texts.title} <em>Policy</em>
         </h1>
         <div className="srule" />
-        
+
         <div className="policy-content">
           <p className="prose"><strong>Ultimo aggiornamento / Last Updated:</strong> Aprile 2026</p>
           <p className="prose">{texts.desc}</p>
@@ -90,10 +90,10 @@ export default function CookiePolicy() {
 
           <h3 className="policy-h3">{texts.contact}</h3>
           <p className="prose">
-            {texts.contact_desc}<br/>
-            <strong>Gelateria Cento Per Cento di Bottesi Fabrizio</strong><br/>
-            Via Castello 31, 37018 Malcesine (VR)<br/>
-            Email: <a href="mailto:info@gelateriacentopercento.it">info@gelateriacentopercento.it</a>
+            {texts.contact_desc}<br />
+            <strong>Gelateria Cento Per Cento di Bottesi Fabrizio</strong><br />
+            Via Castello 31, 37018 Malcesine (VR)<br />
+            Email: <a href="mailto:info@gelateriacentopercento.it">centopercentofabrimalcesine@gmail.com</a>
           </p>
 
           <div style={{ marginTop: '50px' }}>

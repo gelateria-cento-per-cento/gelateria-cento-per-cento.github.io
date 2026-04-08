@@ -263,3 +263,10 @@
   - Deleted deprecated `public/privacy-policy.html` and `public/cookie-policy.html` static pages.
   - Created `PrivacyPolicy.jsx` utilizing the same `.policy-section` and `.policy-content` CSS variables to guarantee consistent centering and layout styling.
   - Updated the content strings in `PrivacyPolicy.jsx` to explicitly mention Google Analytics 4 (GA4) and the Cookie Banner consent gateway to remain legally accurate regarding user tracking.
+
+## [2026-04-08 09:00]: UI Update: Review Buttons Reorganization
+- *Details*: Moved the TripAdvisor review button from the Location component into the Reviews component to group reputation-related actions together, and explicitly renamed the Google reviews CTA.
+- *Tech Notes*:
+  - Removed TripAdvisor link from `.lbtns` block in `src/components/Location.jsx`.
+  - Added the TripAdvisor link inside `.rcta` container in `src/components/Reviews.jsx`, aligned using a responsive flex wrap layout alongside the Google Reviews button.
+  - Updated localization keys `rv_btn` across all four language files (`it.json`, `en.json`, `de.json`, `fr.json`) to explicitly mention "Google reviews" (e.g., "Leggi tutte le recensioni Google", "Read all Google reviews") for better UX clarity.

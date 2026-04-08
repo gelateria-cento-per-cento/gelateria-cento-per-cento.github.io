@@ -57,12 +57,19 @@ export default function Reviews() {
             </div>
           ))}
         </div>
-        <div className="rcta rv">
+        <div className="rcta rv" style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
           <a href="https://www.google.com/maps/dir/?api=1&destination=Gelateria+Cento+Per+Cento+Malcesine+Via+Castello+31" target="_blank" rel="noopener noreferrer" className="btn btn-gh">
             <span>{t('rv_btn')}</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M5 12h14M13 6l6 6-6 6" />
             </svg>
+          </a>
+          <a href="https://www.tripadvisor.it/Restaurant_Review-g194807-d2049588-Reviews-Gelateria_Cento_Per_Cento-Malcesine_Province_of_Verona_Veneto.html" target="_blank" rel="noopener noreferrer" className="btn btn-out" style={{ 
+            color: 'var(--go)', 
+            borderColor: 'var(--go)',
+            backgroundColor: 'transparent'
+          }} aria-label="Leggi le recensioni su TripAdvisor">
+            <span>{t('lo_ta')}</span>
           </a>
         </div>
       </div>

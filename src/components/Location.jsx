@@ -51,9 +51,6 @@ export default function Location() {
               <a href="tel:+393355284062" className="btn btn-out" aria-label="Chiama la gelateria">
                 <span>{t('lo_cl')}</span>
               </a>
-              <a href="https://www.tripadvisor.it/Restaurant_Review-g194807-d2049588-Reviews-Gelateria_Cento_Per_Cento-Malcesine_Province_of_Verona_Veneto.html" target="_blank" rel="noopener noreferrer" className="btn btn-out" aria-label="Leggi le recensioni su TripAdvisor">
-                <span>{t('lo_ta')}</span>
-              </a>
             </div>
           </div>
           
