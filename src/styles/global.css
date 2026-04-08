@@ -1495,6 +1495,16 @@ footer {
     max-width: 100%;
   }
 
+  /* Center contact and reduce email font size */
+  .foo-grid > div:last-child {
+    text-align: center;
+  }
+
+  .foo-contact a[href^="mailto"] {
+    font-size: 0.7rem;
+    word-break: break-all;
+  }
+
   .foo-bot {
     flex-direction: column;
     align-items: flex-start;
