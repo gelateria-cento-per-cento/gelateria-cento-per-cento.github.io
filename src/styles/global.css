@@ -1063,9 +1063,9 @@ section {
 }
 
 .pcx {
-  font-size: .85rem;
+  font-size: .95rem;
   font-weight: 300;
-  color: #78685a;
+  color: rgba(240, 232, 216, 0.75); /* --ct with opacity for better readability */
   line-height: 1.9;
 }
 
