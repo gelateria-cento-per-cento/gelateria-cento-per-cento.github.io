@@ -293,6 +293,7 @@
 - *Tech Notes*:
     - Replaced `display: none` toggle with `visibility` and `clip-path` for hardware-accelerated transitions.
     - Added a circular expansion effect (`clip-path: circle`) starting from the top-right corner.
+    - Implemented a glassmorphism aesthetic with `backdrop-filter: blur(14px)` and a semi-transparent background (`rgba(12, 10, 7, 0.92)`).
     - Implemented staggered entrance animations for individual menu links using CSS `nth-child` and `transition-delay`.
     - Guided the animation with a `cubic-bezier(.77, 0, .175, 1)` curve for a "professional/architectural" feel.
     - Ensured no layout thrashing or performance impact on mobile devices.

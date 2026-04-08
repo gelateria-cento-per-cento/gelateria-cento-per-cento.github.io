@@ -263,7 +263,9 @@ body.hov #cr {
 .mob {
   position: fixed;
   inset: 0;
-  background: var(--dk);
+  background: rgba(12, 10, 7, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   z-index: 190;
   display: flex;
   flex-direction: column;
