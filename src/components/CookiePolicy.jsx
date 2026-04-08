@@ -93,7 +93,7 @@ export default function CookiePolicy() {
             {texts.contact_desc}<br />
             <strong>Gelateria Cento Per Cento di Bottesi Fabrizio</strong><br />
             Via Castello 31, 37018 Malcesine (VR)<br />
-            Email: <a href="mailto:info@gelateriacentopercento.it">centopercentofabrimalcesine@gmail.com</a>
+            Email: <a href="mailto:centopercentofabrimalcesine@gmail.com">centopercentofabrimalcesine@gmail.com</a>
           </p>
 
           <div style={{ marginTop: '50px' }}>
