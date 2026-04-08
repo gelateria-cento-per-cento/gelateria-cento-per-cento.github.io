@@ -302,3 +302,15 @@
 - *Tech Notes*:
     - Replaced `info@gelateriacentopercento.it` with `centopercentofabrimalcesine@gmail.com` in `Footer.jsx` and `PrivacyPolicy.jsx`.
     - Verified consistent display across all supported languages (IT/EN/DE/FR).
+
+## [2026-04-08 18:58]: Mobile Layout Fix: 3-column Statistics
+- *Details*: Corrected a layout regression where the "Our Story" statistics ("years of experience", "google rating", "reviews") were stacking on multiple rows on mobile.
+- *Tech Notes*:
+    - Updated `@media (max-width: 600px)` in `global.css` to enforce `grid-template-columns: repeat(3, 1fr)`.
+    - Removed `grid-column: 1 / -1` from the third statistic item.
+    - Optimized font sizes for numbers (`.sn`) and labels (`.sl`) using `clamp()` to ensure zero overflow on narrow devices (iPhone SE).
+    - Re-implemented the grid-line aesthetic using `gap: 1px` and `background: var(--bl)` to match the desktop look perfectly.
+
+- [2026-04-08 18:59]: Footer Layout Optimization (Desktop)
+  - *Details*: Reduced vertical whitespace in the footer for the desktop version to avoid "wasted space".
+  - *Tech Notes*: Adjusted `footer` padding, `.foo-grid` padding-bottom, and `.foo-bot` margin-top in `src/styles/global.css`.
