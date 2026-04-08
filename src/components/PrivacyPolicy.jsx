@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
       sections: [
         {
           heading: '1. Titolare del Trattamento',
-          text: <><br/>Fabrizio Bottesi - Gelateria Cento Per Cento<br/>Via Castello, 31 - 37018 Malcesine (VR), Italia<br/>P.IVA: 01515910220<br/>Email: <a href="mailto:info@gelateriacentopercento.it">info@gelateriacentopercento.it</a></>
+          text: <><br/>Fabrizio Bottesi - Gelateria Cento Per Cento<br/>Via Castello, 31 - 37018 Malcesine (VR), Italia<br/>P.IVA: 01515910220<br/>Email: <a href="mailto:centopercentofabrimalcesine@gmail.com">centopercentofabrimalcesine@gmail.com</a></>
         },
         {
           heading: '2. Quali dati raccogliamo e perché',
@@ -45,7 +45,7 @@ export default function PrivacyPolicy() {
       sections: [
         {
           heading: '1. Data Controller',
-          text: <><br/>Fabrizio Bottesi - Gelateria Cento Per Cento<br/>Via Castello, 31 - 37018 Malcesine (VR), Italy<br/>VAT ID: 01515910220<br/>Email: <a href="mailto:info@gelateriacentopercento.it">info@gelateriacentopercento.it</a></>
+          text: <><br/>Fabrizio Bottesi - Gelateria Cento Per Cento<br/>Via Castello, 31 - 37018 Malcesine (VR), Italy<br/>VAT ID: 01515910220<br/>Email: <a href="mailto:centopercentofabrimalcesine@gmail.com">centopercentofabrimalcesine@gmail.com</a></>
         },
         {
           heading: '2. What data we collect and why',

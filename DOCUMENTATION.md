@@ -297,8 +297,8 @@
     - Implemented staggered entrance animations for individual menu links using CSS `nth-child` and `transition-delay`.
     - Guided the animation with a `cubic-bezier(.77, 0, .175, 1)` curve for a "professional/architectural" feel.
     - Ensured no layout thrashing or performance impact on mobile devices.
-- [2026-04-08 18:51]: Footer Contact Refinements (Mobile)
-- *Details*: Centered contact information and optimized email display for narrow viewports.
+- [2026-04-08 18:53]: Official Email Update
+- *Details*: Updated the store's official email address across the site.
 - *Tech Notes*:
-    - Applied `text-align: center` to the contact column on mobile.
-    - Reduced email font size to `0.7rem` and added `word-break: break-all` to prevent overflow of long addresses.
+    - Replaced `info@gelateriacentopercento.it` with `centopercentofabrimalcesine@gmail.com` in `Footer.jsx` and `PrivacyPolicy.jsx`.
+    - Verified consistent display across all supported languages (IT/EN/DE/FR).

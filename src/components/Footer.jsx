@@ -41,7 +41,7 @@ export default function Footer() {
             <p><span itemProp="streetAddress">Via Castello, 31</span></p>
             <p><span itemProp="postalCode">37018</span> <span itemProp="addressLocality">Malcesine</span> (<span itemProp="addressRegion">VR</span>)</p>
             <p><a href="tel:+393355284062" itemProp="telephone">+39 335 528 4062</a></p>
-            <p><a href="mailto:info@gelateriacentopercento.it" itemProp="email">info@gelateriacentopercento.it</a></p>
+            <p><a href="mailto:centopercentofabrimalcesine@gmail.com" itemProp="email">centopercentofabrimalcesine@gmail.com</a></p>
           </div>
         </div>
       </div>
