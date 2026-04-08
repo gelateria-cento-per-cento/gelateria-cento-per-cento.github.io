@@ -1756,6 +1756,7 @@ footer {
   .malcesine-photo {
     grid-column: 1;
     grid-row: auto;
+    width: 100%;
     aspect-ratio: 16/9;
     min-height: auto;
     order: 1;

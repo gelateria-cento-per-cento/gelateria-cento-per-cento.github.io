@@ -340,3 +340,10 @@
     - Implemented `.btn-rv-tripadvisor` (Secondary: Transparent background, Gold border, Dark text).
     - Removed legacy inline styles in `Reviews.jsx`.
     - Maintained unified Gold fill hover animation for both buttons.
+
+## [2026-04-08 20:23]: Bug Fix: Malcesine Photo Visibility & Link Verification
+- *Details*: Resolved an issue where the panoramic Malcesine photo was invisible on mobile devices. Verified all site buttons (Hero, Reviews, Location, Social, Footer) to ensure they point to the correct destinations.
+- *Tech Notes*:
+    - **Location.jsx**: Moved the `rv` (scroll-reveal) class from the grid container to individual columns to align with the site-wide animation pattern and prevent accidental masking.
+    - **global.css**: Added explicit `width: 100%` and stable `aspect-ratio` to the `.malcesine-photo` container in mobile media queries to ensure it renders correctly on smaller screens.
+    - **Link Verification**: Manually audited all CTAs. Links successfully point to Google Business Profile, TripAdvisor, Google Maps (Directions), Instagram, and Facebook.

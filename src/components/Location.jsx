@@ -31,8 +31,8 @@ export default function Location() {
         <h2 className="stitle rv" style={{ color: 'var(--in)' }} dangerouslySetInnerHTML={{ __html: t('lo_t') }}></h2>
         <div className="srule rv"></div>
         
-        <div className="loc-grid rv">
-          <div className="loc-text from-left" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+        <div className="loc-grid">
+          <div className="loc-text rv from-left" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
             <div className="lb">
               <p className="lbl">{t('lo_a')}</p>
               <address>
@@ -54,7 +54,7 @@ export default function Location() {
             </div>
           </div>
           
-          <div className="mw from-left">
+          <div className="mw rv from-left">
             {!showMap ? (
               <div 
                 ref={mapRef} 
@@ -73,7 +73,7 @@ export default function Location() {
             )}
           </div>
           
-          <div className="malcesine-photo from-right">
+          <div className="malcesine-photo rv from-right">
             <a 
               href="https://www.google.com/maps/dir/?api=1&destination=Gelateria+Cento+Per+Cento+Malcesine+Via+Castello+31" 
               target="_blank" 
