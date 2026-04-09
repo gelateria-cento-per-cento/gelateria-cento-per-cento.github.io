@@ -373,3 +373,17 @@
 - [2026-04-09 14:23:35]: Further shift of About section black box on mobile
   *Details*: Increased the negative right offsets to push the black box even further outside the image boundary as requested.
   *Tech Notes*: Updated .yb right property to -24px, -20px, and -16px for respective breakpoints.
+
+- [2026-04-09 14:26:00]: UI Update: Reviews Rating Color
+  - *Details*: Changed the color of the "4.8" rating number in the Reviews section from gold to black for better visual balance as requested.
+  - *Tech Notes*: Updated the `.rds` class in `src/styles/global.css` to set `color: #000`.
+
+- [2026-04-09 14:28:30]: UI Update: Partial Star Rating (4.8 Stars)
+  - *Details*: Implemented a partial fill for the 5th star to accurately represent the 4.8-star rating.
+  - *Tech Notes*:
+    - Created `.star-p` utility in `global.css` using `background-clip: text` and a linear gradient (80% fill).
+    - Updated `Reviews.jsx` and `Hero.jsx` to sub-render the 5th star with this class.
+    - Adjusted the "empty" portion color to `#000` (black) per latest request for higher contrast.
+
+
+

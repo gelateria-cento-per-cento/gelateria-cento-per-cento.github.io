@@ -58,7 +58,7 @@ export default function Reviews() {
           </div>
           <div className="rdsp rv">
             <div className="rds">4.8</div>
-            <div className="rd-stars">★★★★★</div>
+            <div className="rd-stars">★★★★<span className="star-p">★</span></div>
             <div className="rdc">{t('rv_c')}</div>
           </div>
         </div>

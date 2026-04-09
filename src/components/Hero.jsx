@@ -52,7 +52,7 @@ export default function Hero({ isLoaded }) {
           className={`h-badge ${showAnims ? 'show' : ''}`}
           aria-label="4.8 stelle su Google — 842 recensioni"
         >
-          <span className="hb-stars">★★★★★</span>
+          <span className="hb-stars">★★★★<span className="star-p">★</span></span>
           <span className="hb-txt">{t('hr')}</span>
         </a>
       </div>

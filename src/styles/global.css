@@ -1123,7 +1123,7 @@ section {
   font-family: var(--ff);
   font-size: 6.5rem;
   font-weight: 400;
-  color: var(--go);
+  color: #000;
   line-height: 1;
 }
 
@@ -1132,6 +1132,16 @@ section {
   letter-spacing: 3px;
   color: var(--go);
 }
+
+.star-p {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--go) 80%, #000 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 1em;
+  margin-right: -3px; /* offsets letter-spacing of parent */
+}
+
 
 .rdc {
   font-size: .62rem;
