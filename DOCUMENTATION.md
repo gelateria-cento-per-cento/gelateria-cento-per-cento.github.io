@@ -394,3 +394,8 @@
 
 
 
+- [2026-04-09 15:43]: UI Update: Philosophy Section Numbers Visibility (Tier 2)
+  - *Details*: Further increased the visibility of the large numbers (01, 02, 03) in the "Our approach" section as requested.
+  - *Tech Notes*: 
+    - Boosted `.pn` base opacity to `.3` (from `.18`).
+    - Boosted `.pc:hover .pn` and `.pc.active .pn` opacity to `.65` (from `.45`).

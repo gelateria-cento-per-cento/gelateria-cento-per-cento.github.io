@@ -1075,11 +1075,18 @@ section {
 .pn {
   font-family: var(--ff);
   font-size: 4.5rem;
-  color: rgba(200, 150, 62, .1);
+  color: rgba(200, 150, 62, .3);
   font-style: italic;
   line-height: 1;
   margin-bottom: 24px;
   display: block;
+  transition: color .4s ease, transform .4s ease;
+}
+
+.pc:hover .pn,
+.pc.active .pn {
+  color: rgba(200, 150, 62, .65);
+  transform: translateX(8px);
 }
 
 .pct {
