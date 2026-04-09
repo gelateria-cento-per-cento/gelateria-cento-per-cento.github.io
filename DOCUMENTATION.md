@@ -365,3 +365,7 @@
     - **Navigation Feedback**: Added a custom golden `slider-nav` (pagination dots) that animates dynamically as the user swipes.
     - **Edge Bleed**: Engineered a bleed-to-edge effect with matching margins and padding to provide a cinematic, immersive feel.
     - Verified with `npm run build` (Success).
+
+- [2026-04-09 14:22:03]: Move About section black box on mobile
+  *Details*: The black box displaying "30 years of experience" was overlapping too much with the image on mobile. Shifted it to the right by using negative offsets in media queries.
+  *Tech Notes*: Modified .yb class in global.css for max-width 900px, 600px, and 400px.
