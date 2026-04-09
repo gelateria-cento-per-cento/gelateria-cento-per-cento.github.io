@@ -369,3 +369,7 @@
 - [2026-04-09 14:22:03]: Move About section black box on mobile
   *Details*: The black box displaying "30 years of experience" was overlapping too much with the image on mobile. Shifted it to the right by using negative offsets in media queries.
   *Tech Notes*: Modified .yb class in global.css for max-width 900px, 600px, and 400px.
+
+- [2026-04-09 14:23:35]: Further shift of About section black box on mobile
+  *Details*: Increased the negative right offsets to push the black box even further outside the image boundary as requested.
+  *Tech Notes*: Updated .yb right property to -24px, -20px, and -16px for respective breakpoints.
