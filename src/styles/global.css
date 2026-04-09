@@ -1159,53 +1159,93 @@ section {
 }
 
 .rc {
-  background: #131109;
-  border: 1px solid rgba(255, 255, 255, .05);
-  padding: 40px;
-  transition: border-color .3s;
+  background: #ffffff;
+  border: 1px solid #e5ddd0;
+  padding: 48px;
+  transition: all .4s cubic-bezier(.16, 1, .3, 1);
   transform-style: preserve-3d;
   cursor: default;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
 }
 
 .rc:hover {
-  border-color: rgba(200, 150, 62, .3);
+  border-color: var(--go);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(12, 10, 7, 0.05);
 }
 
-.rcf {
-  font-size: .72rem;
-  color: #6a5a3a;
-  margin-bottom: 18px;
-  display: block;
+.rch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.rc-v {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(52, 168, 83, 0.08);
+  color: #2d8a43;
+  padding: 6px 12px;
+  border-radius: 100px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .rcs {
   color: var(--go);
   letter-spacing: 2px;
   font-size: .8rem;
-  margin-bottom: 18px;
+  margin-bottom: 24px;
   display: block;
 }
 
 .rct {
   font-family: var(--ff);
-  font-size: .95rem;
+  font-size: 1.05rem;
   font-style: italic;
-  line-height: 1.9;
-  color: #c0b090;
-  margin-bottom: 22px;
+  line-height: 1.8;
+  color: var(--in);
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.rct::before {
+  content: '“';
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  font-size: 3rem;
+  color: var(--go);
+  opacity: 0.15;
+  font-family: serif;
+}
+
+.rc-footer {
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .rca {
-  font-size: .62rem;
-  font-weight: 500;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-  color: #4a4030;
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--in);
+  margin-bottom: 4px;
 }
 
-.rcp {
-  color: var(--go);
-  margin-left: 6px;
+.rc-source {
+  font-size: .6rem;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #8c8273;
 }
 
 .rcta {
@@ -1782,8 +1822,9 @@ footer {
   .rc {
     flex: 0 0 85%;
     scroll-snap-align: center;
-    padding: 28px 24px;
-    background: #131109;
+    padding: 32px 28px;
+    background: #ffffff;
+    color: var(--in);
   }
 
   /* Social */

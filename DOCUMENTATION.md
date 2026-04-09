@@ -382,8 +382,15 @@
   - *Details*: Implemented a partial fill for the 5th star to accurately represent the 4.8-star rating.
   - *Tech Notes*:
     - Created `.star-p` utility in `global.css` using `background-clip: text` and a linear gradient (80% fill).
-    - Updated `Reviews.jsx` and `Hero.jsx` to sub-render the 5th star with this class.
+  - Updated `Reviews.jsx` and `Hero.jsx` to sub-render the 5th star with this class.
     - Adjusted the "empty" portion color to `#000` (black) per latest request for higher contrast.
+
+- [2026-04-09 14:35:00]: Reviews Localization & Authority Redesign
+  - *Details*: Localized the reviews section across all languages and redesigned the review cards for a more authoritative, professional look.
+  - *Tech Notes*:
+    - Translated `r1`, `r2`, `r3` in all JSON files and added `rv_l`, `rv_v` keys.
+    - Redesigned `Reviews.jsx` with a Google G logo, verified badges, and improved typography.
+    - Updated `global.css` with a new white-card design (`.rc`), refined mobile responsiveness, and added "Verified" badge styling.
 
 
 
