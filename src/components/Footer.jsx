@@ -52,7 +52,31 @@ export default function Footer() {
           {t('f_pi')} 01515910220 · REA VR-123456
         </p>
         <div className="foo-seo-links">
-          <span>{t('fs')}</span>
+          {(() => {
+            const parts = t('fs').split(' · ');
+            const { lang } = useI18n(); // Let's assume lang is available or find it
+            // Based on the translation, we map links
+            const links = [
+              '/geo/cento-per-cento-fabrizio-bottesi.html',
+              '/geo/best-gelato-malcesine.html',
+              '/geo/gelato-artigianale-lago-di-garda.html' // default broad
+            ];
+            
+            // Adjust part 3 based on current translated text for "Lago di Garda" / "Lake Garda" etc.
+            if (parts[2]?.includes('Lake')) links[2] = '/geo/best-ice-cream-lake-garda.html';
+            if (parts[2]?.includes('Garda') && !parts[2].includes('Lago')) {
+                 if (parts[2].includes('Lake')) links[2] = '/geo/best-ice-cream-lake-garda.html';
+                 else if (parts[2].includes('Gardasee')) links[2] = '/geo/beste-eisdiele-gardasee.html';
+                 else if (parts[2].includes('Lac')) links[2] = '/geo/meilleure-glace-lac-de-garde.html';
+            }
+
+            return parts.map((p, i) => (
+              <React.Fragment key={i}>
+                <a href={links[i]}>{p}</a>
+                {i < parts.length - 1 && ' · '}
+              </React.Fragment>
+            ));
+          })()}
         </div>
       </div>
     </footer>
