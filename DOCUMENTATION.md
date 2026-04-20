@@ -399,3 +399,10 @@
   - *Tech Notes*: 
     - Boosted `.pn` base opacity to `.3` (from `.18`).
     - Boosted `.pc:hover .pn` and `.pc.active .pn` opacity to `.65` (from `.45`).
+## [2026-04-20 12:30]: SEO Fix: Resolving "Crawled - currently not indexed"
+- *Details*: Improved the authority and uniqueness of problematic GEO pages to resolve Google Search Console indexing issues.
+- *Tech Notes*:
+  - **Internal Linking**: Added full fallback links for all 6 GEO pages into the `<noscript>` tag of `index.html`. This ensures non-JS crawlers (or bots deferring JS) see these pages as core parts of the site navigation rather than isolated orphans.
+  - **Content Differentiation**: Redesigned `cento-per-cento-fabrizio-bottesi.html` to focus strictly on the founder's biography and artisan craftsmanship.
+  - **Local Utility Added**: Redesigned `gelato-artigianale-lago-di-garda.html` to include a practical "Tourist Guide" with travel times from Limone, Riva, Torri, etc., making the content unique and valuable (not a duplicate of the homepage).
+  - Matches Google's requirements for "Page Indexing" by increasing internal PageRank flow and content quality.
