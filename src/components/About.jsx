@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import Fabrizio from '../assets/images/shooting_in_progress.webp';
+import Fabrizio from '../assets/images/fabrizio.webp';
 import { useI18n } from '../hooks/useI18n';
 
 export default function About() {

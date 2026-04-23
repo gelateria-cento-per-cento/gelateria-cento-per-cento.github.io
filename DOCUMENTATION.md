@@ -405,3 +405,11 @@
   - **Internal Linking**: Added full fallback links for all 6 GEO pages into the `<noscript>` tag of `index.html`. This ensures non-JS crawlers (or bots deferring JS) see these pages as core parts of the site navigation rather than isolated orphans.
   - **Content Differentiation**: Redesigned **all 6 GEO pages** (`fabrizio-bottesi`, `lago-di-garda`, `malcesine`, `gardasee-de`, `lac-de-garde-fr`, and `ice-cream-en`) to focus on unique value propositions (Person, Guide, Local Tips, Insider-Tipp, Savoir-faire, and Foodie Bucket List). This eliminates duplicate content flags and provides specific value for different user segments and languages.
   - Matches Google's requirements for "Page Indexing" by increasing internal PageRank flow and content quality.
+
+## [2026-04-23 18:41]: Fabrizio's Photo Update (Final Version)
+- *Details*: Re-processed the photo of Fabrizio Bottesi using the latest version provided by the user (`fabrizio.png`).
+- *Tech Notes*:
+  - Converted the new source `fabrizio.png` to `fabrizio.webp` with `-q 90` quality.
+  - Updated `src/components/About.jsx` to import and display `fabrizio.webp`.
+  - Cleaned up old asset references (`fabri.webp`, `fabri.png`) to keep the project lean.
+  - Verified with `npm run build` (Success).
