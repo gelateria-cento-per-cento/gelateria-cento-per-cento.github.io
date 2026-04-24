@@ -435,3 +435,7 @@
   - *Details*: Replaced Louisa's review with Andrew Bishop's testimonial across all platforms.
   - *Tech Notes*: Updated i18n JSON files (it, en, de, fr), standalone HTML pages (gelato_site.html, info-gelateria/index.html), and JSON-LD structured data in index.html. Verified translations and language flags. Andrew's review is now the first review (r1).
 
+## [2026-04-24/09:10]: Review Cleanup (Removal of \n)
+- *Details*: Removed all `\n` characters and literal newline escape sequences from customer reviews across the entire project for a cleaner UI.
+- *Tech Notes*: Updated `src/i18n/*.json`, `gelato_site.html`, and `info-gelateria/index.html`. Fixed an accidental Italian translation in the German version of the `info-gelateria` page.
+
