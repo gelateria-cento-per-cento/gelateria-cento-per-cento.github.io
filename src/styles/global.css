@@ -1220,6 +1220,7 @@ section {
   color: var(--in);
   margin-bottom: 32px;
   position: relative;
+  white-space: pre-wrap;
 }
 
 .rct::before {

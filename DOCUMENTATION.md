@@ -413,3 +413,25 @@
   - Updated `src/components/About.jsx` to import and display `fabrizio.webp`.
   - Cleaned up old asset references (`fabri.webp`, `fabri.png`) to keep the project lean.
   - Verified with `npm run build` (Success).
+## [2026-04-24 10:10]: Real Customer Reviews Update (Phase 1)
+- *Details*: Replaced the initial set of "placeholder" reviews with authentic customer feedback, starting with Louisa's review.
+- *Tech Notes*:
+  - **Localization**: Updated `it.json`, `en.json`, `de.json`, and `fr.json` with Louisa's real review text and author name.
+  - **Multiline Support**: Added `white-space: pre-wrap` to review text classes (`.rct` and `.review-text`) in `global.css`, `info-gelateria/index.html`, and `gelato_site.html` to preserve authentic line breaks and emojis.
+  - **Standalone Versions**: Updated hardcoded reviews and the `i18n` scripts in `info-gelateria/index.html` and `gelato_site.html`.
+  - **SEO/Structured Data**: Updated JSON-LD structured data in `index.html` to match the real review by Louisa, improving SEO authenticity.
+  - **Consistency**: Removed all occurrences of the placeholder author "Maria T." across the entire repository.
+
+## [2026-04-24 10:11]: Real Customer Reviews Update (Phase 2)
+- *Details*: Replaced the second "placeholder" review (James K.) with authentic feedback from Patrik Fischer.
+- *Tech Notes*:
+  - **Localization**: Updated `it.json`, `en.json`, `de.json`, and `fr.json` with Patrik's review and name.
+  - **SEO**: Updated the second review entry in `index.html` JSON-LD structured data.
+  - **Standalone Updates**: Synchronized `info-gelateria/index.html` and `gelato_site.html` (both HTML content and i18n scripts).
+  - **Consistency**: Removed all references to "James K." across the project.
+
+
+  - [2026-04-24 11:04]: Review Replacement (Andrew Bishop)
+  - *Details*: Replaced Louisa's review with Andrew Bishop's testimonial across all platforms.
+  - *Tech Notes*: Updated i18n JSON files (it, en, de, fr), standalone HTML pages (gelato_site.html, info-gelateria/index.html), and JSON-LD structured data in index.html. Verified translations and language flags. Andrew's review is now the first review (r1).
+
